@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		119F34AC89F7A55F484BC934 /* Pods_InvoicesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8911FC021F6324C2C60E6989 /* Pods_InvoicesApp.framework */; };
 		20BC18A22804A766005551FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18A12804A766005551FF /* AppDelegate.swift */; };
 		20BC18A62804A766005551FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18A52804A766005551FF /* ViewController.swift */; };
 		20BC18AB2804A768005551FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BC18AA2804A768005551FF /* Assets.xcassets */; };
@@ -14,6 +15,10 @@
 		20BC18B92804A768005551FF /* InvoicesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18B82804A768005551FF /* InvoicesAppTests.swift */; };
 		20BC18C32804A768005551FF /* InvoicesAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18C22804A768005551FF /* InvoicesAppUITests.swift */; };
 		20BC18C52804A768005551FF /* InvoicesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18C42804A768005551FF /* InvoicesAppUITestsLaunchTests.swift */; };
+		20BC18D42804B5CC005551FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20BC18D32804B5CC005551FF /* GoogleService-Info.plist */; };
+		20BC18DA2804B6AF005551FF /* FirebaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18D92804B6AE005551FF /* FirebaseConfig.swift */; };
+		6D37E43C194FB33E9337B389 /* Pods_InvoicesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A135CEC9500C016D433641 /* Pods_InvoicesAppTests.framework */; };
+		8D94BA0A3C1C502011394B3D /* Pods_InvoicesApp_InvoicesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2787EA435FAC1431D40D3B54 /* Pods_InvoicesApp_InvoicesAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AA3070EE275FE2F4FA32292 /* Pods-InvoicesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp.release.xcconfig"; path = "Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp.release.xcconfig"; sourceTree = "<group>"; };
 		20BC189E2804A766005551FF /* InvoicesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvoicesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BC18A12804A766005551FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20BC18A52804A766005551FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +52,16 @@
 		20BC18C22804A768005551FF /* InvoicesAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppUITests.swift; sourceTree = "<group>"; };
 		20BC18C42804A768005551FF /* InvoicesAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		20BC18D12804A777005551FF /* InvoicesApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvoicesApp.entitlements; sourceTree = "<group>"; };
+		20BC18D32804B5CC005551FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		20BC18D92804B6AE005551FF /* FirebaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConfig.swift; sourceTree = "<group>"; };
+		2787EA435FAC1431D40D3B54 /* Pods_InvoicesApp_InvoicesAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesApp_InvoicesAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8911FC021F6324C2C60E6989 /* Pods_InvoicesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		977B884ADC83940230774D98 /* Pods-InvoicesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesAppTests.release.xcconfig"; path = "Target Support Files/Pods-InvoicesAppTests/Pods-InvoicesAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4A135CEC9500C016D433641 /* Pods_InvoicesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD4F02B6B90CF3B160A3182 /* Pods-InvoicesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp.debug.xcconfig"; path = "Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EB67F084D8E5A16CD042C62A /* Pods-InvoicesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-InvoicesAppTests/Pods-InvoicesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ED2F24AD4C22768681FC54AA /* Pods-InvoicesApp-InvoicesAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp-InvoicesAppUITests.release.xcconfig"; path = "Target Support Files/Pods-InvoicesApp-InvoicesAppUITests/Pods-InvoicesApp-InvoicesAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF4ECAC163D7279402EC39C1 /* Pods-InvoicesApp-InvoicesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp-InvoicesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-InvoicesApp-InvoicesAppUITests/Pods-InvoicesApp-InvoicesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119F34AC89F7A55F484BC934 /* Pods_InvoicesApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D37E43C194FB33E9337B389 /* Pods_InvoicesAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D94BA0A3C1C502011394B3D /* Pods_InvoicesApp_InvoicesAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +99,8 @@
 				20BC18B72804A768005551FF /* InvoicesAppTests */,
 				20BC18C12804A768005551FF /* InvoicesAppUITests */,
 				20BC189F2804A766005551FF /* Products */,
+				DF07A54E5FA017A2F855EE09 /* Pods */,
+				2F6985E506809C520A4E5A54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +118,12 @@
 			isa = PBXGroup;
 			children = (
 				20BC18D12804A777005551FF /* InvoicesApp.entitlements */,
-				20BC18A12804A766005551FF /* AppDelegate.swift */,
-				20BC18A52804A766005551FF /* ViewController.swift */,
-				20BC18AA2804A768005551FF /* Assets.xcassets */,
-				20BC18AC2804A768005551FF /* LaunchScreen.storyboard */,
+				20BC18D52804B668005551FF /* AppDelegate */,
+				20BC18D82804B696005551FF /* Config */,
+				20BC18D62804B678005551FF /* Project Utils */,
+				20BC18D72804B688005551FF /* Screens */,
 				20BC18AF2804A768005551FF /* Info.plist */,
+				20BC18D32804B5CC005551FF /* GoogleService-Info.plist */,
 			);
 			path = InvoicesApp;
 			sourceTree = "<group>";
@@ -123,6 +145,62 @@
 			path = InvoicesAppUITests;
 			sourceTree = "<group>";
 		};
+		20BC18D52804B668005551FF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				20BC18A12804A766005551FF /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		20BC18D62804B678005551FF /* Project Utils */ = {
+			isa = PBXGroup;
+			children = (
+				20BC18AC2804A768005551FF /* LaunchScreen.storyboard */,
+				20BC18AA2804A768005551FF /* Assets.xcassets */,
+			);
+			path = "Project Utils";
+			sourceTree = "<group>";
+		};
+		20BC18D72804B688005551FF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				20BC18A52804A766005551FF /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		20BC18D82804B696005551FF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				20BC18D92804B6AE005551FF /* FirebaseConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2F6985E506809C520A4E5A54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8911FC021F6324C2C60E6989 /* Pods_InvoicesApp.framework */,
+				2787EA435FAC1431D40D3B54 /* Pods_InvoicesApp_InvoicesAppUITests.framework */,
+				A4A135CEC9500C016D433641 /* Pods_InvoicesAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF07A54E5FA017A2F855EE09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBD4F02B6B90CF3B160A3182 /* Pods-InvoicesApp.debug.xcconfig */,
+				1AA3070EE275FE2F4FA32292 /* Pods-InvoicesApp.release.xcconfig */,
+				FF4ECAC163D7279402EC39C1 /* Pods-InvoicesApp-InvoicesAppUITests.debug.xcconfig */,
+				ED2F24AD4C22768681FC54AA /* Pods-InvoicesApp-InvoicesAppUITests.release.xcconfig */,
+				EB67F084D8E5A16CD042C62A /* Pods-InvoicesAppTests.debug.xcconfig */,
+				977B884ADC83940230774D98 /* Pods-InvoicesAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -130,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20BC18C82804A768005551FF /* Build configuration list for PBXNativeTarget "InvoicesApp" */;
 			buildPhases = (
+				A6A6D2EED9DA0D18AB313228 /* [CP] Check Pods Manifest.lock */,
 				20BC189A2804A766005551FF /* Sources */,
 				20BC189B2804A766005551FF /* Frameworks */,
 				20BC189C2804A766005551FF /* Resources */,
+				E644DE3135B926E4D58CC6F4 /* [CP] Embed Pods Frameworks */,
+				20BC18DB2804B990005551FF /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -147,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20BC18CB2804A768005551FF /* Build configuration list for PBXNativeTarget "InvoicesAppTests" */;
 			buildPhases = (
+				99C6B5769F495C0C5149A42E /* [CP] Check Pods Manifest.lock */,
 				20BC18B02804A768005551FF /* Sources */,
 				20BC18B12804A768005551FF /* Frameworks */,
 				20BC18B22804A768005551FF /* Resources */,
@@ -165,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20BC18CE2804A768005551FF /* Build configuration list for PBXNativeTarget "InvoicesAppUITests" */;
 			buildPhases = (
+				CDC7EFD45F3447970CBEF79A /* [CP] Check Pods Manifest.lock */,
 				20BC18BA2804A768005551FF /* Sources */,
 				20BC18BB2804A768005551FF /* Frameworks */,
 				20BC18BC2804A768005551FF /* Resources */,
+				E29B82A6878661C98A77DD58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +313,7 @@
 			files = (
 				20BC18AE2804A768005551FF /* LaunchScreen.storyboard in Resources */,
 				20BC18AB2804A768005551FF /* Assets.xcassets in Resources */,
+				20BC18D42804B5CC005551FF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,11 +333,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20BC18DB2804B990005551FF /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		99C6B5769F495C0C5149A42E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvoicesAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6A6D2EED9DA0D18AB313228 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvoicesApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDC7EFD45F3447970CBEF79A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InvoicesApp-InvoicesAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E29B82A6878661C98A77DD58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvoicesApp-InvoicesAppUITests/Pods-InvoicesApp-InvoicesAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvoicesApp-InvoicesAppUITests/Pods-InvoicesApp-InvoicesAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InvoicesApp-InvoicesAppUITests/Pods-InvoicesApp-InvoicesAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E644DE3135B926E4D58CC6F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20BC189A2804A766005551FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20BC18DA2804B6AF005551FF /* FirebaseConfig.swift in Sources */,
 				20BC18A62804A766005551FF /* ViewController.swift in Sources */,
 				20BC18A22804A766005551FF /* AppDelegate.swift in Sources */,
 			);
@@ -420,6 +629,7 @@
 		};
 		20BC18C92804A768005551FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBD4F02B6B90CF3B160A3182 /* Pods-InvoicesApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -434,6 +644,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,6 +661,7 @@
 		};
 		20BC18CA2804A768005551FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA3070EE275FE2F4FA32292 /* Pods-InvoicesApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +676,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,6 +693,7 @@
 		};
 		20BC18CC2804A768005551FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB67F084D8E5A16CD042C62A /* Pods-InvoicesAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,6 +714,7 @@
 		};
 		20BC18CD2804A768005551FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977B884ADC83940230774D98 /* Pods-InvoicesAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +735,7 @@
 		};
 		20BC18CF2804A768005551FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF4ECAC163D7279402EC39C1 /* Pods-InvoicesApp-InvoicesAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +754,7 @@
 		};
 		20BC18D02804A768005551FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED2F24AD4C22768681FC54AA /* Pods-InvoicesApp-InvoicesAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
