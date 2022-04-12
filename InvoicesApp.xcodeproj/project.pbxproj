@@ -17,6 +17,7 @@
 		20BC18C52804A768005551FF /* InvoicesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18C42804A768005551FF /* InvoicesAppUITestsLaunchTests.swift */; };
 		20BC18D42804B5CC005551FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20BC18D32804B5CC005551FF /* GoogleService-Info.plist */; };
 		20BC18DA2804B6AF005551FF /* FirebaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18D92804B6AE005551FF /* FirebaseConfig.swift */; };
+		20E52700280592BD00A00845 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E526FF280592BD00A00845 /* WelcomeViewController.swift */; };
 		6D37E43C194FB33E9337B389 /* Pods_InvoicesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A135CEC9500C016D433641 /* Pods_InvoicesAppTests.framework */; };
 		8D94BA0A3C1C502011394B3D /* Pods_InvoicesApp_InvoicesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2787EA435FAC1431D40D3B54 /* Pods_InvoicesApp_InvoicesAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		20BC18D12804A777005551FF /* InvoicesApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvoicesApp.entitlements; sourceTree = "<group>"; };
 		20BC18D32804B5CC005551FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		20BC18D92804B6AE005551FF /* FirebaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConfig.swift; sourceTree = "<group>"; };
+		20E526FF280592BD00A00845 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		2787EA435FAC1431D40D3B54 /* Pods_InvoicesApp_InvoicesAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesApp_InvoicesAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8911FC021F6324C2C60E6989 /* Pods_InvoicesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		977B884ADC83940230774D98 /* Pods-InvoicesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesAppTests.release.xcconfig"; path = "Target Support Files/Pods-InvoicesAppTests/Pods-InvoicesAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		20BC18D72804B688005551FF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				20E526FD280590B900A00845 /* Welcomescreen */,
 				20BC18A52804A766005551FF /* ViewController.swift */,
 			);
 			path = Screens;
@@ -176,6 +179,22 @@
 				20BC18D92804B6AE005551FF /* FirebaseConfig.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		20E526FD280590B900A00845 /* Welcomescreen */ = {
+			isa = PBXGroup;
+			children = (
+				20E526FE280590DE00A00845 /* Controller */,
+			);
+			path = Welcomescreen;
+			sourceTree = "<group>";
+		};
+		20E526FE280590DE00A00845 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20E526FF280592BD00A00845 /* WelcomeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		2F6985E506809C520A4E5A54 /* Frameworks */ = {
@@ -462,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20BC18DA2804B6AF005551FF /* FirebaseConfig.swift in Sources */,
+				20E52700280592BD00A00845 /* WelcomeViewController.swift in Sources */,
 				20BC18A62804A766005551FF /* ViewController.swift in Sources */,
 				20BC18A22804A766005551FF /* AppDelegate.swift in Sources */,
 			);
