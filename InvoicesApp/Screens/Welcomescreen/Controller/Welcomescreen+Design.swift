@@ -29,14 +29,17 @@ extension WelcomeScreenViewController: BaseInterface {
     func setupStylingViews() {
         self.welcomeViewUI.setupUIColorsAndFonts(_primaryColor: UIColor.init(named: "PrimaryColor")!,
                                                  _buttonColor: .red,
-                                                 _buttonCornerRadius: 20)
+                                                 _buttonCornerRadius: 20,
+                                                 _titleFont: UIFont.init(name: "Roboto-Bold", size: 18)!,
+                                                 _buttonFont: UIFont.init(name: "Roboto-Bold", size: 14)!)
     }
     
     func setupButtonsMethods() {
-        
+        self.welcomeViewUI.addActionToButton()
     }
     
     func setupStrings() {
         self.welcomeViewUI.setupWelcomeString(_string: "Welcome")
+        self.welcomeViewUI.setupButtonText(_string: "GET STARTED")
     }
 }

@@ -47,12 +47,23 @@ class WelcomeUIView: UIView {
         self.lblWelcome.text = _string
     }
     
-    func setupUIColorsAndFonts(_primaryColor: UIColor, _buttonColor: UIColor, _buttonCornerRadius: CGFloat) {
+    
+    func setupButtonText(_string: String) {
+        self.btnGetStarted.setTitle(_string, for: .normal)
+    }
+    
+    func setupUIColorsAndFonts(_primaryColor: UIColor, _buttonColor: UIColor, _buttonCornerRadius: CGFloat, _titleFont: UIFont, _buttonFont: UIFont) {
         self.backgroundColor = _primaryColor
         self.lblWelcome.textColor = .white
-    
+        self.lblWelcome.font = _titleFont
+        self.lblWelcome.textAlignment = .center
         
         self.btnGetStarted.backgroundColor = _buttonColor
         self.btnGetStarted.addCornerRadius(_corners: _buttonCornerRadius)
+        self.btnGetStarted.titleLabel?.font = _buttonFont
+    }
+    
+    func addActionToButton(btnGetStarted_onClick() -> Void) {
+        self.btnGetStarted.addTarget(self, action: btnGetStarted_onClick(), for: .touchUpInside)
     }
 }

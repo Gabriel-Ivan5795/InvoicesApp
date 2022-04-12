@@ -7,8 +7,9 @@
 
 import UIKit
 import LoadingDialog
+import InvoicesHelpers
 
-class WelcomeScreenViewController: UIViewController {
+class WelcomeScreenViewController: BaseViewController {
 
     var welcomeViewUI = WelcomeUIView()
     
@@ -22,6 +23,7 @@ class WelcomeScreenViewController: UIViewController {
         self.setupButtonsMethods()
         self.setupStrings()
         
+        UtilsHelper.printFonts()
         //just for test
         //LoadingDialog.show(context: self)
     }

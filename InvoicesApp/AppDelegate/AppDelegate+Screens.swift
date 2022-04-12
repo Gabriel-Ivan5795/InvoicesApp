@@ -12,4 +12,8 @@ extension AppDelegate: BaseScreens {
     @objc func getWelcomeScreenViewController() -> WelcomeScreenViewController {
         return WelcomeScreenViewController()
     }
+    
+    @objc func getLoginScreenViewController() -> LoginViewController {
+        return LoginViewController()
+    }
 }

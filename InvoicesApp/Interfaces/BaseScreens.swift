@@ -8,4 +8,5 @@
 protocol BaseScreens {
     
     func getWelcomeScreenViewController() -> WelcomeScreenViewController
+    func getLoginScreenViewController() -> LoginViewController
 }
