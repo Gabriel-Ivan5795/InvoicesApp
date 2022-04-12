@@ -5,6 +5,9 @@
       location = "group:InvoicesApp.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:/Users/ivangabriel/Projects/iOS/InvoicesApp/InvoicesHelper/InvoicesHelpers.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
