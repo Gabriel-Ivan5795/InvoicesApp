@@ -10,6 +10,8 @@ def common_pods
    pod 'LoadingDialog'
    pod 'Alamofire', '~> 5.0.0-rc.3' 
    pod 'SVProgressHUD'
+   pod 'SwiftKeychainWrapper', '~> 3.4'
+   pod 'AES256Swift'
 
 end
 
