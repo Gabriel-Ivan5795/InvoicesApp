@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		119F34AC89F7A55F484BC934 /* Pods_InvoicesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8911FC021F6324C2C60E6989 /* Pods_InvoicesApp.framework */; };
+		200E035E2805527500F787F5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200E035C2805527500F787F5 /* Interface.storyboard */; };
+		200E03602805527700F787F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200E035F2805527700F787F5 /* Assets.xcassets */; };
+		200E03662805527800F787F5 /* InvoicesAppWatchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 200E03652805527800F787F5 /* InvoicesAppWatchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		200E036B2805527800F787F5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200E036A2805527800F787F5 /* InterfaceController.swift */; };
+		200E036D2805527800F787F5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200E036C2805527800F787F5 /* ExtensionDelegate.swift */; };
+		200E036F2805527800F787F5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200E036E2805527800F787F5 /* NotificationController.swift */; };
+		200E03712805527800F787F5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200E03702805527800F787F5 /* ComplicationController.swift */; };
+		200E03732805527900F787F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200E03722805527900F787F5 /* Assets.xcassets */; };
+		200E037F2805527900F787F5 /* InvoicesAppWatchOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200E037E2805527900F787F5 /* InvoicesAppWatchOSTests.swift */; };
+		200E03892805527900F787F5 /* InvoicesAppWatchOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200E03882805527900F787F5 /* InvoicesAppWatchOSUITests.swift */; };
+		200E038B2805527900F787F5 /* InvoicesAppWatchOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200E038A2805527900F787F5 /* InvoicesAppWatchOSUITestsLaunchTests.swift */; };
+		200E038E2805527900F787F5 /* InvoicesAppWatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 200E035A2805527500F787F5 /* InvoicesAppWatchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		20BC18A22804A766005551FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18A12804A766005551FF /* AppDelegate.swift */; };
 		20BC18A62804A766005551FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18A52804A766005551FF /* ViewController.swift */; };
 		20BC18AB2804A768005551FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BC18AA2804A768005551FF /* Assets.xcassets */; };
@@ -22,6 +34,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		200E03672805527800F787F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20BC18962804A766005551FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 200E03642805527800F787F5;
+			remoteInfo = "InvoicesAppWatchOS WatchKit Extension";
+		};
+		200E037B2805527900F787F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20BC18962804A766005551FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 200E03642805527800F787F5;
+			remoteInfo = "InvoicesAppWatchOS WatchKit Extension";
+		};
+		200E03852805527900F787F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20BC18962804A766005551FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 200E03592805527500F787F5;
+			remoteInfo = InvoicesAppWatchOS;
+		};
+		200E038C2805527900F787F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20BC18962804A766005551FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 200E03592805527500F787F5;
+			remoteInfo = InvoicesAppWatchOS;
+		};
 		20BC18B52804A768005551FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 20BC18962804A766005551FF /* Project object */;
@@ -38,8 +78,49 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		200E038F2805527900F787F5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				200E038E2805527900F787F5 /* InvoicesAppWatchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200E03922805527900F787F5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				200E03662805527800F787F5 /* InvoicesAppWatchOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1AA3070EE275FE2F4FA32292 /* Pods-InvoicesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp.release.xcconfig"; path = "Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp.release.xcconfig"; sourceTree = "<group>"; };
+		200E035A2805527500F787F5 /* InvoicesAppWatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvoicesAppWatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		200E035D2805527500F787F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		200E035F2805527700F787F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		200E03652805527800F787F5 /* InvoicesAppWatchOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "InvoicesAppWatchOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		200E036A2805527800F787F5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		200E036C2805527800F787F5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		200E036E2805527800F787F5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		200E03702805527800F787F5 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		200E03722805527900F787F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		200E03742805527900F787F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200E03752805527900F787F5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		200E037A2805527900F787F5 /* InvoicesAppWatchOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvoicesAppWatchOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		200E037E2805527900F787F5 /* InvoicesAppWatchOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppWatchOSTests.swift; sourceTree = "<group>"; };
+		200E03842805527900F787F5 /* InvoicesAppWatchOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvoicesAppWatchOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		200E03882805527900F787F5 /* InvoicesAppWatchOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppWatchOSUITests.swift; sourceTree = "<group>"; };
+		200E038A2805527900F787F5 /* InvoicesAppWatchOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppWatchOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		20BC189E2804A766005551FF /* InvoicesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvoicesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BC18A12804A766005551FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20BC18A52804A766005551FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +146,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		200E03622805527800F787F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200E03772805527900F787F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200E03812805527900F787F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20BC189B2804A766005551FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,12 +194,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		200E035B2805527500F787F5 /* InvoicesAppWatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				200E035C2805527500F787F5 /* Interface.storyboard */,
+				200E035F2805527700F787F5 /* Assets.xcassets */,
+			);
+			path = InvoicesAppWatchOS;
+			sourceTree = "<group>";
+		};
+		200E03692805527800F787F5 /* InvoicesAppWatchOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				200E036A2805527800F787F5 /* InterfaceController.swift */,
+				200E036C2805527800F787F5 /* ExtensionDelegate.swift */,
+				200E036E2805527800F787F5 /* NotificationController.swift */,
+				200E03702805527800F787F5 /* ComplicationController.swift */,
+				200E03722805527900F787F5 /* Assets.xcassets */,
+				200E03742805527900F787F5 /* Info.plist */,
+				200E03752805527900F787F5 /* PushNotificationPayload.apns */,
+			);
+			path = "InvoicesAppWatchOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		200E037D2805527900F787F5 /* InvoicesAppWatchOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				200E037E2805527900F787F5 /* InvoicesAppWatchOSTests.swift */,
+			);
+			path = InvoicesAppWatchOSTests;
+			sourceTree = "<group>";
+		};
+		200E03872805527900F787F5 /* InvoicesAppWatchOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				200E03882805527900F787F5 /* InvoicesAppWatchOSUITests.swift */,
+				200E038A2805527900F787F5 /* InvoicesAppWatchOSUITestsLaunchTests.swift */,
+			);
+			path = InvoicesAppWatchOSUITests;
+			sourceTree = "<group>";
+		};
 		20BC18952804A766005551FF = {
 			isa = PBXGroup;
 			children = (
 				20BC18A02804A766005551FF /* InvoicesApp */,
 				20BC18B72804A768005551FF /* InvoicesAppTests */,
 				20BC18C12804A768005551FF /* InvoicesAppUITests */,
+				200E035B2805527500F787F5 /* InvoicesAppWatchOS */,
+				200E03692805527800F787F5 /* InvoicesAppWatchOS WatchKit Extension */,
+				200E037D2805527900F787F5 /* InvoicesAppWatchOSTests */,
+				200E03872805527900F787F5 /* InvoicesAppWatchOSUITests */,
 				20BC189F2804A766005551FF /* Products */,
 				DF07A54E5FA017A2F855EE09 /* Pods */,
 				2F6985E506809C520A4E5A54 /* Frameworks */,
@@ -110,6 +256,10 @@
 				20BC189E2804A766005551FF /* InvoicesApp.app */,
 				20BC18B42804A768005551FF /* InvoicesAppTests.xctest */,
 				20BC18BE2804A768005551FF /* InvoicesAppUITests.xctest */,
+				200E035A2805527500F787F5 /* InvoicesAppWatchOS.app */,
+				200E03652805527800F787F5 /* InvoicesAppWatchOS WatchKit Extension.appex */,
+				200E037A2805527900F787F5 /* InvoicesAppWatchOSTests.xctest */,
+				200E03842805527900F787F5 /* InvoicesAppWatchOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,6 +354,76 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		200E03592805527500F787F5 /* InvoicesAppWatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200E039A2805527900F787F5 /* Build configuration list for PBXNativeTarget "InvoicesAppWatchOS" */;
+			buildPhases = (
+				200E03582805527500F787F5 /* Resources */,
+				200E03922805527900F787F5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				200E03682805527800F787F5 /* PBXTargetDependency */,
+			);
+			name = InvoicesAppWatchOS;
+			productName = InvoicesAppWatchOS;
+			productReference = 200E035A2805527500F787F5 /* InvoicesAppWatchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		200E03642805527800F787F5 /* InvoicesAppWatchOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200E03992805527900F787F5 /* Build configuration list for PBXNativeTarget "InvoicesAppWatchOS WatchKit Extension" */;
+			buildPhases = (
+				200E03612805527800F787F5 /* Sources */,
+				200E03622805527800F787F5 /* Frameworks */,
+				200E03632805527800F787F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InvoicesAppWatchOS WatchKit Extension";
+			productName = "InvoicesAppWatchOS WatchKit Extension";
+			productReference = 200E03652805527800F787F5 /* InvoicesAppWatchOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		200E03792805527900F787F5 /* InvoicesAppWatchOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200E039B2805527900F787F5 /* Build configuration list for PBXNativeTarget "InvoicesAppWatchOSTests" */;
+			buildPhases = (
+				200E03762805527900F787F5 /* Sources */,
+				200E03772805527900F787F5 /* Frameworks */,
+				200E03782805527900F787F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				200E037C2805527900F787F5 /* PBXTargetDependency */,
+			);
+			name = InvoicesAppWatchOSTests;
+			productName = InvoicesAppWatchOSTests;
+			productReference = 200E037A2805527900F787F5 /* InvoicesAppWatchOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		200E03832805527900F787F5 /* InvoicesAppWatchOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200E039C2805527900F787F5 /* Build configuration list for PBXNativeTarget "InvoicesAppWatchOSUITests" */;
+			buildPhases = (
+				200E03802805527900F787F5 /* Sources */,
+				200E03812805527900F787F5 /* Frameworks */,
+				200E03822805527900F787F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				200E03862805527900F787F5 /* PBXTargetDependency */,
+			);
+			name = InvoicesAppWatchOSUITests;
+			productName = InvoicesAppWatchOSUITests;
+			productReference = 200E03842805527900F787F5 /* InvoicesAppWatchOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		20BC189D2804A766005551FF /* InvoicesApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20BC18C82804A768005551FF /* Build configuration list for PBXNativeTarget "InvoicesApp" */;
@@ -214,10 +434,12 @@
 				20BC189C2804A766005551FF /* Resources */,
 				E644DE3135B926E4D58CC6F4 /* [CP] Embed Pods Frameworks */,
 				20BC18DB2804B990005551FF /* Run Script */,
+				200E038F2805527900F787F5 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				200E038D2805527900F787F5 /* PBXTargetDependency */,
 			);
 			name = InvoicesApp;
 			productName = InvoicesApp;
@@ -273,6 +495,20 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					200E03592805527500F787F5 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					200E03642805527800F787F5 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					200E03792805527900F787F5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 200E03642805527800F787F5;
+					};
+					200E03832805527900F787F5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 200E03592805527500F787F5;
+					};
 					20BC189D2804A766005551FF = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -302,11 +538,46 @@
 				20BC189D2804A766005551FF /* InvoicesApp */,
 				20BC18B32804A768005551FF /* InvoicesAppTests */,
 				20BC18BD2804A768005551FF /* InvoicesAppUITests */,
+				200E03592805527500F787F5 /* InvoicesAppWatchOS */,
+				200E03642805527800F787F5 /* InvoicesAppWatchOS WatchKit Extension */,
+				200E03792805527900F787F5 /* InvoicesAppWatchOSTests */,
+				200E03832805527900F787F5 /* InvoicesAppWatchOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		200E03582805527500F787F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200E03602805527700F787F5 /* Assets.xcassets in Resources */,
+				200E035E2805527500F787F5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200E03632805527800F787F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200E03732805527900F787F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200E03782805527900F787F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200E03822805527900F787F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20BC189C2804A766005551FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -457,6 +728,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		200E03612805527800F787F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200E036F2805527800F787F5 /* NotificationController.swift in Sources */,
+				200E03712805527800F787F5 /* ComplicationController.swift in Sources */,
+				200E036D2805527800F787F5 /* ExtensionDelegate.swift in Sources */,
+				200E036B2805527800F787F5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200E03762805527900F787F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200E037F2805527900F787F5 /* InvoicesAppWatchOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		200E03802805527900F787F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200E038B2805527900F787F5 /* InvoicesAppWatchOSUITestsLaunchTests.swift in Sources */,
+				200E03892805527900F787F5 /* InvoicesAppWatchOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		20BC189A2804A766005551FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,6 +786,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		200E03682805527800F787F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 200E03642805527800F787F5 /* InvoicesAppWatchOS WatchKit Extension */;
+			targetProxy = 200E03672805527800F787F5 /* PBXContainerItemProxy */;
+		};
+		200E037C2805527900F787F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 200E03642805527800F787F5 /* InvoicesAppWatchOS WatchKit Extension */;
+			targetProxy = 200E037B2805527900F787F5 /* PBXContainerItemProxy */;
+		};
+		200E03862805527900F787F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 200E03592805527500F787F5 /* InvoicesAppWatchOS */;
+			targetProxy = 200E03852805527900F787F5 /* PBXContainerItemProxy */;
+		};
+		200E038D2805527900F787F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 200E03592805527500F787F5 /* InvoicesAppWatchOS */;
+			targetProxy = 200E038C2805527900F787F5 /* PBXContainerItemProxy */;
+		};
 		20BC18B62804A768005551FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 20BC189D2804A766005551FF /* InvoicesApp */;
@@ -500,6 +819,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		200E035C2805527500F787F5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				200E035D2805527500F787F5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		20BC18AC2804A768005551FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -511,6 +838,198 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		200E03902805527900F787F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25G7LS3L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = InvoicesAppWatchOS_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = InvoicesAppWatchOS;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ivangabriel.InvoicesApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ivangabriel.InvoicesApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		200E03912805527900F787F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25G7LS3L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = InvoicesAppWatchOS_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = InvoicesAppWatchOS;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ivangabriel.InvoicesApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ivangabriel.InvoicesApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		200E03932805527900F787F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25G7LS3L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "InvoicesAppWatchOS WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "InvoicesAppWatchOS WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ivangabriel.InvoicesApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		200E03942805527900F787F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25G7LS3L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "InvoicesAppWatchOS WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "InvoicesAppWatchOS WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ivangabriel.InvoicesApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		200E03952805527900F787F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25G7LS3L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ivangabriel.InvoicesApp.InvoicesAppWatchOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoicesAppWatchOS WatchKit Extension.appex/InvoicesAppWatchOS WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		200E03962805527900F787F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25G7LS3L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ivangabriel.InvoicesApp.InvoicesAppWatchOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoicesAppWatchOS WatchKit Extension.appex/InvoicesAppWatchOS WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		200E03972805527900F787F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25G7LS3L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ivangabriel.InvoicesApp.InvoicesAppWatchOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = InvoicesAppWatchOS;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		200E03982805527900F787F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25G7LS3L22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ivangabriel.InvoicesApp.InvoicesAppWatchOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = InvoicesAppWatchOS;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
 		20BC18C62804A768005551FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -774,6 +1293,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		200E03992805527900F787F5 /* Build configuration list for PBXNativeTarget "InvoicesAppWatchOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200E03932805527900F787F5 /* Debug */,
+				200E03942805527900F787F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		200E039A2805527900F787F5 /* Build configuration list for PBXNativeTarget "InvoicesAppWatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200E03902805527900F787F5 /* Debug */,
+				200E03912805527900F787F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		200E039B2805527900F787F5 /* Build configuration list for PBXNativeTarget "InvoicesAppWatchOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200E03952805527900F787F5 /* Debug */,
+				200E03962805527900F787F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		200E039C2805527900F787F5 /* Build configuration list for PBXNativeTarget "InvoicesAppWatchOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200E03972805527900F787F5 /* Debug */,
+				200E03982805527900F787F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		20BC18992804A766005551FF /* Build configuration list for PBXProject "InvoicesApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
