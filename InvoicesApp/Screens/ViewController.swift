@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LoadingDialog
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.view.backgroundColor = .red
+        
+        //just for test
+        LoadingDialog.show(context: self)
     }
 }
 

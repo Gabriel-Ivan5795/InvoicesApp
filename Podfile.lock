@@ -486,6 +486,7 @@ PODS:
   - gRPC-Core/Interface (1.28.2)
   - GTMSessionFetcher/Core (1.7.0)
   - leveldb-library (1.22.1)
+  - LoadingDialog (1.4.2)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -498,6 +499,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Crashlytics
   - Firebase/Firestore
+  - LoadingDialog
 
 SPEC REPOS:
   trunk:
@@ -518,6 +520,7 @@ SPEC REPOS:
     - gRPC-Core
     - GTMSessionFetcher
     - leveldb-library
+    - LoadingDialog
     - nanopb
     - PromisesObjC
 
@@ -539,9 +542,10 @@ SPEC CHECKSUMS:
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
+  LoadingDialog: aeaf4a6f00c481f50b0061c65da0b9f75d39c2fd
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: 3e4f65d87a6dda389dc942ccbb92cdf4eeb00459
+PODFILE CHECKSUM: 10c968c6f6cfa8f842a1f35881d673e5818b7e2e
 
 COCOAPODS: 1.11.2

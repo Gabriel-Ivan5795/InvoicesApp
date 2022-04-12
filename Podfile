@@ -13,6 +13,8 @@ target 'InvoicesApp' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
 
+  pod 'LoadingDialog' 
+
   target 'InvoicesAppTests' do
     inherit! :search_paths
     # Pods for testing
