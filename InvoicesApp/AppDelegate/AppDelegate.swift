@@ -22,11 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.navigationController = UINavigationController()
-        let nextView = ViewController()
-        self.navigationController.setNavigationBarHidden(true, animated: false)
-        self.navigationController.pushViewController(nextView, animated: false)
-        self.window?.rootViewController = self.navigationController
-        self.window?.makeKeyAndVisible()
+        AppConfig.initializeAppConfig(_window: self.window!,
+                                      _navigationController: self.navigationController)
         
         return true
     }
