@@ -18,8 +18,6 @@
 		20BC18D42804B5CC005551FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20BC18D32804B5CC005551FF /* GoogleService-Info.plist */; };
 		20BC18DA2804B6AF005551FF /* FirebaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18D92804B6AE005551FF /* FirebaseConfig.swift */; };
 		20E52700280592BD00A00845 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E526FF280592BD00A00845 /* WelcomeViewController.swift */; };
-		6D37E43C194FB33E9337B389 /* Pods_InvoicesAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A135CEC9500C016D433641 /* Pods_InvoicesAppTests.framework */; };
-		8D94BA0A3C1C502011394B3D /* Pods_InvoicesApp_InvoicesAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2787EA435FAC1431D40D3B54 /* Pods_InvoicesApp_InvoicesAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,14 +54,8 @@
 		20BC18D32804B5CC005551FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		20BC18D92804B6AE005551FF /* FirebaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConfig.swift; sourceTree = "<group>"; };
 		20E526FF280592BD00A00845 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		2787EA435FAC1431D40D3B54 /* Pods_InvoicesApp_InvoicesAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesApp_InvoicesAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8911FC021F6324C2C60E6989 /* Pods_InvoicesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		977B884ADC83940230774D98 /* Pods-InvoicesAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesAppTests.release.xcconfig"; path = "Target Support Files/Pods-InvoicesAppTests/Pods-InvoicesAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		A4A135CEC9500C016D433641 /* Pods_InvoicesAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD4F02B6B90CF3B160A3182 /* Pods-InvoicesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp.debug.xcconfig"; path = "Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp.debug.xcconfig"; sourceTree = "<group>"; };
-		EB67F084D8E5A16CD042C62A /* Pods-InvoicesAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesAppTests.debug.xcconfig"; path = "Target Support Files/Pods-InvoicesAppTests/Pods-InvoicesAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		ED2F24AD4C22768681FC54AA /* Pods-InvoicesApp-InvoicesAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp-InvoicesAppUITests.release.xcconfig"; path = "Target Support Files/Pods-InvoicesApp-InvoicesAppUITests/Pods-InvoicesApp-InvoicesAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		FF4ECAC163D7279402EC39C1 /* Pods-InvoicesApp-InvoicesAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp-InvoicesAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-InvoicesApp-InvoicesAppUITests/Pods-InvoicesApp-InvoicesAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D37E43C194FB33E9337B389 /* Pods_InvoicesAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D94BA0A3C1C502011394B3D /* Pods_InvoicesApp_InvoicesAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				8911FC021F6324C2C60E6989 /* Pods_InvoicesApp.framework */,
-				2787EA435FAC1431D40D3B54 /* Pods_InvoicesApp_InvoicesAppUITests.framework */,
-				A4A135CEC9500C016D433641 /* Pods_InvoicesAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -212,10 +200,6 @@
 			children = (
 				BBD4F02B6B90CF3B160A3182 /* Pods-InvoicesApp.debug.xcconfig */,
 				1AA3070EE275FE2F4FA32292 /* Pods-InvoicesApp.release.xcconfig */,
-				FF4ECAC163D7279402EC39C1 /* Pods-InvoicesApp-InvoicesAppUITests.debug.xcconfig */,
-				ED2F24AD4C22768681FC54AA /* Pods-InvoicesApp-InvoicesAppUITests.release.xcconfig */,
-				EB67F084D8E5A16CD042C62A /* Pods-InvoicesAppTests.debug.xcconfig */,
-				977B884ADC83940230774D98 /* Pods-InvoicesAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -247,7 +231,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20BC18CB2804A768005551FF /* Build configuration list for PBXNativeTarget "InvoicesAppTests" */;
 			buildPhases = (
-				99C6B5769F495C0C5149A42E /* [CP] Check Pods Manifest.lock */,
 				20BC18B02804A768005551FF /* Sources */,
 				20BC18B12804A768005551FF /* Frameworks */,
 				20BC18B22804A768005551FF /* Resources */,
@@ -266,11 +249,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20BC18CE2804A768005551FF /* Build configuration list for PBXNativeTarget "InvoicesAppUITests" */;
 			buildPhases = (
-				CDC7EFD45F3447970CBEF79A /* [CP] Check Pods Manifest.lock */,
 				20BC18BA2804A768005551FF /* Sources */,
 				20BC18BB2804A768005551FF /* Frameworks */,
 				20BC18BC2804A768005551FF /* Resources */,
-				E29B82A6878661C98A77DD58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,28 +354,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
-		99C6B5769F495C0C5149A42E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InvoicesAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A6A6D2EED9DA0D18AB313228 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,45 +374,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CDC7EFD45F3447970CBEF79A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InvoicesApp-InvoicesAppUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E29B82A6878661C98A77DD58 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InvoicesApp-InvoicesAppUITests/Pods-InvoicesApp-InvoicesAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InvoicesApp-InvoicesAppUITests/Pods-InvoicesApp-InvoicesAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InvoicesApp-InvoicesAppUITests/Pods-InvoicesApp-InvoicesAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E644DE3135B926E4D58CC6F4 /* [CP] Embed Pods Frameworks */ = {
@@ -715,7 +635,6 @@
 		};
 		20BC18CC2804A768005551FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB67F084D8E5A16CD042C62A /* Pods-InvoicesAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -736,7 +655,6 @@
 		};
 		20BC18CD2804A768005551FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 977B884ADC83940230774D98 /* Pods-InvoicesAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -757,7 +675,6 @@
 		};
 		20BC18CF2804A768005551FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF4ECAC163D7279402EC39C1 /* Pods-InvoicesApp-InvoicesAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -776,7 +693,6 @@
 		};
 		20BC18D02804A768005551FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED2F24AD4C22768681FC54AA /* Pods-InvoicesApp-InvoicesAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
