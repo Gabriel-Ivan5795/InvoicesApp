@@ -9,7 +9,7 @@ import UIKit
 
 extension WelcomeScreenViewController {
     
-    @objc func btnGetStarted_onClick(_id: Any) {
-        self.navigationController?.pushViewController((self.getAppDelegate()?.getLoginScreenViewController()), animated: true)
+    @objc func btnGetStarted_onClick() {
+        self.navigationController?.pushViewController((self.getAppDelegate().getLoginScreenViewController()), animated: true)
     }
 }

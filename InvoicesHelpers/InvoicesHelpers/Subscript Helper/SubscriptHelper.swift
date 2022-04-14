@@ -9,7 +9,7 @@ import UIKit
 
 public extension UILabel {
     
-    public func setAttributedTextWithSubscripts(text: String, indicesOfSubscripts: [Int]) {
+    func setAttributedTextWithSubscripts(text: String, indicesOfSubscripts: [Int]) {
         let font = self.font!
         let subscriptFont = font.withSize(font.pointSize * 0.7)
         let subscriptOffset = -font.pointSize * 0.3

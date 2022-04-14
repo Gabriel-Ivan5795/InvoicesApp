@@ -15,10 +15,15 @@ open class CameraHelper: NSObject {
     }
     
     static func hasCameraPermission() -> Bool {
-        if AVCaptureDevice.authorizationStatus(for: .video) == AVAuthorizationStatus.authorized {
-            return true
+        if #available(macCatalyst 14.0, *) {
+            if AVCaptureDevice.authorizationStatus(for: .video) == AVAuthorizationStatus.authorized {
+                return true
+            } else {
+                return false
+            }
         } else {
-            return false
+            // Fallback on earlier versions
         }
+        return false
     }
 }

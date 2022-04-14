@@ -42,6 +42,7 @@
 		202610A72805F61E00D3261A /* BundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202610842805F61E00D3261A /* BundleHelper.swift */; };
 		202610A82805F61E00D3261A /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202610862805F61E00D3261A /* DateExtension.swift */; };
 		202610A92805F61E00D3261A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202610872805F61E00D3261A /* DateHelper.swift */; };
+		204E26802808A79C00DD5862 /* GradientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E267F2808A79C00DD5862 /* GradientHelper.swift */; };
 		C1EF92ED2C46ECB25B3197EC /* Pods_InvoicesHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBE806CFE7928AC2586BD23 /* Pods_InvoicesHelpers.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		202610842805F61E00D3261A /* BundleHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleHelper.swift; sourceTree = "<group>"; };
 		202610862805F61E00D3261A /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		202610872805F61E00D3261A /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		204E267F2808A79C00DD5862 /* GradientHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHelper.swift; sourceTree = "<group>"; };
 		42C9FF3A7905A16C1317EEBC /* Pods-InvoicesHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesHelpers.release.xcconfig"; path = "Target Support Files/Pods-InvoicesHelpers/Pods-InvoicesHelpers.release.xcconfig"; sourceTree = "<group>"; };
 		EFBE806CFE7928AC2586BD23 /* Pods_InvoicesHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,6 +122,7 @@
 		202610052805F50B00D3261A /* InvoicesHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				204E267E2808A77A00DD5862 /* Gradient Helper */,
 				2026107D2805F61E00D3261A /* Alert Helper */,
 				2026107B2805F61E00D3261A /* API Request Helper */,
 				202610832805F61E00D3261A /* Bundle Helper */,
@@ -391,6 +394,14 @@
 			path = "Date Helper";
 			sourceTree = "<group>";
 		};
+		204E267E2808A77A00DD5862 /* Gradient Helper */ = {
+			isa = PBXGroup;
+			children = (
+				204E267F2808A79C00DD5862 /* GradientHelper.swift */,
+			);
+			path = "Gradient Helper";
+			sourceTree = "<group>";
+		};
 		80F473B0B10F108D9748DD14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,6 +554,7 @@
 				2026109A2805F61E00D3261A /* RequestManager.swift in Sources */,
 				202610912805F61E00D3261A /* TextFieldHelper.swift in Sources */,
 				2026108C2805F61E00D3261A /* ImageViewHelper.swift in Sources */,
+				204E26802808A79C00DD5862 /* GradientHelper.swift in Sources */,
 				202610A52805F61E00D3261A /* ObservableHelper.swift in Sources */,
 				202610882805F61E00D3261A /* TapGestureHelper.swift in Sources */,
 				2026109B2805F61E00D3261A /* MockingProtocol.swift in Sources */,

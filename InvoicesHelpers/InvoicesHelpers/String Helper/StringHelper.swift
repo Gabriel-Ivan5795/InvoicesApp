@@ -156,7 +156,7 @@ extension String {
         nf.minimumFractionDigits = 2
         nf.locale = Locale(identifier: langCode)
         let selfDouble = Double(self)
-        return nf.string(from: (selfDouble as? NSNumber) ?? 0.00) ?? String(format: "%.2f", self)
+        return nf.string(from: (selfDouble as NSNumber?) ?? 0.00) ?? String(format: "%.2f", self)
     }
     
     public func setTimeFormatForDanish(langCode: String) -> String {

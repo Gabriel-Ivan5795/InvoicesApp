@@ -10,6 +10,14 @@ import UIKit
 class BaseViewController: UIViewController {
     
     private let appDelegate = UIApplication.shared.delegate as? AppDelegate
+    
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
+        if #available(iOS 13.0, *) {
+            return .lightContent
+        } else {
+            return .lightContent
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +25,7 @@ class BaseViewController: UIViewController {
         
     }
     
-    func getAppDelegate() -> AppDelegate? {
-        return self.appDelegate
+    func getAppDelegate() -> AppDelegate {
+        return self.appDelegate ?? AppDelegate()
     }
 }
