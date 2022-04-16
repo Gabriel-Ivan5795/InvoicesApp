@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import InvoicesHelpers
 
 class BaseViewController: UIViewController {
     
@@ -23,6 +24,10 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         
+    }
+    
+    func showAlert(_errorMessage: String) {
+        AlertHelper.displayAlert(withTitle: "Alert!", message: _errorMessage, action: "OK", from: self)
     }
     
     func getAppDelegate() -> AppDelegate {

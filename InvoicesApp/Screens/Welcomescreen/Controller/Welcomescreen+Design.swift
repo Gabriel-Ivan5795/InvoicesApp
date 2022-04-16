@@ -30,6 +30,7 @@ extension WelcomeScreenViewController: BaseInterface {
         self.welcomeViewUI.setupUIColorsAndFonts(_buttonCornerRadius: 20,
                                                  _titleFont: UIFont.init(name: "Roboto-Bold", size: 24)!,
                                                  _buttonFont: UIFont.init(name: "Roboto-Bold", size: 14)!)
+        self.welcomeViewUI.setupDelegatesCollectionViewAndDataSource(_viewController: self)
     }
     
     func setupButtonsMethods() {

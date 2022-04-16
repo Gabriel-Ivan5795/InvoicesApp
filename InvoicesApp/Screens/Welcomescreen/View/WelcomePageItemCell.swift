@@ -17,6 +17,7 @@ class WelcomePageItemCell: InvoicesAppCollectionViewCell {
         self.imageViewPage = UIImageView()
         self.addSubview(self.imageViewPage)
         self.imageViewPage.contentMode = .scaleAspectFill
+        self.imageViewPage.layer.cornerRadius = 20
         
         self.imageViewPage.anchor(top: self.topAnchor,
                                   left: self.leftAnchor,

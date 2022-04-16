@@ -9,9 +9,16 @@ import UIKit
 
 class LoginViewController: BaseViewController {
 
+    var loginViewUI = LoginUIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        self.setupNavBar()
+        self.setupViews()
+        self.setupConstraints()
+        self.setupStylingViews()
+        self.setupButtonsMethods()
+        self.setupStrings()
     }
 }

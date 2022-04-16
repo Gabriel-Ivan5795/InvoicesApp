@@ -85,6 +85,7 @@
 		202610862805F61E00D3261A /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		202610872805F61E00D3261A /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		204E267F2808A79C00DD5862 /* GradientHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHelper.swift; sourceTree = "<group>"; };
+		20A528992808C67A0061A712 /* Pods_InvoicesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_InvoicesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C9FF3A7905A16C1317EEBC /* Pods-InvoicesHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesHelpers.release.xcconfig"; path = "Target Support Files/Pods-InvoicesHelpers/Pods-InvoicesHelpers.release.xcconfig"; sourceTree = "<group>"; };
 		EFBE806CFE7928AC2586BD23 /* Pods_InvoicesHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -405,6 +406,7 @@
 		80F473B0B10F108D9748DD14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				20A528992808C67A0061A712 /* Pods_InvoicesApp.framework */,
 				EFBE806CFE7928AC2586BD23 /* Pods_InvoicesHelpers.framework */,
 			);
 			name = Frameworks;

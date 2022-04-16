@@ -13,7 +13,7 @@ class WelcomeUIView: UIView {
 
     private var gradientLayer: CAGradientLayer!
     private var lblWelcome = UILabel()
-    private var gridViewWelcome = InvoicesAppGridView()
+    var gridViewWelcome = InvoicesAppGridView()
     private var btnGetStarted = InvoicesAppButton()
     
     override func layoutSubviews() {
@@ -113,7 +113,16 @@ class WelcomeUIView: UIView {
         self.btnGetStarted.initGradientLayer()
     }
     
+    func setupDelegatesCollectionViewAndDataSource(_viewController: WelcomeScreenViewController) {
+        self.gridViewWelcome.getCollectionView().dataSource = _viewController
+        self.gridViewWelcome.getCollectionView().delegate = _viewController
+    }
+    
     func addActionToButton(_viewController: UIViewController, btnGetStarted_onClick: Selector) {
         self.btnGetStarted.addTarget(_viewController, action: btnGetStarted_onClick, for: .touchUpInside)
     }
+    
+//    func getInvoicesAppGridView() -> InvoicesAppGridView {
+//        return self.getInvoicesAppGridView()
+//    }
 }

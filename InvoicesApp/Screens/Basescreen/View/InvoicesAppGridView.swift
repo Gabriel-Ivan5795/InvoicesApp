@@ -9,7 +9,7 @@ import UIKit
 
 class InvoicesAppGridView: UIView {
 
-    private var collectionViewPager: UICollectionView!
+    var collectionViewPager: UICollectionView!
     
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
@@ -26,13 +26,14 @@ class InvoicesAppGridView: UIView {
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
         
-        self.collectionViewPager = UICollectionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 60),
+        self.collectionViewPager = UICollectionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height - 310),
                                                     collectionViewLayout: layout)
         self.collectionViewPager.backgroundColor = .clear
         self.collectionViewPager.register(InvoicesAppCollectionViewCell.self, forCellWithReuseIdentifier: "InvoicesAppCollectionViewCell")
         self.collectionViewPager.isScrollEnabled = true
-        self.collectionViewPager.isPagingEnabled = false
+        self.collectionViewPager.isPagingEnabled = true
         self.collectionViewPager.showsVerticalScrollIndicator = false
+        self.collectionViewPager.showsHorizontalScrollIndicator = false
         self.addSubview(self.collectionViewPager)
     }
     
@@ -58,5 +59,9 @@ class InvoicesAppGridView: UIView {
     func registerCollectionViewCell(_type: InvoicesAppCollectionViewCell.Type, _reuseIdentifier: String) {
         self.collectionViewPager.register(_type,
                                           forCellWithReuseIdentifier: _reuseIdentifier)
+    }
+    
+    func getCollectionView() -> UICollectionView {
+        return self.collectionViewPager
     }
 }

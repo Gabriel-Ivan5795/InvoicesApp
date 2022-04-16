@@ -12,6 +12,7 @@ import InvoicesHelpers
 class WelcomeScreenViewController: BaseViewController {
 
     var welcomeViewUI = WelcomeUIView()
+    var welcomeViewModel = WelcomeViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +23,11 @@ class WelcomeScreenViewController: BaseViewController {
         self.setupStylingViews()
         self.setupButtonsMethods()
         self.setupStrings()
-        
-        UtilsHelper.printFonts()
-        //just for test
-        //LoadingDialog.show(context: self)
+        self.setupBinders()
+        self.getWelcomeItems()
+    }
+    
+    func getWelcomeItems() {
+        self.welcomeViewModel.getWelcomeItems()
     }
 }
