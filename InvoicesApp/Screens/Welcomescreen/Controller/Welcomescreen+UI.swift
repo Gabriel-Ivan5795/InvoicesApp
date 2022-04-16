@@ -16,7 +16,7 @@ extension WelcomeScreenViewController {
         //self.welcomeViewUI.getInvoicesAppGridView().getCollectionView().bindTo(self.welcomeViewModel.welcomeData)
         self.welcomeViewModel.welcomeData.bind { [weak self] datas in
             if (datas.count > 0) {
-                self?.welcomeViewUI.gridViewWelcome.collectionViewPager.reloadData()
+                self?.welcomeViewUI.getInvoicesAppGridView().getCollectionView().reloadData()
             } else {
                 print("No items to show")
             }

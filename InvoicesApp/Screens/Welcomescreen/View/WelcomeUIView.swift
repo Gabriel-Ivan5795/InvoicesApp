@@ -13,7 +13,7 @@ class WelcomeUIView: UIView {
 
     private var gradientLayer: CAGradientLayer!
     private var lblWelcome = UILabel()
-    var gridViewWelcome = InvoicesAppGridView()
+    private var gridViewWelcome = InvoicesAppGridView()
     private var btnGetStarted = InvoicesAppButton()
     
     override func layoutSubviews() {
@@ -122,7 +122,7 @@ class WelcomeUIView: UIView {
         self.btnGetStarted.addTarget(_viewController, action: btnGetStarted_onClick, for: .touchUpInside)
     }
     
-//    func getInvoicesAppGridView() -> InvoicesAppGridView {
-//        return self.getInvoicesAppGridView()
-//    }
+    func getInvoicesAppGridView() -> InvoicesAppGridView {
+        return self.gridViewWelcome
+    }
 }

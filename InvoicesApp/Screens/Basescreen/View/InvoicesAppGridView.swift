@@ -9,7 +9,7 @@ import UIKit
 
 class InvoicesAppGridView: UIView {
 
-    var collectionViewPager: UICollectionView!
+    private var collectionViewPager: UICollectionView!
     
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
@@ -26,10 +26,14 @@ class InvoicesAppGridView: UIView {
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 0
         
-        self.collectionViewPager = UICollectionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 50, height: UIScreen.main.bounds.height - 310),
+        self.collectionViewPager = UICollectionView(frame: CGRect(x: 0,
+                                                                  y: 0,
+                                                                  width: UIScreen.main.bounds.width - 50,
+                                                                  height: UIScreen.main.bounds.height - 310),
                                                     collectionViewLayout: layout)
         self.collectionViewPager.backgroundColor = .clear
-        self.collectionViewPager.register(InvoicesAppCollectionViewCell.self, forCellWithReuseIdentifier: "InvoicesAppCollectionViewCell")
+        self.collectionViewPager.register(InvoicesAppCollectionViewCell.self,
+                                          forCellWithReuseIdentifier: "InvoicesAppCollectionViewCell")
         self.collectionViewPager.isScrollEnabled = true
         self.collectionViewPager.isPagingEnabled = true
         self.collectionViewPager.showsVerticalScrollIndicator = false
@@ -56,7 +60,8 @@ class InvoicesAppGridView: UIView {
         self.addShadow()
     }
     
-    func registerCollectionViewCell(_type: InvoicesAppCollectionViewCell.Type, _reuseIdentifier: String) {
+    func registerCollectionViewCell(_type: InvoicesAppCollectionViewCell.Type,
+                                    _reuseIdentifier: String) {
         self.collectionViewPager.register(_type,
                                           forCellWithReuseIdentifier: _reuseIdentifier)
     }
