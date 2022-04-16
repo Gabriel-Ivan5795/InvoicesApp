@@ -14,9 +14,11 @@ class InvoicesAppButton: UIButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.gradientLayer.anchorPoint = .zero
-        self.gradientLayer.bounds = self.bounds
-        self.layer.insertSublayer(self.gradientLayer, at: 0)
+        if (self.gradientLayer != nil) {
+            self.gradientLayer.anchorPoint = .zero
+            self.gradientLayer.bounds = self.bounds
+            self.layer.insertSublayer(self.gradientLayer, at: 0)
+        }
     }
     
     func initGradientLayer() {

@@ -32,10 +32,15 @@ extension LoginViewController: BaseInterface {
     }
     
     func setupButtonsMethods() {
-        
+        self.loginViewUI.addActionToFacebookButton(_viewController: self, btnFacebookSignIn_onClick: #selector(btnFacebookSignIn_onClick))
+        self.loginViewUI.addActionToGoogleButton(_viewController: self, btnGoogleSignIn_onClick: #selector(btnGoogleSignIn_onClick))
+        self.loginViewUI.addActionToAppleButton(_viewController: self, btnAppleSignIn_onClick: #selector(btnAppleSignIn_onClick))
     }
     
     func setupStrings() {
         self.loginViewUI.setupTitleString(_string: "LOGIN")
+        self.loginViewUI.setupTitlesButtons(_facebookTitle: "Sign in with Faceook",
+                                            _googleTitle: "Sign in with Google",
+                                            _appleTitle: "Sign in with Apple")
     }
 }

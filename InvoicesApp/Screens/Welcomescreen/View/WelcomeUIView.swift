@@ -118,7 +118,7 @@ class WelcomeUIView: UIView {
         self.gridViewWelcome.getCollectionView().delegate = _viewController
     }
     
-    func addActionToButton(_viewController: UIViewController, btnGetStarted_onClick: Selector) {
+    func addActionToButton(_viewController: BaseViewController, btnGetStarted_onClick: Selector) {
         self.btnGetStarted.addTarget(_viewController, action: btnGetStarted_onClick, for: .touchUpInside)
     }
     

@@ -8,7 +8,7 @@
 import UIKit
 import InvoicesHelpers
 
-class WelcomeViewModel: NSObject {
+class WelcomeViewModel {
 
     var welcomeData: ObservableHelper<[WelcomeModel]> = ObservableHelper([])
     var error: ObservableHelper<String?> = ObservableHelper(nil)

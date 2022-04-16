@@ -21,12 +21,12 @@ open class LocationHelper: NSObject {
         var hasPermission = false
         if CLLocationManager.locationServicesEnabled() {
             switch CLLocationManager.authorizationStatus() {
-            case .restricted, .denied:
-                hasPermission = false
-            case .authorizedAlways, .authorizedWhenInUse, .notDetermined:
-                hasPermission = true
-            default:
-                print("hello")
+                case .restricted, .denied:
+                    hasPermission = false
+                case .authorizedAlways, .authorizedWhenInUse, .notDetermined:
+                    hasPermission = true
+                default:
+                    hasPermission = false
             }
         } else {
             hasPermission = false

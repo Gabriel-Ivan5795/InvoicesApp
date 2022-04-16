@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import AuthenticationServices
 
 class LoginViewController: BaseViewController {
 
     var loginViewUI = LoginUIView()
+    var loginViewModel = LoginViewModel()
+    open var currentNonce: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,5 +23,6 @@ class LoginViewController: BaseViewController {
         self.setupStylingViews()
         self.setupButtonsMethods()
         self.setupStrings()
+        self.setupBinders()
     }
 }

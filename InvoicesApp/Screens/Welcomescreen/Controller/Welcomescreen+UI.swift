@@ -11,8 +11,7 @@ import LoadingDialog
 
 extension WelcomeScreenViewController {
     
-    open func setupBinders() {
-        
+    func setupBinders() {
         //self.welcomeViewUI.getInvoicesAppGridView().getCollectionView().bindTo(self.welcomeViewModel.welcomeData)
         self.welcomeViewModel.welcomeData.bind { [weak self] datas in
             if (datas.count > 0) {
