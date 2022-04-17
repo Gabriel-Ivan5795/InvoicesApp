@@ -15,7 +15,7 @@ extension LoginViewController {
     }
     
     @objc func btnGoogleSignIn_onClick() {
-        print("clicked google")
+        self.loginViewModel.callGoogleServerToGetCredentials()
     }
     
     @objc func btnAppleSignIn_onClick() {

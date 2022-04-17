@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,5 +29,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance.handle(url)
+    }
+    
+//    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+//        let loginController = GIDSignIn.sharedInstance()?.presentingViewController as? LoginViewController
+//        if (loginController != nil) {
+//            if (user != nil) {
+//                loginController.loginViewModel.callGoogleServerToGetCredentials(_user: user as Any)
+//            }
+//        }
+//    }
 }
 

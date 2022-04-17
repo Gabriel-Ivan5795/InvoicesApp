@@ -25,10 +25,15 @@ def firebase_pods
 
 end
 
+def socials_pods
+  pod 'GoogleSignIn'
+end
+
 target 'InvoicesApp' do
  
   common_pods
   firebase_pods
+  socials_pods
 
 end
 
