@@ -34,6 +34,8 @@
 		202610E0280618B900D3261A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202610DF280618B900D3261A /* LoginViewController.swift */; };
 		202610E5280618D800D3261A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202610E4280618D700D3261A /* LoginModel.swift */; };
 		202610E82806192900D3261A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202610E72806192900D3261A /* BaseViewController.swift */; };
+		203C7F21280CD0D800442847 /* LoginViewModel+Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C7F20280CD0D700442847 /* LoginViewModel+Twitter.swift */; };
+		203C7F23280CD21E00442847 /* TwitterAuthentificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C7F22280CD21E00442847 /* TwitterAuthentificationRequest.swift */; };
 		204E26832808AD8800DD5862 /* InvoicesAppGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E26822808AD8800DD5862 /* InvoicesAppGridView.swift */; };
 		204E26852808AF0700DD5862 /* InvoicesAppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E26842808AF0700DD5862 /* InvoicesAppCollectionViewCell.swift */; };
 		204E26872808B24F00DD5862 /* WelcomePageItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E26862808B24F00DD5862 /* WelcomePageItemCell.swift */; };
@@ -123,6 +125,8 @@
 		202610DF280618B900D3261A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		202610E4280618D700D3261A /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		202610E72806192900D3261A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		203C7F20280CD0D700442847 /* LoginViewModel+Twitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewModel+Twitter.swift"; sourceTree = "<group>"; };
+		203C7F22280CD21E00442847 /* TwitterAuthentificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAuthentificationRequest.swift; sourceTree = "<group>"; };
 		204E26822808AD8800DD5862 /* InvoicesAppGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppGridView.swift; sourceTree = "<group>"; };
 		204E26842808AF0700DD5862 /* InvoicesAppCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppCollectionViewCell.swift; sourceTree = "<group>"; };
 		204E26862808B24F00DD5862 /* WelcomePageItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageItemCell.swift; sourceTree = "<group>"; };
@@ -275,6 +279,7 @@
 				209C88CC280C0A7800F87565 /* LoginViewModel+Apple.swift */,
 				209C88CE280C0B2B00F87565 /* LoginViewModel+Google.swift */,
 				209C88D0280C0B6B00F87565 /* LoginViewModel+Facebook.swift */,
+				203C7F20280CD0D700442847 /* LoginViewModel+Twitter.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 				20A4B1E0280B77B400575AFE /* AppleAuthentificationRequest.swift */,
 				20A4B1E4280B91D700575AFE /* GoogleAuthentificationRequest.swift */,
 				209C88CA280C097A00F87565 /* FacebookAuthentificationRequest.swift */,
+				203C7F22280CD21E00442847 /* TwitterAuthentificationRequest.swift */,
 			);
 			path = "Authentification Request";
 			sourceTree = "<group>";
@@ -494,6 +500,7 @@
 				E644DE3135B926E4D58CC6F4 /* [CP] Embed Pods Frameworks */,
 				20BC18DB2804B990005551FF /* Run Script */,
 				202610BB2806053300D3261A /* Embed Frameworks */,
+				4CC59765072B855E70D5FAFB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -643,6 +650,23 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
+		4CC59765072B855E70D5FAFB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A6A6D2EED9DA0D18AB313228 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -711,7 +735,9 @@
 				209C88CB280C097A00F87565 /* FacebookAuthentificationRequest.swift in Sources */,
 				20E52700280592BD00A00845 /* WelcomeScreenViewController.swift in Sources */,
 				202610B0280600C100D3261A /* BaseScreens.swift in Sources */,
+				203C7F21280CD0D800442847 /* LoginViewModel+Twitter.swift in Sources */,
 				204E26872808B24F00DD5862 /* WelcomePageItemCell.swift in Sources */,
+				203C7F23280CD21E00442847 /* TwitterAuthentificationRequest.swift in Sources */,
 				20A4B1E1280B77B400575AFE /* AppleAuthentificationRequest.swift in Sources */,
 				20E6F4652809685300B7D5DF /* Welcomescreen+UI.swift in Sources */,
 				202610AE2805FEE700D3261A /* BaseInterface.swift in Sources */,

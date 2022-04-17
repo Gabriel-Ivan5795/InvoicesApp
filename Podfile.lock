@@ -520,6 +520,9 @@ PODS:
   - PromisesObjC (2.0.0)
   - SVProgressHUD (2.2.5)
   - SwiftKeychainWrapper (3.4.0)
+  - TwitterCore (3.2.0)
+  - TwitterKit (3.4.2):
+    - TwitterCore (>= 3.2.0)
 
 DEPENDENCIES:
   - AES256Swift
@@ -534,6 +537,7 @@ DEPENDENCIES:
   - LoadingDialog
   - SVProgressHUD
   - SwiftKeychainWrapper (~> 3.4)
+  - TwitterKit
 
 SPEC REPOS:
   trunk:
@@ -566,6 +570,8 @@ SPEC REPOS:
     - PromisesObjC
     - SVProgressHUD
     - SwiftKeychainWrapper
+    - TwitterCore
+    - TwitterKit
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -597,7 +603,9 @@ SPEC CHECKSUMS:
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
+  TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
+  TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
 
-PODFILE CHECKSUM: df6fe7f54a796d6d17b54ef507e34ab65d6bd0e0
+PODFILE CHECKSUM: 83ce2a38d0c673a04118750589223d47fa1896f2
 
 COCOAPODS: 1.11.2

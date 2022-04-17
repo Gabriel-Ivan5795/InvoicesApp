@@ -12,6 +12,7 @@ class LoginUIView: UIView {
 
     private var gradientLayer: CAGradientLayer!
     private var lblLogin = UILabel()
+    private var btnLoginWithTwitter = InvoicesAppSocialButton()
     private var btnLoginWithFacebook = InvoicesAppSocialButton()
     private var btnLoginWithGoogle = InvoicesAppSocialButton()
     private var btnLoginWithApple = InvoicesAppSocialButton()
@@ -35,6 +36,7 @@ class LoginUIView: UIView {
     
     func setupViews() {
         self.addSubview(self.lblLogin)
+        self.addSubview(self.btnLoginWithTwitter)
         self.addSubview(self.btnLoginWithFacebook)
         self.addSubview(self.btnLoginWithGoogle)
         self.addSubview(self.btnLoginWithApple)
@@ -59,9 +61,19 @@ class LoginUIView: UIView {
                                  heightConstant: 25)
         }
         
-        self.btnLoginWithFacebook.anchor(left: self.leftAnchor,
+        self.btnLoginWithTwitter.anchor(left: self.leftAnchor,
+                                        bottom: self.btnLoginWithFacebook.topAnchor,
+                                        right: self.rightAnchor,
+                                        leftConstant: 25,
+                                        bottomConstant: 25,
+                                        rightConstant: 25,
+                                        heightConstant: 60)
+        
+        self.btnLoginWithFacebook.anchor(top: self.btnLoginWithTwitter.bottomAnchor,
+                                         left: self.leftAnchor,
                                          bottom: self.btnLoginWithGoogle.topAnchor,
                                          right: self.rightAnchor,
+                                         topConstant: 25,
                                          leftConstant: 25,
                                          bottomConstant: 25,
                                          rightConstant: 25,
@@ -103,7 +115,8 @@ class LoginUIView: UIView {
         self.lblLogin.text = _string
     }
     
-    func setupTitlesButtons(_facebookTitle: String, _googleTitle: String, _appleTitle: String) {
+    func setupTitlesButtons(_twitterTitle: String, _facebookTitle: String, _googleTitle: String, _appleTitle: String) {
+        self.btnLoginWithTwitter.getLabelButton().text = _twitterTitle
         self.btnLoginWithFacebook.getLabelButton().text = _facebookTitle
         self.btnLoginWithGoogle.getLabelButton().text = _googleTitle
         self.btnLoginWithApple.getLabelButton().text = _appleTitle
@@ -114,6 +127,9 @@ class LoginUIView: UIView {
         self.lblLogin.font = _titleFont
         self.lblLogin.textAlignment = .center
 
+        self.btnLoginWithTwitter.addCornerRadius(_corners: _buttonCornerRadius)
+        self.btnLoginWithTwitter.getLabelButton().font = _buttonFont
+        
         self.btnLoginWithFacebook.addCornerRadius(_corners: _buttonCornerRadius)
         self.btnLoginWithFacebook.getLabelButton().font = _buttonFont
         
@@ -123,9 +139,15 @@ class LoginUIView: UIView {
         self.btnLoginWithApple.addCornerRadius(_corners: _buttonCornerRadius)
         self.btnLoginWithApple.getLabelButton().font = _buttonFont
         
+        self.setupCustomBackgroundAndStylishForTwitterButton()
         self.setupCustomBackgroundAndStylishForFacebookButton()
         self.setupCustomBackgroundAndStylishForGoogleButton()
         self.setupCustomBackgroundAndStylishForAppleButton()
+    }
+    
+    private func setupCustomBackgroundAndStylishForTwitterButton() {
+        self.btnLoginWithTwitter.backgroundColor = .systemBlue
+        self.btnLoginWithTwitter.getImageButton().image = UIImage.init(named: "TwitterIcon")
     }
 
     private func setupCustomBackgroundAndStylishForFacebookButton() {
@@ -141,6 +163,10 @@ class LoginUIView: UIView {
     private func setupCustomBackgroundAndStylishForAppleButton() {
         self.btnLoginWithApple.backgroundColor = .black
         self.btnLoginWithApple.getImageButton().image = UIImage.init(named: "AppleIcon")
+    }
+    
+    func addActionToTwitterButton(_viewController: BaseViewController, btnTwitterSignIn_onClick: Selector) {
+        self.btnLoginWithTwitter.addTarget(_viewController, action: btnTwitterSignIn_onClick, for: .touchUpInside)
     }
     
     func addActionToFacebookButton(_viewController: BaseViewController, btnFacebookSignIn_onClick: Selector) {

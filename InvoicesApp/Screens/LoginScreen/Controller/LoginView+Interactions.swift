@@ -10,6 +10,10 @@ import AuthenticationServices
 
 extension LoginViewController {
     
+    @objc func btnTwitterSignIn_onClick() {
+        self.loginViewModel.callTwitterServerToGetCredentials()
+    }
+    
     @objc func btnFacebookSignIn_onClick() {
         self.loginViewModel.callFaceboolServerToGetCredentials()
     }

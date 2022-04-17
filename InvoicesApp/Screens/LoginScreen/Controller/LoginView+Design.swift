@@ -32,6 +32,7 @@ extension LoginViewController: BaseInterface {
     }
     
     func setupButtonsMethods() {
+        self.loginViewUI.addActionToTwitterButton(_viewController: self, btnTwitterSignIn_onClick: #selector(btnTwitterSignIn_onClick))
         self.loginViewUI.addActionToFacebookButton(_viewController: self, btnFacebookSignIn_onClick: #selector(btnFacebookSignIn_onClick))
         self.loginViewUI.addActionToGoogleButton(_viewController: self, btnGoogleSignIn_onClick: #selector(btnGoogleSignIn_onClick))
         self.loginViewUI.addActionToAppleButton(_viewController: self, btnAppleSignIn_onClick: #selector(btnAppleSignIn_onClick))
@@ -39,7 +40,8 @@ extension LoginViewController: BaseInterface {
     
     func setupStrings() {
         self.loginViewUI.setupTitleString(_string: "LOGIN")
-        self.loginViewUI.setupTitlesButtons(_facebookTitle: "Sign in with Faceook",
+        self.loginViewUI.setupTitlesButtons(_twitterTitle: "Sign in with Twitter",
+                                            _facebookTitle: "Sign in with Facebook",
                                             _googleTitle: "Sign in with Google",
                                             _appleTitle: "Sign in with Apple")
     }

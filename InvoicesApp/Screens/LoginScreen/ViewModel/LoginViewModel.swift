@@ -29,4 +29,8 @@ class LoginViewModel {
     func facebookLoginUser() {
         self.callFaceboolServerToGetCredentials()
     }
+    
+    func twitterLoginUser() {
+        self.callTwitterServerToGetCredentials()
+    }
 }

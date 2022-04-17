@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 import GoogleSignIn
 import FBSDKCoreKit
+import TwitterKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseConfig.initializeCrashlytics()
         //FirebaseConfig.processTestCrash()
         
+        TWTRTwitter.sharedInstance().start(withConsumerKey: "1515818531161575426-bUiuvMFLFEq4kQ7UwtTLCehdWsNySr", consumerSecret: "ycJBIl4gpWFndwghmMvVplHMbRi3GdB4QFBeuIdM6rGS0")
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.navigationController = UINavigationController()
         AppConfig.initializeAppConfig(_window: self.window!,
@@ -34,19 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         let isGoogleOpenURL = GIDSignIn.sharedInstance.handle(url)
         let isFacebookOpenURL = ApplicationDelegate.shared.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,annotation: options[UIApplication.OpenURLOptionsKey.annotation])
-        if (isGoogleOpenURL) { return isGoogleOpenURL }
-        if (isFacebookOpenURL) { return isFacebookOpenURL }
+        let isTwitterOpenURL = TWTRTwitter.sharedInstance().application(app, open: url, options: options)
         
-        return false
+        return (isGoogleOpenURL || isFacebookOpenURL || isTwitterOpenURL)
     }
-    
-//    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-//        let loginController = GIDSignIn.sharedInstance()?.presentingViewController as? LoginViewController
-//        if (loginController != nil) {
-//            if (user != nil) {
-//                loginController.loginViewModel.callGoogleServerToGetCredentials(_user: user as Any)
-//            }
-//        }
-//    }
 }
 
