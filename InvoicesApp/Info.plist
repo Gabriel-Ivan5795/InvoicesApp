@@ -5,22 +5,43 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>701973366972132</string>
+				<string>com.googleusercontent.apps.812279711555-d2nov3jk353dob742cannrldm6jpq6p4</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1011310529815421</string>
 			</array>
 		</dict>
 	</array>
 	<key>FacebookAppID</key>
-	<string>701973366972132</string>
+	<string>1011310529815421</string>
 	<key>FacebookClientToken</key>
-	<string>b2245ad42b292ccdb7bd4389c1b056ce</string>
+	<string>50f611abe174594db6fc9beaaa8cf47b</string>
 	<key>FacebookDisplayName</key>
-	<string>InvoicesManager</string>
+	<string>InvoicesApp</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>fbapi</string>
-		<string>fb-messenger-share-api</string>
+        <string>fbapi</string>
+        <string>fbapi20130214</string>
+        <string>fbapi20130410</string>
+        <string>fbapi20130702</string>
+        <string>fbapi20131010</string>
+        <string>fbapi20131219</string>
+        <string>fbapi20140410</string>
+        <string>fbapi20140116</string>
+        <string>fbapi20150313</string>
+        <string>fbapi20150629</string>
+        <string>fbapi20160328</string>
+        <string>fbauth</string>
+        <string>fb-messenger-share-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
 	</array>
 	<key>UIAppFonts</key>
 	<array>

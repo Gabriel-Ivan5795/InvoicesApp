@@ -27,8 +27,8 @@ end
 
 def socials_pods
   pod 'GoogleSignIn'
-  pod 'FBSDKCoreKit'
-  pod 'FBSDKLoginKit'	
+  pod 'FBSDKCoreKit', '~> 8.0'
+  pod 'FBSDKLoginKit', '~> 8.0'	
 end
 
 target 'InvoicesApp' do
