@@ -11,7 +11,7 @@ import AuthenticationServices
 extension LoginViewController {
     
     @objc func btnFacebookSignIn_onClick() {
-        print("clicked facebook")
+        self.loginViewModel.callFaceboolServerToGetCredentials()
     }
     
     @objc func btnGoogleSignIn_onClick() {
