@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseConfig.initializeCrashlytics()
         //FirebaseConfig.processTestCrash()
         
-        TWTRTwitter.sharedInstance().start(withConsumerKey: "1515818531161575426-bUiuvMFLFEq4kQ7UwtTLCehdWsNySr", consumerSecret: "ycJBIl4gpWFndwghmMvVplHMbRi3GdB4QFBeuIdM6rGS0")
+        TWTRTwitter.sharedInstance().start(withConsumerKey: "694sICEmimszEmem9bqmhyjLU", consumerSecret: "17Lt2OgKdgxF2PgQFlsqE1u4wkOkbrTToNDA3dwkSkOStBJvKg")
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.navigationController = UINavigationController()
@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         let isGoogleOpenURL = GIDSignIn.sharedInstance.handle(url)
-        let isFacebookOpenURL = ApplicationDelegate.shared.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+        let isFacebookOpenURL = ApplicationDelegate.shared.application(app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplication.OpenURLOptionsKey.annotation])
         let isTwitterOpenURL = TWTRTwitter.sharedInstance().application(app, open: url, options: options)
         
         return (isGoogleOpenURL || isFacebookOpenURL || isTwitterOpenURL)

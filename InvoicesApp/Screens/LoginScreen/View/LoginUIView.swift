@@ -129,15 +129,19 @@ class LoginUIView: UIView {
 
         self.btnLoginWithTwitter.addCornerRadius(_corners: _buttonCornerRadius)
         self.btnLoginWithTwitter.getLabelButton().font = _buttonFont
+        self.btnLoginWithTwitter.getLabelButton().textColor = .white
         
         self.btnLoginWithFacebook.addCornerRadius(_corners: _buttonCornerRadius)
         self.btnLoginWithFacebook.getLabelButton().font = _buttonFont
+        self.btnLoginWithFacebook.getLabelButton().textColor = .white
         
         self.btnLoginWithGoogle.addCornerRadius(_corners: _buttonCornerRadius)
         self.btnLoginWithGoogle.getLabelButton().font = _buttonFont
+        self.btnLoginWithGoogle.getLabelButton().textColor = .white
         
         self.btnLoginWithApple.addCornerRadius(_corners: _buttonCornerRadius)
         self.btnLoginWithApple.getLabelButton().font = _buttonFont
+        self.btnLoginWithApple.getLabelButton().textColor = .white
         
         self.setupCustomBackgroundAndStylishForTwitterButton()
         self.setupCustomBackgroundAndStylishForFacebookButton()
