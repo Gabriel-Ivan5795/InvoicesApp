@@ -69,7 +69,7 @@ class LoginUIView: UIView {
                                left: self.leftAnchor,
                                bottom: self.bottomAnchor,
                                right: self.rightAnchor,
-                               topConstant: 250,
+                               topConstant: 10,
                                leftConstant: 0,
                                bottomConstant: 10,
                                rightConstant: 0)
@@ -82,11 +82,12 @@ class LoginUIView: UIView {
                                 bottomConstant: 0,
                                 rightConstant: 0)
         
-        self.contentView.leadingAnchor.constraint(equalTo: self.scrollView.bottomAnchor).isActive = true
-        
-        self.btnLoginWithTwitter.anchor(left: self.contentView.leftAnchor,
+        self.contentView.anchorToCenterX(centerX: self.scrollView.centerXAnchor)
+        self.btnLoginWithTwitter.anchor(top: self.contentView.topAnchor,
+                                        left: self.contentView.leftAnchor,
                                         bottom: self.btnLoginWithFacebook.topAnchor,
                                         right: self.contentView.rightAnchor,
+                                        topConstant: 40,
                                         leftConstant: 25,
                                         bottomConstant: 25,
                                         rightConstant: 25,
@@ -126,11 +127,9 @@ class LoginUIView: UIView {
     func setupStylingViews() {
         self.initGradientLayer()
         self.btnLoginWithApple.tag = 1
-        
-        self.scrollView.backgroundColor = .red
-        self.contentView.backgroundColor = .blue
-        
-        self.scrollView.isScrollEnabled = true
+        self.btnLoginWithGoogle.tag = 2
+        self.btnLoginWithFacebook.tag = 3
+        self.btnLoginWithTwitter.tag = 4
     }
     
     func initGradientLayer() {
