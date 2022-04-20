@@ -38,5 +38,21 @@ extension LoginViewModel {
                 self.error.value = error
             })
         })
+//        let provider = OAuthProvider(providerID: "twitter.com")
+//        provider.customParameters = ["lang": "fr", "oauth_consumer_key": "694sICEmimszEmem9bqmhyjLU", "oauth_consumer_secret": "17Lt2OgKdgxF2PgQFlsqE1u4wkOkbrTToNDA3dwkSkOStBJvKg"]
+//
+//        provider.getCredentialWith(nil, completion: { credentials, error in
+//            if (error != nil) {
+//                self.isLoadingEnabled.value = false
+//                self.error.value = error?.localizedDescription ?? "An error has occured during Twitter Sign in using Firebase"
+//            }
+//            TwitterAuthentificationRequest().loginUserOnFirebase(_credentials: credentials, _authSuccess: { success in
+//                self.isLoadingEnabled.value = false
+//                self.loginResult.value = success
+//            }, _authError: { error in
+//                self.isLoadingEnabled.value = false
+//                self.error.value = error
+//            })
+//        })
     }
 }
