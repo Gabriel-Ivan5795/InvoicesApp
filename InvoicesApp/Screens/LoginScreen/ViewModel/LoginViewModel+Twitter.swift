@@ -39,7 +39,14 @@ extension LoginViewModel {
             })
         })
 //        let provider = OAuthProvider(providerID: "twitter.com")
-//        provider.customParameters = ["lang": "fr", "oauth_consumer_key": "694sICEmimszEmem9bqmhyjLU", "oauth_consumer_secret": "17Lt2OgKdgxF2PgQFlsqE1u4wkOkbrTToNDA3dwkSkOStBJvKg"]
+//        provider.customParameters = ["lang": "fr",
+//                                     "oauth_consumer_key": "694sICEmimszEmem9bqmhyjLU",
+//                                     "oauth_nonce": "kYjzVBB8Y0ZFabxSWbWovY3uYSQ2pTgmZeNu2VS4cg",
+//                                     "oauth_signature": "tnnArxj06cWHq44gCs1OSKk%2FjLY%3D",
+//                                     "oauth_signature_method": "HMAC-SHA1",
+//                                     "oauth_timestamp": String.init(format: "%lu", Date().timeIntervalSince1970),
+//                                     "oauth_token": "370773112-GmHxMAgYyLbNEtIKZeRNFsMKPR9EyMZeS9weJAEb",
+//                                     "oauth_version": "1.0"]
 //
 //        provider.getCredentialWith(nil, completion: { credentials, error in
 //            if (error != nil) {

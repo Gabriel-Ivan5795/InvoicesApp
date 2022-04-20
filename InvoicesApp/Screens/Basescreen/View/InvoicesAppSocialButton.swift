@@ -42,7 +42,9 @@ class InvoicesAppSocialButton: InvoicesAppButton {
                               left: self.leftAnchor,
                               bottom: self.bottomAnchor,
                               right: self.lblButton.leftAnchor,
+                              topConstant: 20,
                               leftConstant: 8,
+                              bottomConstant: 20,
                               rightConstant: 8,
                               widthConstant: 20,
                               heightConstant: 20)
