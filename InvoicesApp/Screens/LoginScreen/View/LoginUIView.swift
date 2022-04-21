@@ -14,6 +14,9 @@ class LoginUIView: UIView {
     private var lblLogin = UILabel()
     private var scrollView = UIScrollView()
     private var contentView = UIView()
+    private var txtUsername = InvoicesAppTextField()
+    private var txtPassword = InvoicesAppTextField()
+    private var btnLogin = InvoicesAppButton()
     private var btnLoginWithTwitter = InvoicesAppSocialButton()
     private var btnLoginWithFacebook = InvoicesAppSocialButton()
     private var btnLoginWithGoogle = InvoicesAppSocialButton()
@@ -40,6 +43,9 @@ class LoginUIView: UIView {
         self.addSubview(self.lblLogin)
         self.addSubview(self.scrollView)
         self.scrollView.addSubview(self.contentView)
+        self.contentView.addSubview(self.txtUsername)
+        self.contentView.addSubview(self.txtPassword)
+        self.contentView.addSubview(self.btnLogin)
         self.contentView.addSubview(self.btnLoginWithTwitter)
         self.contentView.addSubview(self.btnLoginWithFacebook)
         self.contentView.addSubview(self.btnLoginWithGoogle)
@@ -83,7 +89,37 @@ class LoginUIView: UIView {
                                 rightConstant: 0)
         
         self.contentView.anchorToCenterX(centerX: self.scrollView.centerXAnchor)
-        self.btnLoginWithTwitter.anchor(top: self.contentView.topAnchor,
+        
+        self.txtUsername.anchor(top: self.contentView.topAnchor,
+                                left: self.contentView.leftAnchor,
+                                bottom: self.txtPassword.topAnchor,
+                                right: self.contentView.rightAnchor,
+                                topConstant: 40,
+                                leftConstant: 25,
+                                bottomConstant: 25,
+                                rightConstant: 25,
+                                heightConstant: 60)
+        self.txtPassword.anchor(top: self.txtUsername.bottomAnchor,
+                                left: self.contentView.leftAnchor,
+                                bottom: self.btnLogin.topAnchor,
+                                right: self.contentView.rightAnchor,
+                                topConstant: 25,
+                                leftConstant: 25,
+                                bottomConstant: 25,
+                                rightConstant: 25,
+                                heightConstant: 60)
+        
+        self.btnLogin.anchor(top: self.txtPassword.bottomAnchor,
+                                left: self.contentView.leftAnchor,
+                                bottom: self.btnLoginWithTwitter.topAnchor,
+                                right: self.contentView.rightAnchor,
+                                topConstant: 25,
+                                leftConstant: 25,
+                                bottomConstant: 25,
+                                rightConstant: 25,
+                                heightConstant: 60)
+        
+        self.btnLoginWithTwitter.anchor(top: self.btnLogin.bottomAnchor,
                                         left: self.contentView.leftAnchor,
                                         bottom: self.btnLoginWithFacebook.topAnchor,
                                         right: self.contentView.rightAnchor,
@@ -130,6 +166,12 @@ class LoginUIView: UIView {
         self.btnLoginWithGoogle.tag = 2
         self.btnLoginWithFacebook.tag = 3
         self.btnLoginWithTwitter.tag = 4
+        
+        self.btnLogin.tag = 5
+        
+        self.btnLogin.backgroundColor = .systemYellow
+        self.txtUsername.backgroundColor = .white
+        self.txtPassword.backgroundColor = .white
     }
     
     func initGradientLayer() {
@@ -176,6 +218,14 @@ class LoginUIView: UIView {
         self.setupCustomBackgroundAndStylishForAppleButton()
     }
     
+    func getUsernameValue() -> String {
+        return self.txtUsername.getContentField()
+    }
+    
+    func getPasswordValue() -> String {
+        return self.txtPassword.getContentField()
+    }
+    
     private func setupCustomBackgroundAndStylishForTwitterButton() {
         self.btnLoginWithTwitter.backgroundColor = .systemBlue
         self.btnLoginWithTwitter.getImageButton().image = UIImage.init(named: "TwitterIcon")
@@ -210,5 +260,9 @@ class LoginUIView: UIView {
     
     func addActionToAppleButton(_viewController: BaseViewController, btnAppleSignIn_onClick: Selector) {
         self.btnLoginWithApple.addTarget(_viewController, action: btnAppleSignIn_onClick, for: .touchUpInside)
+    }
+    
+    func addActionToCustomLoginButton(_viewController: BaseViewController, btnLogin_onClick: Selector) {
+        self.btnLogin.addTarget(_viewController, action: btnLogin_onClick, for: .touchUpInside)
     }
 }

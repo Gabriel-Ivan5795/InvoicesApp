@@ -37,7 +37,8 @@ extension LoginViewModel {
             }
             let credentials = GoogleAuthProvider.credential(withIDToken: idToken,
                                                             accessToken: authentication.accessToken)
-            GoogleAuthentificationRequest().loginUserOnFirebase(_credentials: credentials, _authSuccess: { success in
+            let loginModel = LoginModel.init(_authentificationCredentials: credentials)
+            GoogleAuthentificationRequest().loginUserOnFirebase(_loginModel: loginModel, _authSuccess: { success in
                 self.isLoadingEnabled.value = false
                 self.loginResult.value = success
             }, _authError: { error in

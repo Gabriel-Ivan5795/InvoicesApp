@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2008E89C28118B1F0036837D /* PasswordAuthentificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2008E89B28118B1F0036837D /* PasswordAuthentificationRequest.swift */; };
 		202610AB2805FEA200D3261A /* Welcomescreen+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202610AA2805FEA200D3261A /* Welcomescreen+Design.swift */; };
 		202610AE2805FEE700D3261A /* BaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202610AD2805FEE700D3261A /* BaseInterface.swift */; };
 		202610B0280600C100D3261A /* BaseScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202610AF280600C100D3261A /* BaseScreens.swift */; };
@@ -40,6 +41,7 @@
 		2083CDA6280AF2AB00AA474B /* LoginView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083CDA5280AF2AB00AA474B /* LoginView+Design.swift */; };
 		2083CDA8280AF2FA00AA474B /* LoginView+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083CDA7280AF2FA00AA474B /* LoginView+Delegates.swift */; };
 		2083CDAB280AF32500AA474B /* LoginUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083CDAA280AF32500AA474B /* LoginUIView.swift */; };
+		2095E2D528117B4200E67E70 /* InvoicesAppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2095E2D428117B4200E67E70 /* InvoicesAppTextField.swift */; };
 		209C88CB280C097A00F87565 /* FacebookAuthentificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C88CA280C097A00F87565 /* FacebookAuthentificationRequest.swift */; };
 		209C88CD280C0A7800F87565 /* LoginViewModel+Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C88CC280C0A7800F87565 /* LoginViewModel+Apple.swift */; };
 		209C88CF280C0B2B00F87565 /* LoginViewModel+Google.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C88CE280C0B2B00F87565 /* LoginViewModel+Google.swift */; };
@@ -100,6 +102,7 @@
 
 /* Begin PBXFileReference section */
 		1A5404191BBF7AB8087EAFDC /* Pods-InvoicesApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp.debug.xcconfig"; path = "Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2008E89B28118B1F0036837D /* PasswordAuthentificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordAuthentificationRequest.swift; sourceTree = "<group>"; };
 		202610AA2805FEA200D3261A /* Welcomescreen+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcomescreen+Design.swift"; sourceTree = "<group>"; };
 		202610AD2805FEE700D3261A /* BaseInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterface.swift; sourceTree = "<group>"; };
 		202610AF280600C100D3261A /* BaseScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreens.swift; sourceTree = "<group>"; };
@@ -134,6 +137,7 @@
 		2083CDA5280AF2AB00AA474B /* LoginView+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginView+Design.swift"; sourceTree = "<group>"; };
 		2083CDA7280AF2FA00AA474B /* LoginView+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginView+Delegates.swift"; sourceTree = "<group>"; };
 		2083CDAA280AF32500AA474B /* LoginUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUIView.swift; sourceTree = "<group>"; };
+		2095E2D428117B4200E67E70 /* InvoicesAppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppTextField.swift; sourceTree = "<group>"; };
 		209C88CA280C097A00F87565 /* FacebookAuthentificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookAuthentificationRequest.swift; sourceTree = "<group>"; };
 		209C88CC280C0A7800F87565 /* LoginViewModel+Apple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewModel+Apple.swift"; sourceTree = "<group>"; };
 		209C88CE280C0B2B00F87565 /* LoginViewModel+Google.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewModel+Google.swift"; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 				20A4B1E2280B85B100575AFE /* InvoicesAppSocialButton.swift */,
 				204E26822808AD8800DD5862 /* InvoicesAppGridView.swift */,
 				204E26842808AF0700DD5862 /* InvoicesAppCollectionViewCell.swift */,
+				2095E2D428117B4200E67E70 /* InvoicesAppTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -333,6 +338,7 @@
 				20A4B1E4280B91D700575AFE /* GoogleAuthentificationRequest.swift */,
 				209C88CA280C097A00F87565 /* FacebookAuthentificationRequest.swift */,
 				203C7F22280CD21E00442847 /* TwitterAuthentificationRequest.swift */,
+				2008E89B28118B1F0036837D /* PasswordAuthentificationRequest.swift */,
 			);
 			path = "Authentification Request";
 			sourceTree = "<group>";
@@ -734,12 +740,14 @@
 				20A4B1D9280B680200575AFE /* LoginView+UI.swift in Sources */,
 				20A4B1DB280B6AAB00575AFE /* LoginView+Interactions.swift in Sources */,
 				20A4B1E3280B85B100575AFE /* InvoicesAppSocialButton.swift in Sources */,
+				2095E2D528117B4200E67E70 /* InvoicesAppTextField.swift in Sources */,
 				209C88CB280C097A00F87565 /* FacebookAuthentificationRequest.swift in Sources */,
 				20E52700280592BD00A00845 /* WelcomeScreenViewController.swift in Sources */,
 				202610B0280600C100D3261A /* BaseScreens.swift in Sources */,
 				203C7F21280CD0D800442847 /* LoginViewModel+Twitter.swift in Sources */,
 				204E26872808B24F00DD5862 /* WelcomePageItemCell.swift in Sources */,
 				203C7F23280CD21E00442847 /* TwitterAuthentificationRequest.swift in Sources */,
+				2008E89C28118B1F0036837D /* PasswordAuthentificationRequest.swift in Sources */,
 				20A4B1E1280B77B400575AFE /* AppleAuthentificationRequest.swift in Sources */,
 				20E6F4652809685300B7D5DF /* Welcomescreen+UI.swift in Sources */,
 				202610AE2805FEE700D3261A /* BaseInterface.swift in Sources */,

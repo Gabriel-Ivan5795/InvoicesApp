@@ -10,5 +10,5 @@ import FirebaseAuth
 
 protocol IAuthentificationRequest {
     
-    func loginUserOnFirebase(_credentials: AuthCredential?, _authSuccess: @escaping(String) -> Void, _authError: @escaping(String) -> Void)
+    func loginUserOnFirebase(_loginModel: LoginModel?, _authSuccess: @escaping(String) -> Void, _authError: @escaping(String) -> Void)
 }

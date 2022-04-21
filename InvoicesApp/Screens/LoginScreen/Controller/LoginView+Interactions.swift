@@ -10,6 +10,11 @@ import AuthenticationServices
 
 extension LoginViewController {
     
+    @objc func btnLogin_onClick() {
+        self.loginViewModel.usernameAndPasswordLoginUser(_username: self.loginViewUI.getUsernameValue(),
+                                                         _password: self.loginViewUI.getPasswordValue())
+    }
+    
     @objc func btnTwitterSignIn_onClick() {
         self.loginViewModel.callTwitterServerToGetCredentials()
     }

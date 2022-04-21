@@ -34,7 +34,8 @@ extension LoginViewModel {
                         let email = result["email"]
                         let name = result["name"]
                         let credentials = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
-                        FacebookAuthentificationRequest().loginUserOnFirebase(_credentials: credentials, _authSuccess: { success in
+                        let loginModel = LoginModel.init(_authentificationCredentials: credentials)
+                        FacebookAuthentificationRequest().loginUserOnFirebase(_loginModel: loginModel, _authSuccess: { success in
                             self.isLoadingEnabled.value = false
                             self.loginResult.value = success
                         }, _authError: { error in

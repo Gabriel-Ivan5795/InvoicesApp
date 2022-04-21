@@ -36,6 +36,7 @@ extension LoginViewController: BaseInterface {
         self.loginViewUI.addActionToFacebookButton(_viewController: self, btnFacebookSignIn_onClick: #selector(btnFacebookSignIn_onClick))
         self.loginViewUI.addActionToGoogleButton(_viewController: self, btnGoogleSignIn_onClick: #selector(btnGoogleSignIn_onClick))
         self.loginViewUI.addActionToAppleButton(_viewController: self, btnAppleSignIn_onClick: #selector(btnAppleSignIn_onClick))
+        self.loginViewUI.addActionToCustomLoginButton(_viewController: self, btnLogin_onClick: #selector(btnLogin_onClick))
     }
     
     func setupStrings() {

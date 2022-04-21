@@ -30,7 +30,8 @@ extension LoginViewModel {
                 return
             }
             let credentials = TwitterAuthProvider.credential(withToken: token, secret: secret)
-            TwitterAuthentificationRequest().loginUserOnFirebase(_credentials: credentials, _authSuccess: { success in
+            let loginModel = LoginModel.init(_authentificationCredentials: credentials)
+            TwitterAuthentificationRequest().loginUserOnFirebase(_loginModel: loginModel, _authSuccess: { success in
                 self.isLoadingEnabled.value = false
                 self.loginResult.value = success
             }, _authError: { error in

@@ -16,7 +16,8 @@ extension LoginViewModel {
         if #available(iOS 13.0, *) {
             let credentials = _user as? ASAuthorizationAppleIDCredential
             if let appleIDCredentials = credentials {
-                AppleAuthentificationRequest().loginUserOnFirebase(_credentials: self.prepareAppleSDKResponseToFirebaseAuthRequest(currentNonce: _currentNonce, appleIDCredentials: appleIDCredentials), _authSuccess: { success in
+                let loginModel = LoginModel.init(_authentificationCredentials: self.prepareAppleSDKResponseToFirebaseAuthRequest(currentNonce: _currentNonce, appleIDCredentials: appleIDCredentials)!)
+                AppleAuthentificationRequest().loginUserOnFirebase(_loginModel: loginModel, _authSuccess: { success in
                     self.isLoadingEnabled.value = false
                     self.loginResult.value = success
                 }, _authError: { error in

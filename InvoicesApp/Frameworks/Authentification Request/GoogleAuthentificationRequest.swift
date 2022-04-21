@@ -10,9 +10,9 @@ import Firebase
 
 class GoogleAuthentificationRequest: IAuthentificationRequest {
     
-    func loginUserOnFirebase(_credentials: AuthCredential?, _authSuccess: @escaping (String) -> Void, _authError: @escaping (String) -> Void) {
-        if (_credentials != nil) {
-            Auth.auth().signIn(with: _credentials!, completion: { (authResult, error) in
+    func loginUserOnFirebase(_loginModel: LoginModel?, _authSuccess: @escaping (String) -> Void, _authError: @escaping (String) -> Void) {
+        if (_loginModel?.authentificationCredentials != nil) {
+            Auth.auth().signIn(with: (_loginModel?.authentificationCredentials)!, completion: { (authResult, error) in
                 if (error != nil) {
                     _authError(error?.localizedDescription ?? "An error has occured during login with Google on Firebase")
                 }
