@@ -14,8 +14,8 @@ class LoginUIView: UIView {
     private var lblLogin = UILabel()
     private var scrollView = UIScrollView()
     private var contentView = UIView()
-    private var txtUsername = InvoicesAppTextField()
-    private var txtPassword = InvoicesAppTextField()
+    private var txtUsername = InvoicesAppField()
+    private var txtPassword = InvoicesAppField()
     private var btnLogin = InvoicesAppButton()
     private var btnLoginWithTwitter = InvoicesAppSocialButton()
     private var btnLoginWithFacebook = InvoicesAppSocialButton()
@@ -98,7 +98,7 @@ class LoginUIView: UIView {
                                 leftConstant: 25,
                                 bottomConstant: 25,
                                 rightConstant: 25,
-                                heightConstant: 60)
+                                heightConstant: 86)
         self.txtPassword.anchor(top: self.txtUsername.bottomAnchor,
                                 left: self.contentView.leftAnchor,
                                 bottom: self.btnLogin.topAnchor,
@@ -107,7 +107,7 @@ class LoginUIView: UIView {
                                 leftConstant: 25,
                                 bottomConstant: 25,
                                 rightConstant: 25,
-                                heightConstant: 60)
+                                heightConstant: 86)
         
         self.btnLogin.anchor(top: self.txtPassword.bottomAnchor,
                                 left: self.contentView.leftAnchor,
@@ -123,7 +123,7 @@ class LoginUIView: UIView {
                                         left: self.contentView.leftAnchor,
                                         bottom: self.btnLoginWithFacebook.topAnchor,
                                         right: self.contentView.rightAnchor,
-                                        topConstant: 40,
+                                        topConstant: 25,
                                         leftConstant: 25,
                                         bottomConstant: 25,
                                         rightConstant: 25,
@@ -168,6 +168,7 @@ class LoginUIView: UIView {
         self.btnLoginWithTwitter.tag = 4
         
         self.btnLogin.tag = 5
+        self.btnLogin.layer.cornerRadius = 20
         
         self.btnLogin.backgroundColor = .systemYellow
         self.txtUsername.backgroundColor = .white
@@ -219,11 +220,11 @@ class LoginUIView: UIView {
     }
     
     func getUsernameValue() -> String {
-        return self.txtUsername.getContentField()
+        return self.txtUsername.getInvoicesAppTextField().getContentField()
     }
     
     func getPasswordValue() -> String {
-        return self.txtPassword.getContentField()
+        return self.txtPassword.getInvoicesAppTextField().getContentField()
     }
     
     private func setupCustomBackgroundAndStylishForTwitterButton() {

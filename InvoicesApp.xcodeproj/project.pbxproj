@@ -66,6 +66,7 @@
 		20E52700280592BD00A00845 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E526FF280592BD00A00845 /* WelcomeScreenViewController.swift */; };
 		20E6F463280966C900B7D5DF /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E6F462280966C900B7D5DF /* WelcomeViewModel.swift */; };
 		20E6F4652809685300B7D5DF /* Welcomescreen+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E6F4642809685300B7D5DF /* Welcomescreen+UI.swift */; };
+		A155EBDF281487C9006F6FE5 /* InvoicesAppField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A155EBDE281487C9006F6FE5 /* InvoicesAppField.swift */; };
 		A15D6E0C280F5C2D00C113E7 /* Pods_InvoicesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15D6E0B280F5C2D00C113E7 /* Pods_InvoicesApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -166,6 +167,7 @@
 		20E6F462280966C900B7D5DF /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		20E6F4642809685300B7D5DF /* Welcomescreen+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcomescreen+UI.swift"; sourceTree = "<group>"; };
 		8B9C22B61E7482BC51697692 /* Pods_InvoicesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A155EBDE281487C9006F6FE5 /* InvoicesAppField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppField.swift; sourceTree = "<group>"; };
 		A15D6E0B280F5C2D00C113E7 /* Pods_InvoicesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_InvoicesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AB92C669AC2206F3AEB114 /* Pods-InvoicesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp.release.xcconfig"; path = "Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -232,6 +234,7 @@
 				204E26822808AD8800DD5862 /* InvoicesAppGridView.swift */,
 				204E26842808AF0700DD5862 /* InvoicesAppCollectionViewCell.swift */,
 				2095E2D428117B4200E67E70 /* InvoicesAppTextField.swift */,
+				A155EBDE281487C9006F6FE5 /* InvoicesAppField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,13 +346,6 @@
 			path = "Authentification Request";
 			sourceTree = "<group>";
 		};
-		20A528982808C65E0061A712 /* APIService */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = APIService;
-			sourceTree = "<group>";
-		};
 		20BC18952804A766005551FF = {
 			isa = PBXGroup;
 			children = (
@@ -375,7 +371,6 @@
 		20BC18A02804A766005551FF /* InvoicesApp */ = {
 			isa = PBXGroup;
 			children = (
-				20A528982808C65E0061A712 /* APIService */,
 				20BC18D12804A777005551FF /* InvoicesApp.entitlements */,
 				20BC18D52804B668005551FF /* AppDelegate */,
 				202610AC2805FEB100D3261A /* Interfaces */,
@@ -755,6 +750,7 @@
 				202610B7280604D800D3261A /* WelcomeUIView.swift in Sources */,
 				20A4B1DF280B777500575AFE /* IAuthentificationRequest.swift in Sources */,
 				202610B22806015200D3261A /* AppDelegate+Screens.swift in Sources */,
+				A155EBDF281487C9006F6FE5 /* InvoicesAppField.swift in Sources */,
 				209C88CF280C0B2B00F87565 /* LoginViewModel+Google.swift in Sources */,
 				204E268A2808B32400DD5862 /* WelcomeModel.swift in Sources */,
 				202610E0280618B900D3261A /* LoginViewController.swift in Sources */,

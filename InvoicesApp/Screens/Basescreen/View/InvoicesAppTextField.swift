@@ -20,6 +20,7 @@ class InvoicesAppTextField: UIView {
             self.setupConstraints()
             self.addBorders()
             self.addCornerRadius(_corners: 20)
+            self.addBorderColorAndWidth()
         }
     }
     
@@ -32,10 +33,10 @@ class InvoicesAppTextField: UIView {
                               left: self.leftAnchor,
                               bottom: self.bottomAnchor,
                               right: self.rightAnchor,
-                              topConstant: 8,
-                              leftConstant: 0,
-                              bottomConstant: 8,
-                              rightConstant: 0)
+                              topConstant: 16,
+                              leftConstant: 16,
+                              bottomConstant: 16,
+                              rightConstant: 16)
     }
     
     func addBorders() {
@@ -45,6 +46,11 @@ class InvoicesAppTextField: UIView {
     func addCornerRadius(_corners: CGFloat?) {
         self.clipsToBounds = true
         self.layer.cornerRadius = _corners ?? CGFloat(0)
+    }
+    
+    func addBorderColorAndWidth() {
+        self.layer.borderColor = UIColor.init(named: "PrimaryColor")?.cgColor
+        self.layer.borderWidth = 2.0
     }
     
     func getContentField() -> String {
