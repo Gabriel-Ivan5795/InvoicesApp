@@ -223,8 +223,16 @@ class LoginUIView: UIView {
         return self.txtUsername.getInvoicesAppTextField().getContentField()
     }
     
+    func getUsernameField() -> InvoicesAppField {
+        return self.txtUsername
+    }
+    
     func getPasswordValue() -> String {
         return self.txtPassword.getInvoicesAppTextField().getContentField()
+    }
+    
+    func getPasswordField() -> InvoicesAppField {
+        return self.txtPassword
     }
     
     private func setupCustomBackgroundAndStylishForTwitterButton() {

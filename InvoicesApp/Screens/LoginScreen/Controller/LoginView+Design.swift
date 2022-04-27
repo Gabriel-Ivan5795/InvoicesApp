@@ -37,6 +37,8 @@ extension LoginViewController: BaseInterface {
         self.loginViewUI.addActionToGoogleButton(_viewController: self, btnGoogleSignIn_onClick: #selector(btnGoogleSignIn_onClick))
         self.loginViewUI.addActionToAppleButton(_viewController: self, btnAppleSignIn_onClick: #selector(btnAppleSignIn_onClick))
         self.loginViewUI.addActionToCustomLoginButton(_viewController: self, btnLogin_onClick: #selector(btnLogin_onClick))
+        self.loginViewUI.getUsernameField().getInvoicesAppTextField().getField().addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        self.loginViewUI.getPasswordField().getInvoicesAppTextField().getField().addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     
     func setupStrings() {

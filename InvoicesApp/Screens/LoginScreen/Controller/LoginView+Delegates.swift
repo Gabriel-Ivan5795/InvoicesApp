@@ -30,4 +30,22 @@ extension LoginViewController: UIGestureRecognizerDelegate, ASAuthorizationContr
                 break
         }
     }
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        if (textField.isEqual(self.loginViewUI.getUsernameField().getInvoicesAppTextField().getField())) {
+            if (textField.text?.isValid() == true) {
+                self.loginViewUI.getUsernameField().showLabelPlaceholder()
+            } else {
+                self.loginViewUI.getUsernameField().hideLabelPlaceholder()
+            }
+        }
+        
+        if (textField.isEqual(self.loginViewUI.getPasswordField().getInvoicesAppTextField().getField())) {
+            if (textField.text?.isValid() == true) {
+                self.loginViewUI.getPasswordField().showLabelPlaceholder()
+            } else {
+                self.loginViewUI.getPasswordField().hideLabelPlaceholder()
+            }
+        }
+    }
 }

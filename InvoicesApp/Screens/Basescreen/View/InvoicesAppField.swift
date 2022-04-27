@@ -19,13 +19,13 @@ class InvoicesAppField: UIView {
             self.setupViews()
             self.setupConstraints()
             self.setupStylingViews()
+            self.hideLabelPlaceholder()
         }
     }
     
     func setupViews() {
         self.addSubview(self.invoicesAppTextField)
         self.addSubview(self.lblTitlePlaceholder)
-        self.lblTitlePlaceholder.text = "Test"
     }
     
     func setupConstraints() {
@@ -51,10 +51,19 @@ class InvoicesAppField: UIView {
         
         self.lblTitlePlaceholder.backgroundColor = .white
         self.lblTitlePlaceholder.textColor = UIColor.init(named: "PrimaryColor")
+        self.lblTitlePlaceholder.text = "Username"
     }
     
     func addBorders() {
         self.addDashedBorder()
+    }
+    
+    func showLabelPlaceholder() {
+        self.lblTitlePlaceholder.isHidden = false
+    }
+    
+    func hideLabelPlaceholder() {
+        self.lblTitlePlaceholder.isHidden = true
     }
     
     func addCornerRadius(_corners: CGFloat?) {

@@ -18,9 +18,11 @@ class InvoicesAppTextField: UIView {
             
             self.setupViews()
             self.setupConstraints()
+            self.setupStylingViews()
             self.addBorders()
             self.addCornerRadius(_corners: 20)
             self.addBorderColorAndWidth()
+            self.textField.placeholder = "Username"
         }
     }
     
@@ -39,6 +41,10 @@ class InvoicesAppTextField: UIView {
                               rightConstant: 16)
     }
     
+    func setupStylingViews() {
+        self.textField.textColor = .black
+    }
+    
     func addBorders() {
         self.addDashedBorder()
     }
@@ -55,5 +61,9 @@ class InvoicesAppTextField: UIView {
     
     func getContentField() -> String {
         return self.textField.text!
+    }
+    
+    func getField() -> UITextField {
+        return self.textField
     }
 }
