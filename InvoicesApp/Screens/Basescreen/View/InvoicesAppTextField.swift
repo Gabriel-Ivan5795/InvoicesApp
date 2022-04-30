@@ -22,7 +22,6 @@ class InvoicesAppTextField: UIView {
             self.addBorders()
             self.addCornerRadius(_corners: 20)
             self.addBorderColorAndWidth()
-            self.textField.placeholder = "Username"
         }
     }
     
@@ -65,5 +64,9 @@ class InvoicesAppTextField: UIView {
     
     func getField() -> UITextField {
         return self.textField
+    }
+    
+    func setPlaceholder(_string: String) {
+        self.textField.placeholder = _string
     }
 }

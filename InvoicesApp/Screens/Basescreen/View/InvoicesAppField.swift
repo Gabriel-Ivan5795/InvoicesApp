@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import InvoicesHelpers
 
 class InvoicesAppField: UIView {
 
-    private var lblTitlePlaceholder = UILabel()
+    private var lblTitlePlaceholder = PaddingLabel()
     private var invoicesAppTextField = InvoicesAppTextField()
     
     override func didMoveToSuperview() {
@@ -41,17 +42,16 @@ class InvoicesAppField: UIView {
                                         left: self.leftAnchor,
                                         topConstant: 8,
                                         leftConstant: 24,
-                                        widthConstant: 40,
-                                        heightConstant: 12)
+                                        heightConstant: 16)
     }
     
     func setupStylingViews() {
         self.addBorders()
         self.addCornerRadius(_corners: 20)
+        self.addShadow()
         
         self.lblTitlePlaceholder.backgroundColor = .white
         self.lblTitlePlaceholder.textColor = UIColor.init(named: "PrimaryColor")
-        self.lblTitlePlaceholder.text = "Username"
     }
     
     func addBorders() {
@@ -71,7 +71,15 @@ class InvoicesAppField: UIView {
         self.layer.cornerRadius = _corners ?? CGFloat(0)
     }
     
+    func getInvoicesAppTitlePlaceholder() -> PaddingLabel {
+        return self.lblTitlePlaceholder
+    }
+    
     func getInvoicesAppTextField() -> InvoicesAppTextField {
         return self.invoicesAppTextField
+    }
+    
+    func setPlaceholderTitle(_string: String) {
+        self.lblTitlePlaceholder.text = _string
     }
 }

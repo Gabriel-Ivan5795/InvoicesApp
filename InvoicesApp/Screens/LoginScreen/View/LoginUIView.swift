@@ -168,11 +168,12 @@ class LoginUIView: UIView {
         self.btnLoginWithTwitter.tag = 4
         
         self.btnLogin.tag = 5
-        self.btnLogin.layer.cornerRadius = 20
         
-        self.btnLogin.backgroundColor = .systemYellow
         self.txtUsername.backgroundColor = .white
+        self.txtUsername.getInvoicesAppTextField().getField().autocapitalizationType = .none
+        self.txtUsername.getInvoicesAppTextField().getField().keyboardType = .emailAddress
         self.txtPassword.backgroundColor = .white
+        self.txtPassword.getInvoicesAppTextField().getField().isSecureTextEntry = true
     }
     
     func initGradientLayer() {
@@ -192,10 +193,17 @@ class LoginUIView: UIView {
         self.btnLoginWithApple.getLabelButton().text = _appleTitle
     }
     
+    func setupLoginButtonTitle(_string: String) {
+        self.btnLogin.setTitle(_string, for: .normal)
+    }
+    
     func setupUIColorsAndFonts(_buttonCornerRadius: CGFloat, _titleFont: UIFont, _buttonFont: UIFont) {
         self.lblLogin.textColor = .white
         self.lblLogin.font = _titleFont
         self.lblLogin.textAlignment = .center
+        
+        self.btnLogin.titleLabel?.font = _buttonFont
+        self.btnLogin.setTitleColor(.white, for: .normal)
 
         self.btnLoginWithTwitter.addCornerRadius(_corners: _buttonCornerRadius)
         self.btnLoginWithTwitter.getLabelButton().font = _buttonFont
@@ -213,6 +221,7 @@ class LoginUIView: UIView {
         self.btnLoginWithApple.getLabelButton().font = _buttonFont
         self.btnLoginWithApple.getLabelButton().textColor = .white
         
+        self.setupCustomBackgroundAndStylishForLoginButton()
         self.setupCustomBackgroundAndStylishForTwitterButton()
         self.setupCustomBackgroundAndStylishForFacebookButton()
         self.setupCustomBackgroundAndStylishForGoogleButton()
@@ -233,6 +242,11 @@ class LoginUIView: UIView {
     
     func getPasswordField() -> InvoicesAppField {
         return self.txtPassword
+    }
+    
+    private func setupCustomBackgroundAndStylishForLoginButton() {
+        self.btnLogin.addCornerRadius(_corners: 20)
+        self.btnLogin.initGradientLayer()
     }
     
     private func setupCustomBackgroundAndStylishForTwitterButton() {

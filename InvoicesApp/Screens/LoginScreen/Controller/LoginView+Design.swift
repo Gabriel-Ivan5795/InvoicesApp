@@ -43,9 +43,17 @@ extension LoginViewController: BaseInterface {
     
     func setupStrings() {
         self.loginViewUI.setupTitleString(_string: "LOGIN")
+        
         self.loginViewUI.setupTitlesButtons(_twitterTitle: "Sign in with Twitter",
                                             _facebookTitle: "Sign in with Facebook",
                                             _googleTitle: "Sign in with Google",
                                             _appleTitle: "Sign in with Apple")
+        
+        self.loginViewUI.getUsernameField().getInvoicesAppTextField().setPlaceholder(_string: "Username")
+        self.loginViewUI.getUsernameField().setPlaceholderTitle(_string: "Username")
+        self.loginViewUI.getPasswordField().getInvoicesAppTextField().setPlaceholder(_string: "Password")
+        self.loginViewUI.getPasswordField().setPlaceholderTitle(_string: "Password")
+        
+        self.loginViewUI.setupLoginButtonTitle(_string: "Login")
     }
 }

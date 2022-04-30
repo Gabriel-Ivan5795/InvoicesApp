@@ -16,4 +16,8 @@ extension AppDelegate: BaseScreens {
     @objc func getLoginScreenViewController() -> LoginViewController {
         return LoginViewController()
     }
+    
+    @objc func getHomeScreenViewController() -> HomeViewController {
+        return HomeViewController()
+    }
 }

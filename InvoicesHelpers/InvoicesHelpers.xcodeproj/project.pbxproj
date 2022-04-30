@@ -43,6 +43,7 @@
 		202610A82805F61E00D3261A /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202610862805F61E00D3261A /* DateExtension.swift */; };
 		202610A92805F61E00D3261A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202610872805F61E00D3261A /* DateHelper.swift */; };
 		204E26802808A79C00DD5862 /* GradientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E267F2808A79C00DD5862 /* GradientHelper.swift */; };
+		A11EC954281D721A001085B6 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11EC953281D721A001085B6 /* PaddingLabel.swift */; };
 		C1EF92ED2C46ECB25B3197EC /* Pods_InvoicesHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBE806CFE7928AC2586BD23 /* Pods_InvoicesHelpers.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		204E267F2808A79C00DD5862 /* GradientHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientHelper.swift; sourceTree = "<group>"; };
 		20A528992808C67A0061A712 /* Pods_InvoicesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_InvoicesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C9FF3A7905A16C1317EEBC /* Pods-InvoicesHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesHelpers.release.xcconfig"; path = "Target Support Files/Pods-InvoicesHelpers/Pods-InvoicesHelpers.release.xcconfig"; sourceTree = "<group>"; };
+		A11EC953281D721A001085B6 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		EFBE806CFE7928AC2586BD23 /* Pods_InvoicesHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 		202610052805F50B00D3261A /* InvoicesHelpers */ = {
 			isa = PBXGroup;
 			children = (
+				A11EC952281D71E1001085B6 /* PaddingLabel Helper */,
 				204E267E2808A77A00DD5862 /* Gradient Helper */,
 				2026107D2805F61E00D3261A /* Alert Helper */,
 				2026107B2805F61E00D3261A /* API Request Helper */,
@@ -422,6 +425,14 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		A11EC952281D71E1001085B6 /* PaddingLabel Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A11EC953281D721A001085B6 /* PaddingLabel.swift */,
+			);
+			path = "PaddingLabel Helper";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -551,6 +562,7 @@
 				202610A42805F61E00D3261A /* AlertHelper.swift in Sources */,
 				202610972805F61E00D3261A /* LocalNotificationHelper.swift in Sources */,
 				2026108B2805F61E00D3261A /* CameraHelper.swift in Sources */,
+				A11EC954281D721A001085B6 /* PaddingLabel.swift in Sources */,
 				2026108F2805F61E00D3261A /* Reachability.swift in Sources */,
 				2026108A2805F61E00D3261A /* ViewHelper.swift in Sources */,
 				2026109A2805F61E00D3261A /* RequestManager.swift in Sources */,

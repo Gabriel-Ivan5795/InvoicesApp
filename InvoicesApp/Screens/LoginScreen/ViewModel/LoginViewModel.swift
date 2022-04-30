@@ -35,14 +35,6 @@ class LoginViewModel {
     }
     
     func usernameAndPasswordLoginUser(_username: String, _password: String) {
-        self.isLoadingEnabled.value = true
-        let loginModel = LoginModel.init(_username: _username, _password: _password)
-        PasswordAuthentificationRequest().loginUserOnFirebase(_loginModel: loginModel, _authSuccess: { success in
-            self.isLoadingEnabled.value = false
-            self.loginResult.value = success
-        }, _authError: { error in
-            self.isLoadingEnabled.value = false
-            self.error.value = error
-        })
+        self.callNoServerToGetCredentials(_username: _username, _password: _password)
     }
 }

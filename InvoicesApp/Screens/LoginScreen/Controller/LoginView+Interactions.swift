@@ -7,10 +7,22 @@
 
 import UIKit
 import AuthenticationServices
+import InvoicesHelpers
 
 extension LoginViewController {
     
     @objc func btnLogin_onClick() {
+        if (!self.loginViewUI.getUsernameValue().isValid() ||
+            !self.loginViewUI.getUsernameValue().isEmailValid()) {
+            self.showAlert(_errorMessage: "Please insert a valid email!")
+            return
+        }
+        
+        if (!self.loginViewUI.getPasswordValue().isValid()) {
+            self.showAlert(_errorMessage: "Please insert a valid password!")
+            return
+        }
+        
         self.loginViewModel.usernameAndPasswordLoginUser(_username: self.loginViewUI.getUsernameValue(),
                                                          _password: self.loginViewUI.getPasswordValue())
     }
