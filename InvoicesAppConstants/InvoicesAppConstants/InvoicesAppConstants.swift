@@ -10,4 +10,6 @@ import Foundation
 public struct InvoicesAppConstants {
     
     public static let keyInvoicesAppFirebaseLoginToken = "keyInvoicesAppFirebaseLoginToken"
+    
+    public static let isUserLoggedIn = "isUserLoggedIn"
 }

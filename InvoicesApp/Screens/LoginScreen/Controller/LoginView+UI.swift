@@ -19,6 +19,8 @@ extension LoginViewController {
                 if (resultToken.isValid() == true) {
                     SafeHelper.saveToken(_accessToken: resultToken,
                                          _accessTokenKey: InvoicesAppConstants.keyInvoicesAppFirebaseLoginToken)
+                    UserDefaults.standard.set("yes", forKey: InvoicesAppConstants.isUserLoggedIn)
+                    UserDefaults.standard.synchronize()
                     self?.navigationController?.pushViewController((self?.getAppDelegate().getHomeScreenViewController())!, animated: true)
                 } else {
                     print("login done but an error has occured during login call, the token is invalid")

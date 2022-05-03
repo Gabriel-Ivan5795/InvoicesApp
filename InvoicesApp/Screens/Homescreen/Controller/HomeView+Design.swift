@@ -15,7 +15,7 @@ extension HomeViewController: BaseInterface {
     }
     
     func setupViews() {
-        
+        self.view.backgroundColor = .white
     }
     
     func setupConstraints() {
