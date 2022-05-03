@@ -82,4 +82,8 @@ class InvoicesAppField: UIView {
     func setPlaceholderTitle(_string: String) {
         self.lblTitlePlaceholder.text = _string
     }
+    
+    func setValueField(_value: String) {
+        self.getInvoicesAppTextField().setValueField(_value: _value)
+    }
 }

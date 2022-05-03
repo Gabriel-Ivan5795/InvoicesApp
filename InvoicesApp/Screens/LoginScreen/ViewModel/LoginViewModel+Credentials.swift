@@ -16,6 +16,20 @@ extension LoginViewModel {
             self.isLoadingEnabled.value = false
             self.loginResult.value = success
         }, _authError: { error in
+            if (error == "There is no user record corresponding to this identifier. The user may have been deleted.") {
+                self.registerUserNoServerToGetCredentials(_loginModel: loginModel)
+            } else {
+                self.isLoadingEnabled.value = false
+                self.error.value = error
+            }
+        })
+    }
+    
+    func registerUserNoServerToGetCredentials(_loginModel: LoginModel) {
+        CreateUserRequest().loginUserOnFirebase(_loginModel: _loginModel, _authSuccess: { success in
+            self.isLoadingEnabled.value = false
+            self.loginResult.value = success
+        }, _authError: { error in
             self.isLoadingEnabled.value = false
             self.error.value = error
         })

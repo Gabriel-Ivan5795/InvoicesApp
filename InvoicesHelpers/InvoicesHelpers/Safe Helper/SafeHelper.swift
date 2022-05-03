@@ -24,6 +24,12 @@ open class SafeHelper: NSObject {
                                      withAccessibility: .always)
     }
     
+    open class func saveToken(_accessToken: String, _accessTokenKey: String) {
+        KeychainWrapper.standard.set(_accessToken,
+                                     forKey: _accessTokenKey,
+                                     withAccessibility: .alwaysThisDeviceOnly)
+    }
+    
     open class func saveKeyForDecodingFromFirebase(_keyFromFirebase: String, _keyForSaving: String) {
         KeychainWrapper.standard.set(_keyFromFirebase,
                                      forKey: _keyForSaving,

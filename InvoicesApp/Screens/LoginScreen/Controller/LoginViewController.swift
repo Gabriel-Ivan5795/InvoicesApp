@@ -24,5 +24,6 @@ class LoginViewController: BaseViewController {
         self.setupButtonsMethods()
         self.setupStrings()
         self.setupBinders()
+        self.setupTestCredentials()
     }
 }

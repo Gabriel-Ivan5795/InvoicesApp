@@ -7,6 +7,7 @@
 
 import UIKit
 import InvoicesHelpers
+import InvoicesAppConstants
 import LoadingDialog
 
 extension LoginViewController {
@@ -14,8 +15,14 @@ extension LoginViewController {
     func setupBinders() {
     
         self.loginViewModel.loginResult.bind { [weak self] result in
-            if (result != nil) {
-                print("login done")
+            if let resultToken = result {
+                if (resultToken.isValid() == true) {
+                    SafeHelper.saveToken(_accessToken: resultToken,
+                                         _accessTokenKey: InvoicesAppConstants.keyInvoicesAppFirebaseLoginToken)
+                    self?.navigationController?.pushViewController((self?.getAppDelegate().getHomeScreenViewController())!, animated: true)
+                } else {
+                    print("login done but an error has occured during login call, the token is invalid")
+                }
             } else {
                 print("waiting for login")
             }

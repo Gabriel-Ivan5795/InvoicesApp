@@ -69,4 +69,8 @@ class InvoicesAppTextField: UIView {
     func setPlaceholder(_string: String) {
         self.textField.placeholder = _string
     }
+    
+    func setValueField(_value: String) {
+        self.textField.text = _value
+    }
 }

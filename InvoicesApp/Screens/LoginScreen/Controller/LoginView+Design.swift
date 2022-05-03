@@ -56,4 +56,11 @@ extension LoginViewController: BaseInterface {
         
         self.loginViewUI.setupLoginButtonTitle(_string: "Login")
     }
+    
+    func setupTestCredentials() {
+        #if DEBUG
+        self.loginViewUI.getUsernameField().setValueField(_value: "a@b.com")
+        self.loginViewUI.getPasswordField().setValueField(_value: "password123")
+        #endif
+    }
 }

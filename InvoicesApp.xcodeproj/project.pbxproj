@@ -73,6 +73,9 @@
 		A11EC963281D7FA5001085B6 /* HomeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11EC962281D7FA5001085B6 /* HomeUIView.swift */; };
 		A155EBDF281487C9006F6FE5 /* InvoicesAppField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A155EBDE281487C9006F6FE5 /* InvoicesAppField.swift */; };
 		A15D6E0C280F5C2D00C113E7 /* Pods_InvoicesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15D6E0B280F5C2D00C113E7 /* Pods_InvoicesApp.framework */; };
+		A16A3F652821A446005287AE /* CreateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16A3F642821A446005287AE /* CreateUserRequest.swift */; };
+		A16A3FB12821A96F005287AE /* InvoicesAppConstants.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16A3FB02821A96F005287AE /* InvoicesAppConstants.framework */; };
+		A16A3FB22821A96F005287AE /* InvoicesAppConstants.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A16A3FB02821A96F005287AE /* InvoicesAppConstants.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A16A3FB22821A96F005287AE /* InvoicesAppConstants.framework in Embed Frameworks */,
 				20A72410280FD7EB00519C42 /* InvoicesHelpers.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -179,6 +183,8 @@
 		A11EC962281D7FA5001085B6 /* HomeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIView.swift; sourceTree = "<group>"; };
 		A155EBDE281487C9006F6FE5 /* InvoicesAppField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppField.swift; sourceTree = "<group>"; };
 		A15D6E0B280F5C2D00C113E7 /* Pods_InvoicesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_InvoicesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A16A3F642821A446005287AE /* CreateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRequest.swift; sourceTree = "<group>"; };
+		A16A3FB02821A96F005287AE /* InvoicesAppConstants.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InvoicesAppConstants.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AB92C669AC2206F3AEB114 /* Pods-InvoicesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp.release.xcconfig"; path = "Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,6 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16A3FB12821A96F005287AE /* InvoicesAppConstants.framework in Frameworks */,
 				20A7240F280FD7EB00519C42 /* InvoicesHelpers.framework in Frameworks */,
 				A15D6E0C280F5C2D00C113E7 /* Pods_InvoicesApp.framework in Frameworks */,
 			);
@@ -339,6 +346,7 @@
 		20A4B1DC280B774E00575AFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A16A3F632821A428005287AE /* CreateUser Request */,
 				20A4B1DD280B775900575AFE /* Authentification Request */,
 			);
 			path = Frameworks;
@@ -485,6 +493,7 @@
 		2F6985E506809C520A4E5A54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A16A3FB02821A96F005287AE /* InvoicesAppConstants.framework */,
 				A15D6E0B280F5C2D00C113E7 /* Pods_InvoicesApp.framework */,
 				202610B82806053300D3261A /* InvoicesHelpers.framework */,
 				8B9C22B61E7482BC51697692 /* Pods_InvoicesApp.framework */,
@@ -533,6 +542,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A16A3F632821A428005287AE /* CreateUser Request */ = {
+			isa = PBXGroup;
+			children = (
+				A16A3F642821A446005287AE /* CreateUserRequest.swift */,
+			);
+			path = "CreateUser Request";
 			sourceTree = "<group>";
 		};
 		DF07A54E5FA017A2F855EE09 /* Pods */ = {
@@ -787,6 +804,7 @@
 				202610E82806192900D3261A /* BaseViewController.swift in Sources */,
 				204E26832808AD8800DD5862 /* InvoicesAppGridView.swift in Sources */,
 				202610AB2805FEA200D3261A /* Welcomescreen+Design.swift in Sources */,
+				A16A3F652821A446005287AE /* CreateUserRequest.swift in Sources */,
 				202610BD28060C9F00D3261A /* Welcomescreen+Delegates.swift in Sources */,
 				20A4B1D7280B65BA00575AFE /* LoginViewModel.swift in Sources */,
 				20A4B1D9280B680200575AFE /* LoginView+UI.swift in Sources */,
