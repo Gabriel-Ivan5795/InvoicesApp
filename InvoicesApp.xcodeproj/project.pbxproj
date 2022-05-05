@@ -76,6 +76,8 @@
 		A16A3F652821A446005287AE /* CreateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16A3F642821A446005287AE /* CreateUserRequest.swift */; };
 		A16A3FB12821A96F005287AE /* InvoicesAppConstants.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16A3FB02821A96F005287AE /* InvoicesAppConstants.framework */; };
 		A16A3FB22821A96F005287AE /* InvoicesAppConstants.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A16A3FB02821A96F005287AE /* InvoicesAppConstants.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1A0824B2824544F00DC674F /* InvoicesAppHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0824A2824544F00DC674F /* InvoicesAppHeader.swift */; };
+		A1A0824D2824582400DC674F /* InvoicesAppSmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0824C2824582400DC674F /* InvoicesAppSmallButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +187,8 @@
 		A15D6E0B280F5C2D00C113E7 /* Pods_InvoicesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_InvoicesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16A3F642821A446005287AE /* CreateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRequest.swift; sourceTree = "<group>"; };
 		A16A3FB02821A96F005287AE /* InvoicesAppConstants.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InvoicesAppConstants.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A0824A2824544F00DC674F /* InvoicesAppHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppHeader.swift; sourceTree = "<group>"; };
+		A1A0824C2824582400DC674F /* InvoicesAppSmallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppSmallButton.swift; sourceTree = "<group>"; };
 		B6AB92C669AC2206F3AEB114 /* Pods-InvoicesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp.release.xcconfig"; path = "Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -252,6 +256,8 @@
 				204E26842808AF0700DD5862 /* InvoicesAppCollectionViewCell.swift */,
 				2095E2D428117B4200E67E70 /* InvoicesAppTextField.swift */,
 				A155EBDE281487C9006F6FE5 /* InvoicesAppField.swift */,
+				A1A0824A2824544F00DC674F /* InvoicesAppHeader.swift */,
+				A1A0824C2824582400DC674F /* InvoicesAppSmallButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -833,6 +839,8 @@
 				202610E0280618B900D3261A /* LoginViewController.swift in Sources */,
 				2083CDA6280AF2AB00AA474B /* LoginView+Design.swift in Sources */,
 				A11EC95F281D7EF2001085B6 /* HomeView+Design.swift in Sources */,
+				A1A0824D2824582400DC674F /* InvoicesAppSmallButton.swift in Sources */,
+				A1A0824B2824544F00DC674F /* InvoicesAppHeader.swift in Sources */,
 				20BC18A22804A766005551FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

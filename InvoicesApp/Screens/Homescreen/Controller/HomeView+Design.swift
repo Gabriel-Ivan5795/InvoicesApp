@@ -16,10 +16,18 @@ extension HomeViewController: BaseInterface {
     
     func setupViews() {
         self.view.backgroundColor = .white
+        self.view.addSubview(self.homeUIView)
     }
     
     func setupConstraints() {
-        
+        self.homeUIView.anchor(top: self.view.topAnchor,
+                               left: self.view.leftAnchor,
+                               bottom: self.view.bottomAnchor,
+                               right: self.view.rightAnchor,
+                               topConstant: 0,
+                               leftConstant: 0,
+                               bottomConstant: 0,
+                               rightConstant: 0)
     }
     
     func setupStylingViews() {

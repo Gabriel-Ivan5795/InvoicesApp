@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: BaseViewController {
 
+    var homeUIView = HomeUIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
