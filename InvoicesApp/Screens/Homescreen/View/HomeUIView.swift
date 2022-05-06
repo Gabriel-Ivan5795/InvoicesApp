@@ -36,6 +36,14 @@ class HomeUIView: UIView {
     }
     
     func setupStylingViews() {
-        self.invoicesAppHeader.backgroundColor = .systemGreen
+        
+    }
+    
+    func setupBackgroundColor(_color: UIColor) {
+        self.invoicesAppHeader.backgroundColor = _color
+    }
+    
+    func addActionToLogoutButton(_viewController: BaseViewController, btnLogout_onClick: Selector) {
+        self.invoicesAppHeader.getButtonLeft().addTarget(_viewController, action: btnLogout_onClick, for: .touchUpInside)
     }
 }

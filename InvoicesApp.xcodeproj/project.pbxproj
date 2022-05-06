@@ -38,6 +38,11 @@
 		204E26852808AF0700DD5862 /* InvoicesAppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E26842808AF0700DD5862 /* InvoicesAppCollectionViewCell.swift */; };
 		204E26872808B24F00DD5862 /* WelcomePageItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E26862808B24F00DD5862 /* WelcomePageItemCell.swift */; };
 		204E268A2808B32400DD5862 /* WelcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E26892808B32400DD5862 /* WelcomeModel.swift */; };
+		207D5B182825066F00993856 /* HomeView+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D5B172825066F00993856 /* HomeView+UI.swift */; };
+		207D5B1A2825069500993856 /* HomeView+Interactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D5B192825069500993856 /* HomeView+Interactions.swift */; };
+		207D5B1C282507DB00993856 /* IDeAuthentificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D5B1B282507DB00993856 /* IDeAuthentificationRequest.swift */; };
+		207D5B1E2825080D00993856 /* DeAuthentificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D5B1D2825080D00993856 /* DeAuthentificationRequest.swift */; };
+		207D5B2128250B6100993856 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D5B2028250B6100993856 /* HomeViewModel.swift */; };
 		2083CDA6280AF2AB00AA474B /* LoginView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083CDA5280AF2AB00AA474B /* LoginView+Design.swift */; };
 		2083CDA8280AF2FA00AA474B /* LoginView+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083CDA7280AF2FA00AA474B /* LoginView+Delegates.swift */; };
 		2083CDAB280AF32500AA474B /* LoginUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083CDAA280AF32500AA474B /* LoginUIView.swift */; };
@@ -146,6 +151,11 @@
 		204E26842808AF0700DD5862 /* InvoicesAppCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppCollectionViewCell.swift; sourceTree = "<group>"; };
 		204E26862808B24F00DD5862 /* WelcomePageItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageItemCell.swift; sourceTree = "<group>"; };
 		204E26892808B32400DD5862 /* WelcomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModel.swift; sourceTree = "<group>"; };
+		207D5B172825066F00993856 /* HomeView+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+UI.swift"; sourceTree = "<group>"; };
+		207D5B192825069500993856 /* HomeView+Interactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+Interactions.swift"; sourceTree = "<group>"; };
+		207D5B1B282507DB00993856 /* IDeAuthentificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDeAuthentificationRequest.swift; sourceTree = "<group>"; };
+		207D5B1D2825080D00993856 /* DeAuthentificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeAuthentificationRequest.swift; sourceTree = "<group>"; };
+		207D5B2028250B6100993856 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2083CDA5280AF2AB00AA474B /* LoginView+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginView+Design.swift"; sourceTree = "<group>"; };
 		2083CDA7280AF2FA00AA474B /* LoginView+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginView+Delegates.swift"; sourceTree = "<group>"; };
 		2083CDAA280AF32500AA474B /* LoginUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUIView.swift; sourceTree = "<group>"; };
@@ -341,6 +351,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		207D5B1F28250B5100993856 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				207D5B2028250B6100993856 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		2083CDA9280AF31300AA474B /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,11 +380,13 @@
 			isa = PBXGroup;
 			children = (
 				20A4B1DE280B777500575AFE /* IAuthentificationRequest.swift */,
+				207D5B1B282507DB00993856 /* IDeAuthentificationRequest.swift */,
 				20A4B1E0280B77B400575AFE /* AppleAuthentificationRequest.swift */,
 				20A4B1E4280B91D700575AFE /* GoogleAuthentificationRequest.swift */,
 				209C88CA280C097A00F87565 /* FacebookAuthentificationRequest.swift */,
 				203C7F22280CD21E00442847 /* TwitterAuthentificationRequest.swift */,
 				2008E89B28118B1F0036837D /* PasswordAuthentificationRequest.swift */,
+				207D5B1D2825080D00993856 /* DeAuthentificationRequest.swift */,
 			);
 			path = "Authentification Request";
 			sourceTree = "<group>";
@@ -448,8 +468,8 @@
 		20BC18D72804B688005551FF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				A11EC957281D7E8C001085B6 /* Homescreen */,
 				202610BE2806102E00D3261A /* Basescreen */,
+				A11EC957281D7E8C001085B6 /* Homescreen */,
 				202610DD2806189D00D3261A /* LoginScreen */,
 				20E526FD280590B900A00845 /* Welcomescreen */,
 			);
@@ -512,7 +532,7 @@
 			children = (
 				A11EC95B281D7EAE001085B6 /* Model */,
 				A11EC95A281D7EA8001085B6 /* View */,
-				A11EC959281D7EA0001085B6 /* ViewModel */,
+				207D5B1F28250B5100993856 /* ViewModel */,
 				A11EC958281D7E99001085B6 /* Controller */,
 			);
 			path = Homescreen;
@@ -524,15 +544,10 @@
 				A11EC95C281D7ED4001085B6 /* HomeViewController.swift */,
 				A11EC95E281D7EF2001085B6 /* HomeView+Design.swift */,
 				A11EC960281D7F55001085B6 /* HomeView+Delegates.swift */,
+				207D5B172825066F00993856 /* HomeView+UI.swift */,
+				207D5B192825069500993856 /* HomeView+Interactions.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		A11EC959281D7EA0001085B6 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A11EC95A281D7EA8001085B6 /* View */ = {
@@ -805,10 +820,12 @@
 				2083CDAB280AF32500AA474B /* LoginUIView.swift in Sources */,
 				20BC18DA2804B6AF005551FF /* FirebaseConfig.swift in Sources */,
 				202610C12806104C00D3261A /* InvoicesAppButton.swift in Sources */,
+				207D5B1E2825080D00993856 /* DeAuthentificationRequest.swift in Sources */,
 				A11EC956281D73EB001085B6 /* LoginViewModel+Credentials.swift in Sources */,
 				20A4B1E5280B91D700575AFE /* GoogleAuthentificationRequest.swift in Sources */,
 				202610E82806192900D3261A /* BaseViewController.swift in Sources */,
 				204E26832808AD8800DD5862 /* InvoicesAppGridView.swift in Sources */,
+				207D5B2128250B6100993856 /* HomeViewModel.swift in Sources */,
 				202610AB2805FEA200D3261A /* Welcomescreen+Design.swift in Sources */,
 				A16A3F652821A446005287AE /* CreateUserRequest.swift in Sources */,
 				202610BD28060C9F00D3261A /* Welcomescreen+Delegates.swift in Sources */,
@@ -818,6 +835,7 @@
 				20A4B1E3280B85B100575AFE /* InvoicesAppSocialButton.swift in Sources */,
 				2095E2D528117B4200E67E70 /* InvoicesAppTextField.swift in Sources */,
 				209C88CB280C097A00F87565 /* FacebookAuthentificationRequest.swift in Sources */,
+				207D5B182825066F00993856 /* HomeView+UI.swift in Sources */,
 				20E52700280592BD00A00845 /* WelcomeScreenViewController.swift in Sources */,
 				202610B0280600C100D3261A /* BaseScreens.swift in Sources */,
 				203C7F21280CD0D800442847 /* LoginViewModel+Twitter.swift in Sources */,
@@ -831,6 +849,7 @@
 				A11EC961281D7F55001085B6 /* HomeView+Delegates.swift in Sources */,
 				209C88D1280C0B6B00F87565 /* LoginViewModel+Facebook.swift in Sources */,
 				202610B7280604D800D3261A /* WelcomeUIView.swift in Sources */,
+				207D5B1C282507DB00993856 /* IDeAuthentificationRequest.swift in Sources */,
 				20A4B1DF280B777500575AFE /* IAuthentificationRequest.swift in Sources */,
 				202610B22806015200D3261A /* AppDelegate+Screens.swift in Sources */,
 				A155EBDF281487C9006F6FE5 /* InvoicesAppField.swift in Sources */,
@@ -839,6 +858,7 @@
 				202610E0280618B900D3261A /* LoginViewController.swift in Sources */,
 				2083CDA6280AF2AB00AA474B /* LoginView+Design.swift in Sources */,
 				A11EC95F281D7EF2001085B6 /* HomeView+Design.swift in Sources */,
+				207D5B1A2825069500993856 /* HomeView+Interactions.swift in Sources */,
 				A1A0824D2824582400DC674F /* InvoicesAppSmallButton.swift in Sources */,
 				A1A0824B2824544F00DC674F /* InvoicesAppHeader.swift in Sources */,
 				20BC18A22804A766005551FF /* AppDelegate.swift in Sources */,

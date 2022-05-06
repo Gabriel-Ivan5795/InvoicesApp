@@ -13,7 +13,6 @@ import LoadingDialog
 extension LoginViewController {
     
     func setupBinders() {
-    
         self.loginViewModel.loginResult.bind { [weak self] result in
             if let resultToken = result {
                 if (resultToken.isValid() == true) {

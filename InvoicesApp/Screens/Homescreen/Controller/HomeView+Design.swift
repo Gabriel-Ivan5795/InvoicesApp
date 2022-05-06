@@ -31,11 +31,11 @@ extension HomeViewController: BaseInterface {
     }
     
     func setupStylingViews() {
-        
+        self.homeUIView.setupBackgroundColor(_color: UIColor.init(named: "PrimaryColor")!)
     }
     
     func setupButtonsMethods() {
-        
+        self.homeUIView.addActionToLogoutButton(_viewController: self, btnLogout_onClick: #selector(btnLogout_onClick))
     }
     
     func setupStrings() {

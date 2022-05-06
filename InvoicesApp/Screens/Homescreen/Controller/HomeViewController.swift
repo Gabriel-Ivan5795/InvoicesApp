@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: BaseViewController {
 
     var homeUIView = HomeUIView()
+    var homeViewModel = HomeViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,5 +21,6 @@ class HomeViewController: BaseViewController {
         self.setupStylingViews()
         self.setupButtonsMethods()
         self.setupStrings()
+        self.setupBinders()
     }
 }

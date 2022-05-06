@@ -64,4 +64,12 @@ class InvoicesAppHeader: UIView {
         self.btnLeft.backgroundColor = .systemBlue
         self.btnRight.backgroundColor = .systemRed
     }
+    
+    func getButtonLeft() -> InvoicesAppSmallButton {
+        return self.btnLeft
+    }
+    
+    func getButtonRight() -> InvoicesAppSmallButton {
+        return self.btnRight
+    }
 }

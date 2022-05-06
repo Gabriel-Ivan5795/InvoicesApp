@@ -44,6 +44,11 @@ open class SafeHelper: NSObject {
                                               withAccessibility: .always)
     }
     
+    open class func deleteToken(_accessTokenKey: String) {
+        KeychainWrapper.standard.removeObject(forKey: _accessTokenKey,
+                                              withAccessibility: .alwaysThisDeviceOnly)
+    }
+    
     open class func deleteFirebaseToken(_firebaseTokenKey: String) {
         KeychainWrapper.standard.removeObject(forKey: _firebaseTokenKey,
                                               withAccessibility: .always)
