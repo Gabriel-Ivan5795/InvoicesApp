@@ -46,7 +46,7 @@ class InvoicesAppHeader: UIView {
         self.lblTitleHeader.anchor(top: self.topAnchor,
                                    left: self.btnLeft.rightAnchor,
                                    right: self.btnRight.leftAnchor,
-                                   topConstant: self.getTopPadding() + 10,
+                                   topConstant: self.getTopPadding() + 16,
                                    leftConstant: 8,
                                    rightConstant: 8,
                                    heightConstant: 21)
@@ -55,14 +55,13 @@ class InvoicesAppHeader: UIView {
     func setupStylingViews() {
         self.lblTitleHeader.font = UIFont.init(name: "Roboto-Bold", size: 18)
         self.lblTitleHeader.textColor = .white
-        self.lblTitleHeader.text = "Home"
         self.lblTitleHeader.textAlignment = .center
         
-        self.btnLeft.getImageView().backgroundColor = .red
-        self.btnRight.getImageView().backgroundColor = .blue
-        
-        self.btnLeft.backgroundColor = .systemBlue
-        self.btnRight.backgroundColor = .systemRed
+//        self.btnLeft.getImageView().backgroundColor = .red
+//        self.btnRight.getImageView().backgroundColor = .blue
+//
+//        self.btnLeft.backgroundColor = .systemBlue
+//        self.btnRight.backgroundColor = .systemRed
     }
     
     func getButtonLeft() -> InvoicesAppSmallButton {
@@ -71,5 +70,25 @@ class InvoicesAppHeader: UIView {
     
     func getButtonRight() -> InvoicesAppSmallButton {
         return self.btnRight
+    }
+    
+    func setupTitleHeader(_titleString: String) {
+        self.lblTitleHeader.text = _titleString
+    }
+    
+    func hideRightButton() {
+        self.btnRight.isHidden = true
+    }
+    
+    func hideLeftButton() {
+        self.btnLeft.isHidden = true
+    }
+    
+    func unHideRightButton() {
+        self.btnRight.isHidden = false
+    }
+    
+    func unHideLeftButton() {
+        self.btnLeft.isHidden = false
     }
 }

@@ -1,17 +1,16 @@
 //
-//  HomeViewController.swift
+//  AddInvoicesViewController.swift
 //  InvoicesApp
 //
-//  Created by Gabriel Ivan on 30.04.2022.
+//  Created by Gabriel Ivan on 09.05.2022.
 //
 
 import UIKit
 
-class HomeViewController: BaseViewController {
+class AddInvoicesViewController: BaseViewController {
 
-    var homeUIView = HomeUIView()
-    var homeViewModel = HomeViewModel()
-    	
+    var addInvoicesUIView = AddInvoicesUIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +20,5 @@ class HomeViewController: BaseViewController {
         self.setupStylingViews()
         self.setupButtonsMethods()
         self.setupStrings()
-        self.setupBinders()
     }
 }

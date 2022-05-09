@@ -38,4 +38,8 @@ class InvoicesAppSmallButton: UIButton {
     func getImageView() -> UIImageView {
         return self.imgButton
     }
+    
+    func setupImageView(_imageName: String) {
+        self.imgButton.image = UIImage.init(named: _imageName)
+    }
 }

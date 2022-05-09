@@ -12,6 +12,7 @@ def common_pods
    pod 'SVProgressHUD'
    pod 'SwiftKeychainWrapper', '~> 3.4'
    pod 'AES256Swift'
+   pod 'MaterialComponents/Buttons'
 
 end
 

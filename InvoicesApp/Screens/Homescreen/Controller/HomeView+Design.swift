@@ -31,14 +31,15 @@ extension HomeViewController: BaseInterface {
     }
     
     func setupStylingViews() {
-        self.homeUIView.setupBackgroundColor(_color: UIColor.init(named: "PrimaryColor")!)
+        self.homeUIView.setupBackgroundColors(_color: UIColor.init(named: "PrimaryColor")!)
     }
     
     func setupButtonsMethods() {
+        self.homeUIView.addActionToCreateFabButton(_viewController: self, btnCreateInvoice_onClick: #selector(btnCreateInvoice_onClick))
         self.homeUIView.addActionToLogoutButton(_viewController: self, btnLogout_onClick: #selector(btnLogout_onClick))
     }
     
     func setupStrings() {
-        
+        self.homeUIView.getHeaderView().setupTitleHeader(_titleString: "Home")
     }
 }

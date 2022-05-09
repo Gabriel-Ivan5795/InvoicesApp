@@ -20,4 +20,8 @@ extension AppDelegate: BaseScreens {
     @objc func getHomeScreenViewController() -> HomeViewController {
         return HomeViewController()
     }
+    
+    @objc func getAddInvoicesScreenViewController() -> AddInvoicesViewController {
+        return AddInvoicesViewController()
+    }
 }

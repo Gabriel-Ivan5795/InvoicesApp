@@ -81,6 +81,12 @@
 		A16A3F652821A446005287AE /* CreateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16A3F642821A446005287AE /* CreateUserRequest.swift */; };
 		A16A3FB12821A96F005287AE /* InvoicesAppConstants.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16A3FB02821A96F005287AE /* InvoicesAppConstants.framework */; };
 		A16A3FB22821A96F005287AE /* InvoicesAppConstants.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A16A3FB02821A96F005287AE /* InvoicesAppConstants.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A17319E62829A2020056D869 /* AddInvoicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17319E52829A2020056D869 /* AddInvoicesViewController.swift */; };
+		A17319E82829A2270056D869 /* AddInvoicesView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17319E72829A2270056D869 /* AddInvoicesView+Design.swift */; };
+		A17319EA2829A25E0056D869 /* AddInvoicesView+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17319E92829A25E0056D869 /* AddInvoicesView+Delegates.swift */; };
+		A17319EC2829A2690056D869 /* AddInvoicesView+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17319EB2829A2690056D869 /* AddInvoicesView+UI.swift */; };
+		A17319EE2829A2760056D869 /* AddInvoicesView+Interactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17319ED2829A2760056D869 /* AddInvoicesView+Interactions.swift */; };
+		A17319F02829A3110056D869 /* AddInvoicesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17319EF2829A3100056D869 /* AddInvoicesUIView.swift */; };
 		A1A0824B2824544F00DC674F /* InvoicesAppHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0824A2824544F00DC674F /* InvoicesAppHeader.swift */; };
 		A1A0824D2824582400DC674F /* InvoicesAppSmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0824C2824582400DC674F /* InvoicesAppSmallButton.swift */; };
 /* End PBXBuildFile section */
@@ -197,6 +203,12 @@
 		A15D6E0B280F5C2D00C113E7 /* Pods_InvoicesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_InvoicesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16A3F642821A446005287AE /* CreateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRequest.swift; sourceTree = "<group>"; };
 		A16A3FB02821A96F005287AE /* InvoicesAppConstants.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InvoicesAppConstants.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17319E52829A2020056D869 /* AddInvoicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInvoicesViewController.swift; sourceTree = "<group>"; };
+		A17319E72829A2270056D869 /* AddInvoicesView+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddInvoicesView+Design.swift"; sourceTree = "<group>"; };
+		A17319E92829A25E0056D869 /* AddInvoicesView+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddInvoicesView+Delegates.swift"; sourceTree = "<group>"; };
+		A17319EB2829A2690056D869 /* AddInvoicesView+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddInvoicesView+UI.swift"; sourceTree = "<group>"; };
+		A17319ED2829A2760056D869 /* AddInvoicesView+Interactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddInvoicesView+Interactions.swift"; sourceTree = "<group>"; };
+		A17319EF2829A3100056D869 /* AddInvoicesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInvoicesUIView.swift; sourceTree = "<group>"; };
 		A1A0824A2824544F00DC674F /* InvoicesAppHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppHeader.swift; sourceTree = "<group>"; };
 		A1A0824C2824582400DC674F /* InvoicesAppSmallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppSmallButton.swift; sourceTree = "<group>"; };
 		B6AB92C669AC2206F3AEB114 /* Pods-InvoicesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp.release.xcconfig"; path = "Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -469,6 +481,7 @@
 			isa = PBXGroup;
 			children = (
 				202610BE2806102E00D3261A /* Basescreen */,
+				A17319E02829A1CA0056D869 /* AddInvoicescreen */,
 				A11EC957281D7E8C001085B6 /* Homescreen */,
 				202610DD2806189D00D3261A /* LoginScreen */,
 				20E526FD280590B900A00845 /* Welcomescreen */,
@@ -571,6 +584,51 @@
 				A16A3F642821A446005287AE /* CreateUserRequest.swift */,
 			);
 			path = "CreateUser Request";
+			sourceTree = "<group>";
+		};
+		A17319E02829A1CA0056D869 /* AddInvoicescreen */ = {
+			isa = PBXGroup;
+			children = (
+				A17319E42829A1F10056D869 /* Model */,
+				A17319E32829A1EC0056D869 /* View */,
+				A17319E22829A1E20056D869 /* ViewModel */,
+				A17319E12829A1DA0056D869 /* Controller */,
+			);
+			path = AddInvoicescreen;
+			sourceTree = "<group>";
+		};
+		A17319E12829A1DA0056D869 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A17319E52829A2020056D869 /* AddInvoicesViewController.swift */,
+				A17319E72829A2270056D869 /* AddInvoicesView+Design.swift */,
+				A17319E92829A25E0056D869 /* AddInvoicesView+Delegates.swift */,
+				A17319EB2829A2690056D869 /* AddInvoicesView+UI.swift */,
+				A17319ED2829A2760056D869 /* AddInvoicesView+Interactions.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A17319E22829A1E20056D869 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A17319E32829A1EC0056D869 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A17319EF2829A3100056D869 /* AddInvoicesUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A17319E42829A1F10056D869 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DF07A54E5FA017A2F855EE09 /* Pods */ = {
@@ -811,12 +869,17 @@
 			files = (
 				209C88CD280C0A7800F87565 /* LoginViewModel+Apple.swift in Sources */,
 				2083CDA8280AF2FA00AA474B /* LoginView+Delegates.swift in Sources */,
+				A17319EC2829A2690056D869 /* AddInvoicesView+UI.swift in Sources */,
 				204E26852808AF0700DD5862 /* InvoicesAppCollectionViewCell.swift in Sources */,
 				20E6F463280966C900B7D5DF /* WelcomeViewModel.swift in Sources */,
+				A17319E62829A2020056D869 /* AddInvoicesViewController.swift in Sources */,
+				A17319F02829A3110056D869 /* AddInvoicesUIView.swift in Sources */,
 				202610B42806033300D3261A /* AppConfig.swift in Sources */,
 				A11EC95D281D7ED4001085B6 /* HomeViewController.swift in Sources */,
+				A17319EA2829A25E0056D869 /* AddInvoicesView+Delegates.swift in Sources */,
 				202610E5280618D800D3261A /* LoginModel.swift in Sources */,
 				202610DC2806187C00D3261A /* Welcomescreen+UIInteractions.swift in Sources */,
+				A17319EE2829A2760056D869 /* AddInvoicesView+Interactions.swift in Sources */,
 				2083CDAB280AF32500AA474B /* LoginUIView.swift in Sources */,
 				20BC18DA2804B6AF005551FF /* FirebaseConfig.swift in Sources */,
 				202610C12806104C00D3261A /* InvoicesAppButton.swift in Sources */,
@@ -843,6 +906,7 @@
 				203C7F23280CD21E00442847 /* TwitterAuthentificationRequest.swift in Sources */,
 				2008E89C28118B1F0036837D /* PasswordAuthentificationRequest.swift in Sources */,
 				20A4B1E1280B77B400575AFE /* AppleAuthentificationRequest.swift in Sources */,
+				A17319E82829A2270056D869 /* AddInvoicesView+Design.swift in Sources */,
 				20E6F4652809685300B7D5DF /* Welcomescreen+UI.swift in Sources */,
 				202610AE2805FEE700D3261A /* BaseInterface.swift in Sources */,
 				A11EC963281D7FA5001085B6 /* HomeUIView.swift in Sources */,
