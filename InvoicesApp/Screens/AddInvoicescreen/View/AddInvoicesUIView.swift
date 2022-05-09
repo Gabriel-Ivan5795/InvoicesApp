@@ -10,6 +10,7 @@ import UIKit
 class AddInvoicesUIView: UIView {
 
     private var invoicesAppHeader = InvoicesAppHeader()
+    private var scannedImageView = UIImageView()
     
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
@@ -23,6 +24,7 @@ class AddInvoicesUIView: UIView {
     
     func setupViews() {
         self.addSubview(self.invoicesAppHeader)
+        self.addSubview(self.scannedImageView)
     }
     
     func setupConstraints() {
@@ -33,6 +35,14 @@ class AddInvoicesUIView: UIView {
                                       leftConstant: 0,
                                       rightConstant: 0,
                                       heightConstant: 60 + self.getTopPadding())
+        self.scannedImageView.anchor(top: self.invoicesAppHeader.bottomAnchor,
+                                     left: self.leftAnchor,
+                                     bottom: self.bottomAnchor,
+                                     right: self.rightAnchor,
+                                     topConstant: 20,
+                                     leftConstant: 20,
+                                     bottomConstant: 20,
+                                     rightConstant: 20)
     }
     
     func setupBackgroundColors(_color: UIColor) {
@@ -41,5 +51,9 @@ class AddInvoicesUIView: UIView {
     
     func getHeaderView() -> InvoicesAppHeader {
         return self.invoicesAppHeader
+    }
+    
+    func getScannedImageView() -> UIImageView {
+        return self.scannedImageView
     }
 }
