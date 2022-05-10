@@ -59,11 +59,19 @@ class InvoicesAppField: UIView {
     }
     
     func showLabelPlaceholder() {
-        self.lblTitlePlaceholder.isHidden = false
+        if (self.lblTitlePlaceholder.isHidden == true) {
+            UIView.transition(with: self.lblTitlePlaceholder, duration: 1.0, options: .transitionFlipFromBottom, animations: {
+                self.lblTitlePlaceholder.isHidden = false
+            })
+        }
     }
     
     func hideLabelPlaceholder() {
-        self.lblTitlePlaceholder.isHidden = true
+        if (self.lblTitlePlaceholder.isHidden == false) {
+            UIView.transition(with: self.lblTitlePlaceholder, duration: 1.0, options: .transitionCrossDissolve, animations: {
+                self.lblTitlePlaceholder.isHidden = true
+            })
+        }
     }
     
     func addCornerRadius(_corners: CGFloat?) {

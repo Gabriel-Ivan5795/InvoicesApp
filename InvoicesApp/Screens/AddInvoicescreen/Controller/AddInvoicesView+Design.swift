@@ -35,13 +35,21 @@ extension AddInvoicesViewController: BaseInterface {
         
         self.addInvoicesUIView.getHeaderView().hideRightButton()
         self.addInvoicesUIView.getHeaderView().getButtonLeft().setupImageView(_imageName: "ImgBack")
+        
+        self.addInvoicesUIView.getTitleField().getInvoicesAppTextField().getField().delegate = self
+        self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().getField().delegate = self
     }
     
     func setupButtonsMethods() {
-        
+        self.addInvoicesUIView.getTitleField().getInvoicesAppTextField().getField().addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().getField().addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     
     func setupStrings() {
         self.addInvoicesUIView.getHeaderView().setupTitleHeader(_titleString: "Add Invoice")
+        self.addInvoicesUIView.getTitleField().getInvoicesAppTextField().setPlaceholder(_string: "Title Invoice")
+        self.addInvoicesUIView.getTitleField().setPlaceholderTitle(_string: "Title Invoice")
+        self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().setPlaceholder(_string: "Description")
+        self.addInvoicesUIView.getDescriptionField().setPlaceholderTitle(_string: "Description")
     }
 }
