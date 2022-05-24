@@ -34,6 +34,7 @@ class AddInvoicesUIView: UIView {
         self.addSubview(self.contentView)
         self.contentView.addSubview(self.invoicesAppTitleField)
         self.contentView.addSubview(self.invoicesAppDescriptionField)
+        self.contentView.addSubview(self.invoicesAppScanDocumentButton)
         self.contentView.addSubview(self.scannedImageView)
     }
     
@@ -76,7 +77,14 @@ class AddInvoicesUIView: UIView {
                                                 leftConstant: 20,
                                                 rightConstant: 20,
                                                 heightConstant: 86)
-        self.scannedImageView.anchor(top: self.invoicesAppDescriptionField.bottomAnchor,
+        self.invoicesAppScanDocumentButton.anchor(top: self.invoicesAppDescriptionField.bottomAnchor,
+                                                  left: self.contentView.leftAnchor,
+                                                  right: self.contentView.rightAnchor,
+                                                  topConstant: 20,
+                                                  leftConstant: 25,
+                                                  rightConstant: 25,
+                                                  heightConstant: 60)
+        self.scannedImageView.anchor(top: self.invoicesAppScanDocumentButton.bottomAnchor,
                                      left: self.contentView.leftAnchor,
                                      bottom: self.contentView.bottomAnchor,
                                      right: self.contentView.rightAnchor,
@@ -92,13 +100,20 @@ class AddInvoicesUIView: UIView {
         
         self.invoicesAppDescriptionField.backgroundColor = .white
         self.invoicesAppDescriptionField.getInvoicesAppTextField().getField().autocapitalizationType = .sentences
+        
+        self.invoicesAppScanDocumentButton.layer.cornerRadius = 20
     }
     
-    func setupBackgroundColors(_color: UIColor) {
+    func setupBackgroundColors(_color: UIColor, _buttonColor: UIColor) {
         self.invoicesAppHeader.backgroundColor = _color
+        self.invoicesAppScanDocumentButton.backgroundColor = _buttonColor
     }
     
     func setupUIColorsAndFonts(_mainFont: UIFont) {
+    }
+    
+    func addActionToScanningButton(_viewController: BaseViewController, btnScanDocument_onClick: Selector) {
+        self.invoicesAppScanDocumentButton.addTarget(_viewController, action: btnScanDocument_onClick, for: .touchUpInside)
     }
     
     func getHeaderView() -> InvoicesAppHeader {
@@ -115,5 +130,9 @@ class AddInvoicesUIView: UIView {
     
     func getDescriptionField() -> InvoicesAppField {
         return self.invoicesAppDescriptionField
+    }
+    
+    func getScanningButton() -> InvoicesAppButton {
+        return self.invoicesAppScanDocumentButton
     }
 }

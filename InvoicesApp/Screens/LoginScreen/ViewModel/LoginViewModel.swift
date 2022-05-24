@@ -7,7 +7,6 @@
 
 import UIKit
 import InvoicesHelpers
-import Firebase
 import AuthenticationServices
 import GoogleSignIn
 import FBSDKLoginKit

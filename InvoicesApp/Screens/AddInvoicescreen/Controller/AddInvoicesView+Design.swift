@@ -31,7 +31,7 @@ extension AddInvoicesViewController: BaseInterface {
     
     func setupStylingViews() {
         self.view.backgroundColor = .white
-        self.addInvoicesUIView.setupBackgroundColors(_color: UIColor.init(named: "PrimaryColor")!)
+        self.addInvoicesUIView.setupBackgroundColors(_color: UIColor.init(named: "PrimaryColor")!, _buttonColor: UIColor.init(named: "PrimaryColor")!)
         
         self.addInvoicesUIView.getHeaderView().hideRightButton()
         self.addInvoicesUIView.getHeaderView().getButtonLeft().setupImageView(_imageName: "ImgBack")
@@ -43,6 +43,7 @@ extension AddInvoicesViewController: BaseInterface {
     func setupButtonsMethods() {
         self.addInvoicesUIView.getTitleField().getInvoicesAppTextField().getField().addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().getField().addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        self.addInvoicesUIView.addActionToScanningButton(_viewController: self, btnScanDocument_onClick: #selector(btnScanDocument_onClick))
     }
     
     func setupStrings() {
@@ -51,5 +52,6 @@ extension AddInvoicesViewController: BaseInterface {
         self.addInvoicesUIView.getTitleField().setPlaceholderTitle(_string: "Title Invoice")
         self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().setPlaceholder(_string: "Description")
         self.addInvoicesUIView.getDescriptionField().setPlaceholderTitle(_string: "Description")
+        self.addInvoicesUIView.getScanningButton().setTitle("Scan document", for: .normal)
     }
 }
