@@ -19,6 +19,11 @@ class FirebaseConfig: NSObject {
         Crashlytics.initialize()
     }
     
+    class func getDatabaseInstance() -> Firestore {
+        let db = Firestore.firestore()
+        return db
+    }
+    
     class func processTestCrash() {
         let arrayForTest = NSMutableArray()
         #if DEBUG

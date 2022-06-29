@@ -41,6 +41,7 @@ extension AddInvoicesViewController: BaseInterface {
     }
     
     func setupButtonsMethods() {
+        self.addInvoicesUIView.getHeaderView().getButtonLeft().addTarget(self, action: #selector(btnBack_onClick), for: .touchUpInside)
         self.addInvoicesUIView.getTitleField().getInvoicesAppTextField().getField().addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().getField().addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         self.addInvoicesUIView.addActionToScanningButton(_viewController: self, btnScanDocument_onClick: #selector(btnScanDocument_onClick))
@@ -52,6 +53,6 @@ extension AddInvoicesViewController: BaseInterface {
         self.addInvoicesUIView.getTitleField().setPlaceholderTitle(_string: "Title Invoice")
         self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().setPlaceholder(_string: "Description")
         self.addInvoicesUIView.getDescriptionField().setPlaceholderTitle(_string: "Description")
-        self.addInvoicesUIView.getScanningButton().setTitle("Scan document", for: .normal)
+        self.addInvoicesUIView.getSaveDocumentButton().setTitle("Save document", for: .normal)
     }
 }

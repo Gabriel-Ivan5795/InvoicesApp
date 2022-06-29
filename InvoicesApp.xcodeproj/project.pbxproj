@@ -89,6 +89,11 @@
 		A17319F02829A3110056D869 /* AddInvoicesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17319EF2829A3100056D869 /* AddInvoicesUIView.swift */; };
 		A1A0824B2824544F00DC674F /* InvoicesAppHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0824A2824544F00DC674F /* InvoicesAppHeader.swift */; };
 		A1A0824D2824582400DC674F /* InvoicesAppSmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0824C2824582400DC674F /* InvoicesAppSmallButton.swift */; };
+		A1B5F43D286CE2F100DA904B /* IAddInvoiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5F43C286CE2F100DA904B /* IAddInvoiceRequest.swift */; };
+		A1B5F43F286CE32D00DA904B /* AddInvoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5F43E286CE32D00DA904B /* AddInvoiceModel.swift */; };
+		A1B5F441286CE45F00DA904B /* AddInvoiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5F440286CE45F00DA904B /* AddInvoiceRequest.swift */; };
+		A1B5F445286CEA6300DA904B /* AddInvoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5F444286CEA6300DA904B /* AddInvoiceViewModel.swift */; };
+		A1B5F447286CF74F00DA904B /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5F446286CF74F00DA904B /* LoginResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +216,11 @@
 		A17319EF2829A3100056D869 /* AddInvoicesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInvoicesUIView.swift; sourceTree = "<group>"; };
 		A1A0824A2824544F00DC674F /* InvoicesAppHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppHeader.swift; sourceTree = "<group>"; };
 		A1A0824C2824582400DC674F /* InvoicesAppSmallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppSmallButton.swift; sourceTree = "<group>"; };
+		A1B5F43C286CE2F100DA904B /* IAddInvoiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAddInvoiceRequest.swift; sourceTree = "<group>"; };
+		A1B5F43E286CE32D00DA904B /* AddInvoiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInvoiceModel.swift; sourceTree = "<group>"; };
+		A1B5F440286CE45F00DA904B /* AddInvoiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInvoiceRequest.swift; sourceTree = "<group>"; };
+		A1B5F444286CEA6300DA904B /* AddInvoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInvoiceViewModel.swift; sourceTree = "<group>"; };
+		A1B5F446286CF74F00DA904B /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
 		B6AB92C669AC2206F3AEB114 /* Pods-InvoicesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesApp.release.xcconfig"; path = "Target Support Files/Pods-InvoicesApp/Pods-InvoicesApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -343,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				202610E4280618D700D3261A /* LoginModel.swift */,
+				A1B5F446286CF74F00DA904B /* LoginResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -382,6 +393,7 @@
 		20A4B1DC280B774E00575AFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1B5F43B286CE28A00DA904B /* Add Invoice Request */,
 				A16A3F632821A428005287AE /* CreateUser Request */,
 				20A4B1DD280B775900575AFE /* Authentification Request */,
 			);
@@ -612,6 +624,7 @@
 		A17319E22829A1E20056D869 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A1B5F444286CEA6300DA904B /* AddInvoiceViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -627,8 +640,18 @@
 		A17319E42829A1F10056D869 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A1B5F43E286CE32D00DA904B /* AddInvoiceModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A1B5F43B286CE28A00DA904B /* Add Invoice Request */ = {
+			isa = PBXGroup;
+			children = (
+				A1B5F43C286CE2F100DA904B /* IAddInvoiceRequest.swift */,
+				A1B5F440286CE45F00DA904B /* AddInvoiceRequest.swift */,
+			);
+			path = "Add Invoice Request";
 			sourceTree = "<group>";
 		};
 		DF07A54E5FA017A2F855EE09 /* Pods */ = {
@@ -902,12 +925,16 @@
 				20E52700280592BD00A00845 /* WelcomeScreenViewController.swift in Sources */,
 				202610B0280600C100D3261A /* BaseScreens.swift in Sources */,
 				203C7F21280CD0D800442847 /* LoginViewModel+Twitter.swift in Sources */,
+				A1B5F43D286CE2F100DA904B /* IAddInvoiceRequest.swift in Sources */,
 				204E26872808B24F00DD5862 /* WelcomePageItemCell.swift in Sources */,
+				A1B5F43F286CE32D00DA904B /* AddInvoiceModel.swift in Sources */,
 				203C7F23280CD21E00442847 /* TwitterAuthentificationRequest.swift in Sources */,
 				2008E89C28118B1F0036837D /* PasswordAuthentificationRequest.swift in Sources */,
 				20A4B1E1280B77B400575AFE /* AppleAuthentificationRequest.swift in Sources */,
 				A17319E82829A2270056D869 /* AddInvoicesView+Design.swift in Sources */,
+				A1B5F445286CEA6300DA904B /* AddInvoiceViewModel.swift in Sources */,
 				20E6F4652809685300B7D5DF /* Welcomescreen+UI.swift in Sources */,
+				A1B5F447286CF74F00DA904B /* LoginResponseModel.swift in Sources */,
 				202610AE2805FEE700D3261A /* BaseInterface.swift in Sources */,
 				A11EC963281D7FA5001085B6 /* HomeUIView.swift in Sources */,
 				A11EC961281D7F55001085B6 /* HomeView+Delegates.swift in Sources */,
@@ -918,6 +945,7 @@
 				202610B22806015200D3261A /* AppDelegate+Screens.swift in Sources */,
 				A155EBDF281487C9006F6FE5 /* InvoicesAppField.swift in Sources */,
 				209C88CF280C0B2B00F87565 /* LoginViewModel+Google.swift in Sources */,
+				A1B5F441286CE45F00DA904B /* AddInvoiceRequest.swift in Sources */,
 				204E268A2808B32400DD5862 /* WelcomeModel.swift in Sources */,
 				202610E0280618B900D3261A /* LoginViewController.swift in Sources */,
 				2083CDA6280AF2AB00AA474B /* LoginView+Design.swift in Sources */,

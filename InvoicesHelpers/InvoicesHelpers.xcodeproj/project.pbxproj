@@ -44,6 +44,7 @@
 		202610A92805F61E00D3261A /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202610872805F61E00D3261A /* DateHelper.swift */; };
 		204E26802808A79C00DD5862 /* GradientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E267F2808A79C00DD5862 /* GradientHelper.swift */; };
 		A11EC954281D721A001085B6 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11EC953281D721A001085B6 /* PaddingLabel.swift */; };
+		A1B5F443286CE92000DA904B /* EncodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5F442286CE92000DA904B /* EncodableHelper.swift */; };
 		C1EF92ED2C46ECB25B3197EC /* Pods_InvoicesHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFBE806CFE7928AC2586BD23 /* Pods_InvoicesHelpers.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		20A528992808C67A0061A712 /* Pods_InvoicesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_InvoicesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C9FF3A7905A16C1317EEBC /* Pods-InvoicesHelpers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvoicesHelpers.release.xcconfig"; path = "Target Support Files/Pods-InvoicesHelpers/Pods-InvoicesHelpers.release.xcconfig"; sourceTree = "<group>"; };
 		A11EC953281D721A001085B6 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		A1B5F442286CE92000DA904B /* EncodableHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableHelper.swift; sourceTree = "<group>"; };
 		EFBE806CFE7928AC2586BD23 /* Pods_InvoicesHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvoicesHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -329,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				202610762805F61D00D3261A /* APIEncodable.swift */,
+				A1B5F442286CE92000DA904B /* EncodableHelper.swift */,
 			);
 			path = "Encodable Helper";
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				202610A12805F61E00D3261A /* NetworkManager.swift in Sources */,
 				202610A82805F61E00D3261A /* DateExtension.swift in Sources */,
 				202610082805F50B00D3261A /* InvoicesHelper.docc in Sources */,
+				A1B5F443286CE92000DA904B /* EncodableHelper.swift in Sources */,
 				2026109D2805F61E00D3261A /* StatusRequest.swift in Sources */,
 				202610A32805F61E00D3261A /* APIRequest.swift in Sources */,
 				202610A92805F61E00D3261A /* DateHelper.swift in Sources */,

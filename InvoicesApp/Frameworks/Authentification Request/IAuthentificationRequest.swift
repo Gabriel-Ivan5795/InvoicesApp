@@ -9,5 +9,5 @@ import Foundation
 
 protocol IAuthentificationRequest {
     
-    func loginUserOnFirebase(_loginModel: LoginModel?, _authSuccess: @escaping(String) -> Void, _authError: @escaping(String) -> Void)
+    func loginUserOnFirebase(_loginModel: LoginModel?, _authSuccess: @escaping(LoginResponseModel) -> Void, _authError: @escaping(String) -> Void)
 }

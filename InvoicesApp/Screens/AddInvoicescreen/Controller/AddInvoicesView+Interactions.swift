@@ -6,17 +6,32 @@
 //
 
 import UIKit
-import VisionKit
 
 extension AddInvoicesViewController {
     
+    @objc func btnBack_onClick() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @objc func btnScanDocument_onClick() {
-        if #available(iOS 13.0, *) {
-            let scanner = VNDocumentCameraViewController()
-            scanner.delegate = self
-            self.present(scanner, animated: true)
+        if (self.addInvoicesUIView.getTitleField().getInvoicesAppTextField().getContentField().isValid() == false) {
+            self.showAlert(_errorMessage: "Add Invoice Title")
+            return
+        }
+        
+        if (self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().getContentField().isValid() == false) {
+            self.showAlert(_errorMessage: "Add Invoice Description")
+            return
+        }
+        
+        if (self.addInvoicesUIView.getScannedImageView().image != nil) {
+            let addInvoiceModel = AddInvoiceModel.init(_title: self.addInvoicesUIView.getTitleField().getInvoicesAppTextField().getContentField(),
+                                                       _description: self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().getContentField())
+            self.addInvoiceViewModel.storeInvoice(_addInvoiceModel: addInvoiceModel)
         } else {
-            self.showAlert(_errorMessage: "You cannot scann a document because this function need an iOS software update to version 13 or newer.")
+            let addInvoiceModel = AddInvoiceModel.init(_title: self.addInvoicesUIView.getTitleField().getInvoicesAppTextField().getContentField(),
+                                                       _description: self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().getContentField())
+            self.addInvoiceViewModel.storeInvoice(_addInvoiceModel: addInvoiceModel)
         }
     }
 }

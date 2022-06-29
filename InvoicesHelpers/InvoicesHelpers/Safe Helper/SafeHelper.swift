@@ -27,12 +27,18 @@ open class SafeHelper: NSObject {
     open class func saveToken(_accessToken: String, _accessTokenKey: String) {
         KeychainWrapper.standard.set(_accessToken,
                                      forKey: _accessTokenKey,
-                                     withAccessibility: .alwaysThisDeviceOnly)
+                                     withAccessibility: .always)
     }
     
     open class func saveKeyForDecodingFromFirebase(_keyFromFirebase: String, _keyForSaving: String) {
         KeychainWrapper.standard.set(_keyFromFirebase,
                                      forKey: _keyForSaving,
+                                     withAccessibility: .always)
+    }
+    
+    open class func saveCustomValueForKey(_value: String, _key: String) {
+        KeychainWrapper.standard.set(_value,
+                                     forKey: _key,
                                      withAccessibility: .always)
     }
     
@@ -46,7 +52,7 @@ open class SafeHelper: NSObject {
     
     open class func deleteToken(_accessTokenKey: String) {
         KeychainWrapper.standard.removeObject(forKey: _accessTokenKey,
-                                              withAccessibility: .alwaysThisDeviceOnly)
+                                              withAccessibility: .always)
     }
     
     open class func deleteFirebaseToken(_firebaseTokenKey: String) {
@@ -56,6 +62,11 @@ open class SafeHelper: NSObject {
     
     open class func deleteKeyForDecoding(_keyToDecoding: String) {
         KeychainWrapper.standard.removeObject(forKey: _keyToDecoding,
+                                              withAccessibility: .always)
+    }
+    
+    open class func deleteCustomValueForKey(_key: String) {
+        KeychainWrapper.standard.removeObject(forKey: _key,
                                               withAccessibility: .always)
     }
     
@@ -77,6 +88,11 @@ open class SafeHelper: NSObject {
     
     open class func getKeyForDecoding(_keyToDecoding: String) -> String {
         return KeychainWrapper.standard.string(forKey: _keyToDecoding,
+                                               withAccessibility: .always) ?? ""
+    }
+    
+    open class func getCustomValueForKey(_key: String) -> String {
+        return KeychainWrapper.standard.string(forKey: _key,
                                                withAccessibility: .always) ?? ""
     }
     

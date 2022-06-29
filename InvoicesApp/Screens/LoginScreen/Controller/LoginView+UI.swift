@@ -14,15 +14,17 @@ extension LoginViewController {
     
     func setupBinders() {
         self.loginViewModel.loginResult.bind { [weak self] result in
-            if let resultToken = result {
-                if (resultToken.isValid() == true) {
-                    SafeHelper.saveToken(_accessToken: resultToken,
+            if let resultResponseModel = result {
+                if (resultResponseModel.token != nil && resultResponseModel.uuid != nil) {
+                    SafeHelper.saveToken(_accessToken: resultResponseModel.token!,
                                          _accessTokenKey: InvoicesAppConstants.keyInvoicesAppFirebaseLoginToken)
+                    SafeHelper.saveCustomValueForKey(_value: resultResponseModel.uuid!,
+                                                     _key: InvoicesAppConstants.keyInvoicesAppFirebaseLoginUUID)
                     UserDefaults.standard.set("yes", forKey: InvoicesAppConstants.isUserLoggedIn)
                     UserDefaults.standard.synchronize()
                     self?.navigationController?.pushViewController((self?.getAppDelegate().getHomeScreenViewController())!, animated: true)
                 } else {
-                    print("login done but an error has occured during login call, the token is invalid")
+                    print("login done but an error has occured during login call, the token is invalid or uuid is invalid")
                 }
             } else {
                 print("waiting for login")

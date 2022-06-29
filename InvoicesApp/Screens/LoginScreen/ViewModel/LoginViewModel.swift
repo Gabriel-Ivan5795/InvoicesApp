@@ -13,7 +13,7 @@ import FBSDKLoginKit
 
 class LoginViewModel {
     
-    var loginResult: ObservableHelper<String?> = ObservableHelper(nil)
+    var loginResult: ObservableHelper<LoginResponseModel?> = ObservableHelper(nil)
     var error: ObservableHelper<String?> = ObservableHelper(nil)
     var isLoadingEnabled: ObservableHelper<Bool> = ObservableHelper(false)
     

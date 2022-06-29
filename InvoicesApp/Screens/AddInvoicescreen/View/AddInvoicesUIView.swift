@@ -14,7 +14,7 @@ class AddInvoicesUIView: UIView {
     private var contentView = UIView()
     private var invoicesAppTitleField = InvoicesAppField()
     private var invoicesAppDescriptionField = InvoicesAppField()
-    private var invoicesAppScanDocumentButton = InvoicesAppButton()
+    private var invoicesAppAddDocumentButton = InvoicesAppButton()
     private var scannedImageView = UIImageView()
     
     override func didMoveToSuperview() {
@@ -34,7 +34,7 @@ class AddInvoicesUIView: UIView {
         self.addSubview(self.contentView)
         self.contentView.addSubview(self.invoicesAppTitleField)
         self.contentView.addSubview(self.invoicesAppDescriptionField)
-        self.contentView.addSubview(self.invoicesAppScanDocumentButton)
+        self.contentView.addSubview(self.invoicesAppAddDocumentButton)
         self.contentView.addSubview(self.scannedImageView)
     }
     
@@ -77,14 +77,14 @@ class AddInvoicesUIView: UIView {
                                                 leftConstant: 20,
                                                 rightConstant: 20,
                                                 heightConstant: 86)
-        self.invoicesAppScanDocumentButton.anchor(top: self.invoicesAppDescriptionField.bottomAnchor,
+        self.invoicesAppAddDocumentButton.anchor(top: self.invoicesAppDescriptionField.bottomAnchor,
                                                   left: self.contentView.leftAnchor,
                                                   right: self.contentView.rightAnchor,
                                                   topConstant: 20,
                                                   leftConstant: 25,
                                                   rightConstant: 25,
                                                   heightConstant: 60)
-        self.scannedImageView.anchor(top: self.invoicesAppScanDocumentButton.bottomAnchor,
+        self.scannedImageView.anchor(top: self.invoicesAppAddDocumentButton.bottomAnchor,
                                      left: self.contentView.leftAnchor,
                                      bottom: self.contentView.bottomAnchor,
                                      right: self.contentView.rightAnchor,
@@ -101,19 +101,19 @@ class AddInvoicesUIView: UIView {
         self.invoicesAppDescriptionField.backgroundColor = .white
         self.invoicesAppDescriptionField.getInvoicesAppTextField().getField().autocapitalizationType = .sentences
         
-        self.invoicesAppScanDocumentButton.layer.cornerRadius = 20
+        self.invoicesAppAddDocumentButton.layer.cornerRadius = 20
     }
     
     func setupBackgroundColors(_color: UIColor, _buttonColor: UIColor) {
         self.invoicesAppHeader.backgroundColor = _color
-        self.invoicesAppScanDocumentButton.backgroundColor = _buttonColor
+        self.invoicesAppAddDocumentButton.backgroundColor = _buttonColor
     }
     
     func setupUIColorsAndFonts(_mainFont: UIFont) {
     }
     
     func addActionToScanningButton(_viewController: BaseViewController, btnScanDocument_onClick: Selector) {
-        self.invoicesAppScanDocumentButton.addTarget(_viewController, action: btnScanDocument_onClick, for: .touchUpInside)
+        self.invoicesAppAddDocumentButton.addTarget(_viewController, action: btnScanDocument_onClick, for: .touchUpInside)
     }
     
     func getHeaderView() -> InvoicesAppHeader {
@@ -132,7 +132,7 @@ class AddInvoicesUIView: UIView {
         return self.invoicesAppDescriptionField
     }
     
-    func getScanningButton() -> InvoicesAppButton {
-        return self.invoicesAppScanDocumentButton
+    func getSaveDocumentButton() -> InvoicesAppButton {
+        return self.invoicesAppAddDocumentButton
     }
 }
