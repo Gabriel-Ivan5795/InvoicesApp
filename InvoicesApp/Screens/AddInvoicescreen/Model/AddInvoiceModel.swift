@@ -6,21 +6,28 @@
 //
 
 import UIKit
+import InvoicesService
 
-class AddInvoiceModel: Encodable {
+class AddInvoiceModel: BaseAddInvoiceModel {
 
-    private var title: String!
-    private var description: String!
-    private var documentPath: String?
+    private var titleInvoice: String!
+    private var descriptionInvoice: String!
+    private var documentPathInvoice: String?
     
-    init(_title: String, _description: String) {
-        self.title = _title
-        self.description = _description
+    init(_titleInvoice: String, _descriptionInvoice: String) {
+        super.init()
+        self.titleInvoice = _titleInvoice
+        self.descriptionInvoice = _descriptionInvoice
     }
     
-    init(_title: String, _description: String, _documentPath: String) {
-        self.title = _title
-        self.description = _description
-        self.documentPath = _documentPath
+    init(_titleInvoice: String, _descriptionInvoice: String, _documentPathInvoice: String) {
+        super.init()
+        self.titleInvoice = _titleInvoice
+        self.descriptionInvoice = _descriptionInvoice
+        self.documentPathInvoice = _documentPathInvoice
+    }
+    
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
     }
 }

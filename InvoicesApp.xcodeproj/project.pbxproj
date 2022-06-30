@@ -40,7 +40,6 @@
 		204E268A2808B32400DD5862 /* WelcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E26892808B32400DD5862 /* WelcomeModel.swift */; };
 		207D5B182825066F00993856 /* HomeView+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D5B172825066F00993856 /* HomeView+UI.swift */; };
 		207D5B1A2825069500993856 /* HomeView+Interactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D5B192825069500993856 /* HomeView+Interactions.swift */; };
-		207D5B1C282507DB00993856 /* IDeAuthentificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D5B1B282507DB00993856 /* IDeAuthentificationRequest.swift */; };
 		207D5B1E2825080D00993856 /* DeAuthentificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D5B1D2825080D00993856 /* DeAuthentificationRequest.swift */; };
 		207D5B2128250B6100993856 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207D5B2028250B6100993856 /* HomeViewModel.swift */; };
 		2083CDA6280AF2AB00AA474B /* LoginView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2083CDA5280AF2AB00AA474B /* LoginView+Design.swift */; };
@@ -54,7 +53,6 @@
 		20A4B1D7280B65BA00575AFE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A4B1D6280B65BA00575AFE /* LoginViewModel.swift */; };
 		20A4B1D9280B680200575AFE /* LoginView+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A4B1D8280B680200575AFE /* LoginView+UI.swift */; };
 		20A4B1DB280B6AAB00575AFE /* LoginView+Interactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A4B1DA280B6AAB00575AFE /* LoginView+Interactions.swift */; };
-		20A4B1DF280B777500575AFE /* IAuthentificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A4B1DE280B777500575AFE /* IAuthentificationRequest.swift */; };
 		20A4B1E1280B77B400575AFE /* AppleAuthentificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A4B1E0280B77B400575AFE /* AppleAuthentificationRequest.swift */; };
 		20A4B1E3280B85B100575AFE /* InvoicesAppSocialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A4B1E2280B85B100575AFE /* InvoicesAppSocialButton.swift */; };
 		20A4B1E5280B91D700575AFE /* GoogleAuthentificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A4B1E4280B91D700575AFE /* GoogleAuthentificationRequest.swift */; };
@@ -68,6 +66,8 @@
 		20BC18C52804A768005551FF /* InvoicesAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18C42804A768005551FF /* InvoicesAppUITestsLaunchTests.swift */; };
 		20BC18D42804B5CC005551FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20BC18D32804B5CC005551FF /* GoogleService-Info.plist */; };
 		20BC18DA2804B6AF005551FF /* FirebaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC18D92804B6AE005551FF /* FirebaseConfig.swift */; };
+		20CFDCEF286D8699008AF0E4 /* InvoicesService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CFDCEE286D8699008AF0E4 /* InvoicesService.framework */; };
+		20CFDCF0286D8699008AF0E4 /* InvoicesService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20CFDCEE286D8699008AF0E4 /* InvoicesService.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		20E52700280592BD00A00845 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E526FF280592BD00A00845 /* WelcomeScreenViewController.swift */; };
 		20E6F463280966C900B7D5DF /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E6F462280966C900B7D5DF /* WelcomeViewModel.swift */; };
 		20E6F4652809685300B7D5DF /* Welcomescreen+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E6F4642809685300B7D5DF /* Welcomescreen+UI.swift */; };
@@ -89,7 +89,6 @@
 		A17319F02829A3110056D869 /* AddInvoicesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17319EF2829A3100056D869 /* AddInvoicesUIView.swift */; };
 		A1A0824B2824544F00DC674F /* InvoicesAppHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0824A2824544F00DC674F /* InvoicesAppHeader.swift */; };
 		A1A0824D2824582400DC674F /* InvoicesAppSmallButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A0824C2824582400DC674F /* InvoicesAppSmallButton.swift */; };
-		A1B5F43D286CE2F100DA904B /* IAddInvoiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5F43C286CE2F100DA904B /* IAddInvoiceRequest.swift */; };
 		A1B5F43F286CE32D00DA904B /* AddInvoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5F43E286CE32D00DA904B /* AddInvoiceModel.swift */; };
 		A1B5F441286CE45F00DA904B /* AddInvoiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5F440286CE45F00DA904B /* AddInvoiceRequest.swift */; };
 		A1B5F445286CEA6300DA904B /* AddInvoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5F444286CEA6300DA904B /* AddInvoiceViewModel.swift */; };
@@ -122,6 +121,7 @@
 			files = (
 				A16A3FB22821A96F005287AE /* InvoicesAppConstants.framework in Embed Frameworks */,
 				20A72410280FD7EB00519C42 /* InvoicesHelpers.framework in Embed Frameworks */,
+				20CFDCF0286D8699008AF0E4 /* InvoicesService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,7 +164,6 @@
 		204E26892808B32400DD5862 /* WelcomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModel.swift; sourceTree = "<group>"; };
 		207D5B172825066F00993856 /* HomeView+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+UI.swift"; sourceTree = "<group>"; };
 		207D5B192825069500993856 /* HomeView+Interactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+Interactions.swift"; sourceTree = "<group>"; };
-		207D5B1B282507DB00993856 /* IDeAuthentificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDeAuthentificationRequest.swift; sourceTree = "<group>"; };
 		207D5B1D2825080D00993856 /* DeAuthentificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeAuthentificationRequest.swift; sourceTree = "<group>"; };
 		207D5B2028250B6100993856 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2083CDA5280AF2AB00AA474B /* LoginView+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginView+Design.swift"; sourceTree = "<group>"; };
@@ -178,7 +177,6 @@
 		20A4B1D6280B65BA00575AFE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		20A4B1D8280B680200575AFE /* LoginView+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginView+UI.swift"; sourceTree = "<group>"; };
 		20A4B1DA280B6AAB00575AFE /* LoginView+Interactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginView+Interactions.swift"; sourceTree = "<group>"; };
-		20A4B1DE280B777500575AFE /* IAuthentificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAuthentificationRequest.swift; sourceTree = "<group>"; };
 		20A4B1E0280B77B400575AFE /* AppleAuthentificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthentificationRequest.swift; sourceTree = "<group>"; };
 		20A4B1E2280B85B100575AFE /* InvoicesAppSocialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppSocialButton.swift; sourceTree = "<group>"; };
 		20A4B1E4280B91D700575AFE /* GoogleAuthentificationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthentificationRequest.swift; sourceTree = "<group>"; };
@@ -195,6 +193,7 @@
 		20BC18D12804A777005551FF /* InvoicesApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InvoicesApp.entitlements; sourceTree = "<group>"; };
 		20BC18D32804B5CC005551FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		20BC18D92804B6AE005551FF /* FirebaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConfig.swift; sourceTree = "<group>"; };
+		20CFDCEE286D8699008AF0E4 /* InvoicesService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InvoicesService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E526FF280592BD00A00845 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
 		20E6F462280966C900B7D5DF /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		20E6F4642809685300B7D5DF /* Welcomescreen+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Welcomescreen+UI.swift"; sourceTree = "<group>"; };
@@ -216,7 +215,6 @@
 		A17319EF2829A3100056D869 /* AddInvoicesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInvoicesUIView.swift; sourceTree = "<group>"; };
 		A1A0824A2824544F00DC674F /* InvoicesAppHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppHeader.swift; sourceTree = "<group>"; };
 		A1A0824C2824582400DC674F /* InvoicesAppSmallButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoicesAppSmallButton.swift; sourceTree = "<group>"; };
-		A1B5F43C286CE2F100DA904B /* IAddInvoiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAddInvoiceRequest.swift; sourceTree = "<group>"; };
 		A1B5F43E286CE32D00DA904B /* AddInvoiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInvoiceModel.swift; sourceTree = "<group>"; };
 		A1B5F440286CE45F00DA904B /* AddInvoiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInvoiceRequest.swift; sourceTree = "<group>"; };
 		A1B5F444286CEA6300DA904B /* AddInvoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInvoiceViewModel.swift; sourceTree = "<group>"; };
@@ -231,6 +229,7 @@
 			files = (
 				A16A3FB12821A96F005287AE /* InvoicesAppConstants.framework in Frameworks */,
 				20A7240F280FD7EB00519C42 /* InvoicesHelpers.framework in Frameworks */,
+				20CFDCEF286D8699008AF0E4 /* InvoicesService.framework in Frameworks */,
 				A15D6E0C280F5C2D00C113E7 /* Pods_InvoicesApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,8 +402,6 @@
 		20A4B1DD280B775900575AFE /* Authentification Request */ = {
 			isa = PBXGroup;
 			children = (
-				20A4B1DE280B777500575AFE /* IAuthentificationRequest.swift */,
-				207D5B1B282507DB00993856 /* IDeAuthentificationRequest.swift */,
 				20A4B1E0280B77B400575AFE /* AppleAuthentificationRequest.swift */,
 				20A4B1E4280B91D700575AFE /* GoogleAuthentificationRequest.swift */,
 				209C88CA280C097A00F87565 /* FacebookAuthentificationRequest.swift */,
@@ -544,6 +541,7 @@
 		2F6985E506809C520A4E5A54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				20CFDCEE286D8699008AF0E4 /* InvoicesService.framework */,
 				A16A3FB02821A96F005287AE /* InvoicesAppConstants.framework */,
 				A15D6E0B280F5C2D00C113E7 /* Pods_InvoicesApp.framework */,
 				202610B82806053300D3261A /* InvoicesHelpers.framework */,
@@ -648,7 +646,6 @@
 		A1B5F43B286CE28A00DA904B /* Add Invoice Request */ = {
 			isa = PBXGroup;
 			children = (
-				A1B5F43C286CE2F100DA904B /* IAddInvoiceRequest.swift */,
 				A1B5F440286CE45F00DA904B /* AddInvoiceRequest.swift */,
 			);
 			path = "Add Invoice Request";
@@ -925,7 +922,6 @@
 				20E52700280592BD00A00845 /* WelcomeScreenViewController.swift in Sources */,
 				202610B0280600C100D3261A /* BaseScreens.swift in Sources */,
 				203C7F21280CD0D800442847 /* LoginViewModel+Twitter.swift in Sources */,
-				A1B5F43D286CE2F100DA904B /* IAddInvoiceRequest.swift in Sources */,
 				204E26872808B24F00DD5862 /* WelcomePageItemCell.swift in Sources */,
 				A1B5F43F286CE32D00DA904B /* AddInvoiceModel.swift in Sources */,
 				203C7F23280CD21E00442847 /* TwitterAuthentificationRequest.swift in Sources */,
@@ -940,8 +936,6 @@
 				A11EC961281D7F55001085B6 /* HomeView+Delegates.swift in Sources */,
 				209C88D1280C0B6B00F87565 /* LoginViewModel+Facebook.swift in Sources */,
 				202610B7280604D800D3261A /* WelcomeUIView.swift in Sources */,
-				207D5B1C282507DB00993856 /* IDeAuthentificationRequest.swift in Sources */,
-				20A4B1DF280B777500575AFE /* IAuthentificationRequest.swift in Sources */,
 				202610B22806015200D3261A /* AppDelegate+Screens.swift in Sources */,
 				A155EBDF281487C9006F6FE5 /* InvoicesAppField.swift in Sources */,
 				209C88CF280C0B2B00F87565 /* LoginViewModel+Google.swift in Sources */,
@@ -1135,6 +1129,8 @@
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InvoicesApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to scan documents or invoices";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
@@ -1173,6 +1169,8 @@
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InvoicesApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your camera to scan documents or invoices";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;

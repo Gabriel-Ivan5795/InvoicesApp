@@ -7,10 +7,11 @@
 
 import UIKit
 import FirebaseAuth
+import InvoicesService
 
 class DeAuthentificationRequest: IDeAuthentificationRequest {
 
-    func logoutUserOnFirebase(_deAuthSuccess: @escaping (Bool) -> Void, _deAuthError: @escaping (String) -> Void) {
+    func logoutUserOnFirebase(_deAuthSuccess: @escaping(Bool) -> Void, _deAuthError: @escaping(String) -> Void) {
         do {
             try Auth.auth().signOut()
             _deAuthSuccess(true)

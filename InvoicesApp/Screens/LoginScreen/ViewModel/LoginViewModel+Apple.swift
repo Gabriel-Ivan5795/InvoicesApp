@@ -19,7 +19,7 @@ extension LoginViewModel {
                 let loginModel = LoginModel.init(_authentificationCredentials: self.prepareAppleSDKResponseToFirebaseAuthRequest(currentNonce: _currentNonce, appleIDCredentials: appleIDCredentials)!)
                 AppleAuthentificationRequest().loginUserOnFirebase(_loginModel: loginModel, _authSuccess: { success in
                     self.isLoadingEnabled.value = false
-                    self.loginResult.value = success
+                    self.loginResult.value = success as? LoginResponseModel
                 }, _authError: { error in
                     self.isLoadingEnabled.value = false
                     self.error.value = error

@@ -7,12 +7,14 @@
 
 import UIKit
 import Firebase
+import InvoicesService
 
 class TwitterAuthentificationRequest: IAuthentificationRequest {
     
-    func loginUserOnFirebase(_loginModel: LoginModel?, _authSuccess: @escaping (LoginResponseModel) -> Void, _authError: @escaping (String) -> Void) {
-        if (_loginModel?.authentificationCredentials != nil) {
-            Auth.auth().signIn(with: (_loginModel?.authentificationCredentials)!, completion: { (authResult, error) in
+    func loginUserOnFirebase(_loginModel: BaseLoginModel?, _authSuccess: @escaping(BaseLoginResponseModel) -> Void, _authError: @escaping(String) -> Void) {
+        let loginModel = _loginModel as? LoginModel
+        if (loginModel?.authentificationCredentials != nil) {
+            Auth.auth().signIn(with: (loginModel?.authentificationCredentials)!, completion: { (authResult, error) in
                 if (error != nil) {
                     _authError(error?.localizedDescription ?? "An error has occured during Twitter Sign in using Firebase")
                 }

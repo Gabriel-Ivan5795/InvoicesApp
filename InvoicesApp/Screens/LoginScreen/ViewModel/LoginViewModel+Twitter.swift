@@ -33,7 +33,7 @@ extension LoginViewModel {
             let loginModel = LoginModel.init(_authentificationCredentials: credentials)
             TwitterAuthentificationRequest().loginUserOnFirebase(_loginModel: loginModel, _authSuccess: { success in
                 self.isLoadingEnabled.value = false
-                self.loginResult.value = success
+                self.loginResult.value = success as? LoginResponseModel
             }, _authError: { error in
                 self.isLoadingEnabled.value = false
                 self.error.value = error

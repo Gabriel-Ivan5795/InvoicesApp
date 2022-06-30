@@ -25,12 +25,12 @@ extension AddInvoicesViewController {
         }
         
         if (self.addInvoicesUIView.getScannedImageView().image != nil) {
-            let addInvoiceModel = AddInvoiceModel.init(_title: self.addInvoicesUIView.getTitleField().getInvoicesAppTextField().getContentField(),
-                                                       _description: self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().getContentField())
+            let addInvoiceModel = AddInvoiceModel.init(_titleInvoice: self.addInvoicesUIView.getTitleField().getInvoicesAppTextField().getContentField(),
+                                                       _descriptionInvoice: self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().getContentField())
             self.addInvoiceViewModel.storeInvoice(_addInvoiceModel: addInvoiceModel)
         } else {
-            let addInvoiceModel = AddInvoiceModel.init(_title: self.addInvoicesUIView.getTitleField().getInvoicesAppTextField().getContentField(),
-                                                       _description: self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().getContentField())
+            let addInvoiceModel = AddInvoiceModel.init(_titleInvoice: self.addInvoicesUIView.getTitleField().getInvoicesAppTextField().getContentField(),
+                                                       _descriptionInvoice: self.addInvoicesUIView.getDescriptionField().getInvoicesAppTextField().getContentField())
             self.addInvoiceViewModel.storeInvoice(_addInvoiceModel: addInvoiceModel)
         }
     }

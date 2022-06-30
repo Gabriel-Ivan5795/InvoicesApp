@@ -7,12 +7,14 @@
 
 import UIKit
 import Firebase
+import InvoicesService
 
 class CreateUserRequest: IAuthentificationRequest {
     
-    func loginUserOnFirebase(_loginModel: LoginModel?, _authSuccess: @escaping (LoginResponseModel) -> Void, _authError: @escaping (String) -> Void) {
-        if (_loginModel?.username?.isValid() == true && _loginModel?.password?.isValid() == true) {
-            Auth.auth().createUser(withEmail: (_loginModel?.username)!, password: (_loginModel?.password)!, completion: { authResult, error in
+    func loginUserOnFirebase(_loginModel: BaseLoginModel?, _authSuccess: @escaping(BaseLoginResponseModel) -> Void, _authError: @escaping (String) -> Void) {
+        let loginModel = _loginModel as? LoginModel
+        if (loginModel?.username?.isValid() == true && loginModel?.password?.isValid() == true) {
+            Auth.auth().createUser(withEmail: (loginModel?.username)!, password: (loginModel?.password)!, completion: { authResult, error in
                 if (error != nil) {
                     _authError(error?.localizedDescription ?? "An error has occured during login on Firebase")
                 }

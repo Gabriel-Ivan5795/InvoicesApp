@@ -7,14 +7,15 @@
 
 import UIKit
 import Firebase
-import InvoicesAppConstants
+import InvoicesService
 import InvoicesHelpers
+import InvoicesAppConstants
 
 class AddInvoiceRequest: IAddInvoiceRequest {
 
     static var dbContext: Firestore!
     
-    func addInvoiceOnFirebase(_invoiceModel: AddInvoiceModel, _addingResult: @escaping (String) -> Void, _addingError: @escaping (String) -> Void) {
+    func addInvoiceOnFirebase(_invoiceModel: BaseAddInvoiceModel, _addingResult: @escaping (String) -> Void, _addingError: @escaping (String) -> Void) {
         AddInvoiceRequest.dbContext = FirebaseConfig.getDatabaseInstance()
         var ref: DocumentReference? = nil
         let pathToAddInvoiceModel = String.init(format: "%@/%@",
