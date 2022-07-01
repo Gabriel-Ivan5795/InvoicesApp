@@ -5,7 +5,7 @@
       location = "group:InvoicesApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../TimereportApp/InvoicesService/InvoicesService.xcodeproj">
+      location = "group:InvoicesService/InvoicesService.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:InvoicesHelpers/InvoicesHelpers.xcodeproj">

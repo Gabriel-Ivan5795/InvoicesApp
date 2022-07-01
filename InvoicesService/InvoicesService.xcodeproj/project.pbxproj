@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A119D04928685C63001AC7BA /* NowAppConstants.docc in Sources */ = {isa = PBXBuildFile; fileRef = A119D04828685C63001AC7BA /* NowAppConstants.docc */; };
-		A119D05528685C64001AC7BA /* NowAppConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A119D04728685C63001AC7BA /* NowAppConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A119D05F28685C95001AC7BA /* NowAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A119D05E28685C95001AC7BA /* NowAppConstants.swift */; };
-		A119D06128685CA2001AC7BA /* NowAppViewsIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A119D06028685CA2001AC7BA /* NowAppViewsIdentifiers.swift */; };
+		20CFDCD3286D8481008AF0E4 /* InvoicesService.docc in Sources */ = {isa = PBXBuildFile; fileRef = 20CFDCD2286D8481008AF0E4 /* InvoicesService.docc */; };
+		20CFDCD4286D8481008AF0E4 /* InvoicesService.h in Headers */ = {isa = PBXBuildFile; fileRef = 20CFDCD1286D8481008AF0E4 /* InvoicesService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20CFDCDE286D84B6008AF0E4 /* IAuthentificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFDCDC286D84B6008AF0E4 /* IAuthentificationRequest.swift */; };
+		20CFDCDF286D84B6008AF0E4 /* IDeAuthentificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFDCDD286D84B6008AF0E4 /* IDeAuthentificationRequest.swift */; };
+		20CFDCE2286D84D1008AF0E4 /* IAddInvoiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFDCE1286D84D1008AF0E4 /* IAddInvoiceRequest.swift */; };
+		20CFDCE5286D8554008AF0E4 /* BaseLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFDCE4286D8554008AF0E4 /* BaseLoginModel.swift */; };
+		20CFDCE8286D8589008AF0E4 /* BaseLoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFDCE7286D8589008AF0E4 /* BaseLoginResponseModel.swift */; };
+		20CFDCEC286D85F9008AF0E4 /* BaseAddInvoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFDCEB286D85F9008AF0E4 /* BaseAddInvoiceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A119D04428685C63001AC7BA /* NowAppStagingConstants.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NowAppStagingConstants.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A119D04728685C63001AC7BA /* NowAppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NowAppConstants.h; sourceTree = "<group>"; };
-		A119D04828685C63001AC7BA /* NowAppConstants.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NowAppConstants.docc; sourceTree = "<group>"; };
-		A119D05E28685C95001AC7BA /* NowAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowAppConstants.swift; sourceTree = "<group>"; };
-		A119D06028685CA2001AC7BA /* NowAppViewsIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowAppViewsIdentifiers.swift; sourceTree = "<group>"; };
+		20CFDCCE286D8481008AF0E4 /* InvoicesService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InvoicesService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20CFDCD1286D8481008AF0E4 /* InvoicesService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvoicesService.h; sourceTree = "<group>"; };
+		20CFDCD2286D8481008AF0E4 /* InvoicesService.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = InvoicesService.docc; sourceTree = "<group>"; };
+		20CFDCDC286D84B6008AF0E4 /* IAuthentificationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAuthentificationRequest.swift; sourceTree = "<group>"; };
+		20CFDCDD286D84B6008AF0E4 /* IDeAuthentificationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDeAuthentificationRequest.swift; sourceTree = "<group>"; };
+		20CFDCE1286D84D1008AF0E4 /* IAddInvoiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAddInvoiceRequest.swift; sourceTree = "<group>"; };
+		20CFDCE4286D8554008AF0E4 /* BaseLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoginModel.swift; sourceTree = "<group>"; };
+		20CFDCE7286D8589008AF0E4 /* BaseLoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoginResponseModel.swift; sourceTree = "<group>"; };
+		20CFDCEB286D85F9008AF0E4 /* BaseAddInvoiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAddInvoiceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A119D04128685C63001AC7BA /* Frameworks */ = {
+		20CFDCCB286D8481008AF0E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,81 +40,148 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A119D03A28685C63001AC7BA = {
+		20CFDCC4286D8481008AF0E4 = {
 			isa = PBXGroup;
 			children = (
-				A119D04628685C63001AC7BA /* NowAppConstants */,
-				A119D04528685C63001AC7BA /* Products */,
+				20CFDCD0286D8481008AF0E4 /* InvoicesService */,
+				20CFDCCF286D8481008AF0E4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A119D04528685C63001AC7BA /* Products */ = {
+		20CFDCCF286D8481008AF0E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A119D04428685C63001AC7BA /* NowAppStagingConstants.framework */,
+				20CFDCCE286D8481008AF0E4 /* InvoicesService.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A119D04628685C63001AC7BA /* NowAppConstants */ = {
+		20CFDCD0286D8481008AF0E4 /* InvoicesService */ = {
 			isa = PBXGroup;
 			children = (
-				A119D04728685C63001AC7BA /* NowAppConstants.h */,
-				A119D04828685C63001AC7BA /* NowAppConstants.docc */,
-				A119D05E28685C95001AC7BA /* NowAppConstants.swift */,
-				A119D06028685CA2001AC7BA /* NowAppViewsIdentifiers.swift */,
+				20CFDCE6286D8576008AF0E4 /* Base Response */,
+				20CFDCE3286D8543008AF0E4 /* Base Models */,
+				20CFDCDA286D849C008AF0E4 /* Base API Services */,
+				20CFDCD1286D8481008AF0E4 /* InvoicesService.h */,
+				20CFDCD2286D8481008AF0E4 /* InvoicesService.docc */,
 			);
-			path = NowAppConstants;
+			path = InvoicesService;
+			sourceTree = "<group>";
+		};
+		20CFDCDA286D849C008AF0E4 /* Base API Services */ = {
+			isa = PBXGroup;
+			children = (
+				20CFDCE0286D84C9008AF0E4 /* UserInvoices */,
+				20CFDCDB286D84A3008AF0E4 /* UserAuth */,
+			);
+			path = "Base API Services";
+			sourceTree = "<group>";
+		};
+		20CFDCDB286D84A3008AF0E4 /* UserAuth */ = {
+			isa = PBXGroup;
+			children = (
+				20CFDCDC286D84B6008AF0E4 /* IAuthentificationRequest.swift */,
+				20CFDCDD286D84B6008AF0E4 /* IDeAuthentificationRequest.swift */,
+			);
+			path = UserAuth;
+			sourceTree = "<group>";
+		};
+		20CFDCE0286D84C9008AF0E4 /* UserInvoices */ = {
+			isa = PBXGroup;
+			children = (
+				20CFDCE1286D84D1008AF0E4 /* IAddInvoiceRequest.swift */,
+			);
+			path = UserInvoices;
+			sourceTree = "<group>";
+		};
+		20CFDCE3286D8543008AF0E4 /* Base Models */ = {
+			isa = PBXGroup;
+			children = (
+				20CFDCEA286D85EA008AF0E4 /* UserInvoices */,
+				20CFDCE9286D85E1008AF0E4 /* UserAuth */,
+			);
+			path = "Base Models";
+			sourceTree = "<group>";
+		};
+		20CFDCE6286D8576008AF0E4 /* Base Response */ = {
+			isa = PBXGroup;
+			children = (
+				20CFDCED286D860A008AF0E4 /* UserAuth */,
+			);
+			path = "Base Response";
+			sourceTree = "<group>";
+		};
+		20CFDCE9286D85E1008AF0E4 /* UserAuth */ = {
+			isa = PBXGroup;
+			children = (
+				20CFDCE4286D8554008AF0E4 /* BaseLoginModel.swift */,
+			);
+			path = UserAuth;
+			sourceTree = "<group>";
+		};
+		20CFDCEA286D85EA008AF0E4 /* UserInvoices */ = {
+			isa = PBXGroup;
+			children = (
+				20CFDCEB286D85F9008AF0E4 /* BaseAddInvoiceModel.swift */,
+			);
+			path = UserInvoices;
+			sourceTree = "<group>";
+		};
+		20CFDCED286D860A008AF0E4 /* UserAuth */ = {
+			isa = PBXGroup;
+			children = (
+				20CFDCE7286D8589008AF0E4 /* BaseLoginResponseModel.swift */,
+			);
+			path = UserAuth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A119D03F28685C63001AC7BA /* Headers */ = {
+		20CFDCC9286D8481008AF0E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A119D05528685C64001AC7BA /* NowAppConstants.h in Headers */,
+				20CFDCD4286D8481008AF0E4 /* InvoicesService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A119D04328685C63001AC7BA /* NowAppStagingConstants */ = {
+		20CFDCCD286D8481008AF0E4 /* InvoicesService */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A119D05828685C64001AC7BA /* Build configuration list for PBXNativeTarget "NowAppStagingConstants" */;
+			buildConfigurationList = 20CFDCD7286D8481008AF0E4 /* Build configuration list for PBXNativeTarget "InvoicesService" */;
 			buildPhases = (
-				A119D03F28685C63001AC7BA /* Headers */,
-				A119D04028685C63001AC7BA /* Sources */,
-				A119D04128685C63001AC7BA /* Frameworks */,
-				A119D04228685C63001AC7BA /* Resources */,
+				20CFDCC9286D8481008AF0E4 /* Headers */,
+				20CFDCCA286D8481008AF0E4 /* Sources */,
+				20CFDCCB286D8481008AF0E4 /* Frameworks */,
+				20CFDCCC286D8481008AF0E4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NowAppStagingConstants;
-			productName = NowAppConstants;
-			productReference = A119D04428685C63001AC7BA /* NowAppStagingConstants.framework */;
+			name = InvoicesService;
+			productName = InvoicesService;
+			productReference = 20CFDCCE286D8481008AF0E4 /* InvoicesService.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A119D03B28685C63001AC7BA /* Project object */ = {
+		20CFDCC5286D8481008AF0E4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					A119D04328685C63001AC7BA = {
+					20CFDCCD286D8481008AF0E4 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = A119D03E28685C63001AC7BA /* Build configuration list for PBXProject "NowAppStagingConstants" */;
+			buildConfigurationList = 20CFDCC8286D8481008AF0E4 /* Build configuration list for PBXProject "InvoicesService" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,18 +189,18 @@
 				en,
 				Base,
 			);
-			mainGroup = A119D03A28685C63001AC7BA;
-			productRefGroup = A119D04528685C63001AC7BA /* Products */;
+			mainGroup = 20CFDCC4286D8481008AF0E4;
+			productRefGroup = 20CFDCCF286D8481008AF0E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A119D04328685C63001AC7BA /* NowAppStagingConstants */,
+				20CFDCCD286D8481008AF0E4 /* InvoicesService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A119D04228685C63001AC7BA /* Resources */ = {
+		20CFDCCC286D8481008AF0E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,20 +210,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A119D04028685C63001AC7BA /* Sources */ = {
+		20CFDCCA286D8481008AF0E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A119D05F28685C95001AC7BA /* NowAppConstants.swift in Sources */,
-				A119D06128685CA2001AC7BA /* NowAppViewsIdentifiers.swift in Sources */,
-				A119D04928685C63001AC7BA /* NowAppConstants.docc in Sources */,
+				20CFDCE5286D8554008AF0E4 /* BaseLoginModel.swift in Sources */,
+				20CFDCDE286D84B6008AF0E4 /* IAuthentificationRequest.swift in Sources */,
+				20CFDCD3286D8481008AF0E4 /* InvoicesService.docc in Sources */,
+				20CFDCE8286D8589008AF0E4 /* BaseLoginResponseModel.swift in Sources */,
+				20CFDCDF286D84B6008AF0E4 /* IDeAuthentificationRequest.swift in Sources */,
+				20CFDCEC286D85F9008AF0E4 /* BaseAddInvoiceModel.swift in Sources */,
+				20CFDCE2286D84D1008AF0E4 /* IAddInvoiceRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A119D05628685C64001AC7BA /* Debug */ = {
+		20CFDCD5286D8481008AF0E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -199,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -211,7 +290,7 @@
 			};
 			name = Debug;
 		};
-		A119D05728685C64001AC7BA /* Release */ = {
+		20CFDCD6286D8481008AF0E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -256,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -268,58 +347,60 @@
 			};
 			name = Release;
 		};
-		A119D05928685C64001AC7BA /* Debug */ = {
+		20CFDCD8286D8481008AF0E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4Z5SZ2AL2N;
+				DEVELOPMENT_TEAM = 25G7LS3L22;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = NowDanmark.PinStop.Staging.NowAppConstants;
+				PRODUCT_BUNDLE_IDENTIFIER = ivangabriel.InvoicesService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A119D05A28685C64001AC7BA /* Release */ = {
+		20CFDCD9286D8481008AF0E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4Z5SZ2AL2N;
+				DEVELOPMENT_TEAM = 25G7LS3L22;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = NowDanmark.PinStop.Staging.NowAppConstants;
+				PRODUCT_BUNDLE_IDENTIFIER = ivangabriel.InvoicesService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,25 +410,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A119D03E28685C63001AC7BA /* Build configuration list for PBXProject "NowAppStagingConstants" */ = {
+		20CFDCC8286D8481008AF0E4 /* Build configuration list for PBXProject "InvoicesService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A119D05628685C64001AC7BA /* Debug */,
-				A119D05728685C64001AC7BA /* Release */,
+				20CFDCD5286D8481008AF0E4 /* Debug */,
+				20CFDCD6286D8481008AF0E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A119D05828685C64001AC7BA /* Build configuration list for PBXNativeTarget "NowAppStagingConstants" */ = {
+		20CFDCD7286D8481008AF0E4 /* Build configuration list for PBXNativeTarget "InvoicesService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A119D05928685C64001AC7BA /* Debug */,
-				A119D05A28685C64001AC7BA /* Release */,
+				20CFDCD8286D8481008AF0E4 /* Debug */,
+				20CFDCD9286D8481008AF0E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A119D03B28685C63001AC7BA /* Project object */;
+	rootObject = 20CFDCC5286D8481008AF0E4 /* Project object */;
 }
