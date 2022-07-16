@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Vision
 import VisionKit
 
 extension AddInvoicesViewController: UIGestureRecognizerDelegate, VNDocumentCameraViewControllerDelegate, UITextFieldDelegate {
@@ -16,6 +17,18 @@ extension AddInvoicesViewController: UIGestureRecognizerDelegate, VNDocumentCame
             self?.addInvoicesUIView.getScannedImageView().image = scan.imageOfPage(at: 0)
             
             self?.showAlert(_errorMessage: "Done")
+            self?.hasScannedImage = true
+            
+            guard let cgImage = self?.addInvoicesUIView.getScannedImageView().image?.cgImage else { return }
+            
+            let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+            let request = VNRecognizeTextRequest(completionHandler: self?.recognizeTextHandler)
+            do {
+                // Perform the text-recognition request.
+                try handler.perform([request])
+            } catch {
+                print("Unable to perform the requests: \(error).")
+            }
         }
     }
     
@@ -61,6 +74,32 @@ extension AddInvoicesViewController: UIGestureRecognizerDelegate, VNDocumentCame
             } else {
                 self.addInvoicesUIView.getDescriptionField().hideLabelPlaceholder()
             }
+        }
+    }
+    
+    func recognizeTextHandler(request: VNRequest, error: Error?) {
+        if #available(iOS 13.0, *) {
+            guard let observations =
+                    request.results as? [VNRecognizedTextObservation] else {
+                return
+            }
+            let recognizedStrings = observations.compactMap { observation in
+                // Return the string of the top VNRecognizedText instance.
+                return observation.topCandidates(1).first?.string
+            }
+            
+            print(recognizedStrings)
+            var stringBuilder = String.init(format: "%@", "")
+            for stringRecognized in recognizedStrings {
+                if (stringRecognized.contains("Nume")) {
+                    stringBuilder = String.init(format: "%@ %@", stringBuilder, stringRecognized)
+                }
+            }
+            self.addInvoicesUIView.getDescriptionField().setValueField(_value: stringBuilder)
+            // Process the recognized strings.
+            //processResults(recognizedStrings)
+        } else {
+            // Fallback on earlier versions
         }
     }
 }
